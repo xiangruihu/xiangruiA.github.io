@@ -226,11 +226,6 @@
       </tags>
   </entry>
   <entry>
-    <title>testt</title>
-    <url>/2021/02/16/testt/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>活着</title>
     <url>/2021/02/15/%E6%B4%BB%E7%9D%80/</url>
     <content><![CDATA[<p>活着（葛优、巩俐主演）<br>余华<br>12个想法</p>
@@ -581,7 +576,8 @@
 <p><img src="/images/image-20210217003035133.png" alt="image-20210217003035133"></p>
 <p>则算法改写成：</p>
 <h3 id><a href="#" class="headerlink" title></a><img src="/images/image-20210217002906737.png" alt="image-20210217002906737"></h3><h3 id="梯度下降算法更多内容"><a href="#梯度下降算法更多内容" class="headerlink" title="梯度下降算法更多内容"></a>梯度下降算法更多内容</h3><p>请参考<a href="https://blog.csdn.net/qq_41800366/article/details/86583789?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161349126216780261954075%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161349126216780261954075&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-86583789.first_rank_v2_pc_rank_v29&utm_term=%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95&spm=1018.2226.3001.4187">链接</a></p>
-<h2 id="线性代数回顾-Linear-Algebra-Review"><a href="#线性代数回顾-Linear-Algebra-Review" class="headerlink" title="线性代数回顾(Linear Algebra Review)"></a>线性代数回顾(Linear Algebra Review)</h2>]]></content>
+<h2 id="线性代数回顾-Linear-Algebra-Review"><a href="#线性代数回顾-Linear-Algebra-Review" class="headerlink" title="线性代数回顾(Linear Algebra Review)"></a>线性代数回顾(Linear Algebra Review)</h2><p>参考<a href="https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes">链接</a></p>
+]]></content>
       <categories>
         <category>AI</category>
         <category>学习笔记</category>
