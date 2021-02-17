@@ -24,12 +24,12 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"./public/search.xml"};
   </script>
 
-  <meta name="description" content="引言（Introduction)什么是机器学习第一个机器学习定义来源于Arthur Samuel,他定义为： 在特定的编程情况下，给予计算机学习能力。另一个年代近一点的定义，由   Tom Mitchell 提出，来自卡内基梅隆大学，Tom 定义的机器学习是，一个好的学习问题定义如下，他说，一个程序被认为能从经验 E 中学习，解决任务 T，达到性能度量值P，当且仅当，有了经验 E 后，经过 P 评">
+  <meta name="description" content="一.引言（Introduction)1.1什么是机器学习第一个机器学习定义来源于Arthur Samuel,他定义为： 在特定的编程情况下，给予计算机学习能力。另一个年代近一点的定义，由   Tom Mitchell 提出，来自卡内基梅隆大学，Tom 定义的机器学习是，一个好的学习问题定义如下，他说，一个程序被认为能从经验 E 中学习，解决任务 T，达到性能度量值P，当且仅当，有了经验 E 后，经">
 <meta property="og:type" content="article">
 <meta property="og:title" content="吴恩达机器学习笔记">
 <meta property="og:url" content="http://example.com/2020/07/07/%E5%90%B4%E6%81%A9%E8%BE%BE%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="XiangRui&#39;s blog">
-<meta property="og:description" content="引言（Introduction)什么是机器学习第一个机器学习定义来源于Arthur Samuel,他定义为： 在特定的编程情况下，给予计算机学习能力。另一个年代近一点的定义，由   Tom Mitchell 提出，来自卡内基梅隆大学，Tom 定义的机器学习是，一个好的学习问题定义如下，他说，一个程序被认为能从经验 E 中学习，解决任务 T，达到性能度量值P，当且仅当，有了经验 E 后，经过 P 评">
+<meta property="og:description" content="一.引言（Introduction)1.1什么是机器学习第一个机器学习定义来源于Arthur Samuel,他定义为： 在特定的编程情况下，给予计算机学习能力。另一个年代近一点的定义，由   Tom Mitchell 提出，来自卡内基梅隆大学，Tom 定义的机器学习是，一个好的学习问题定义如下，他说，一个程序被认为能从经验 E 中学习，解决任务 T，达到性能度量值P，当且仅当，有了经验 E 后，经">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/image-20210216224108606.png">
 <meta property="og:image" content="http://example.com/images/image-20210216225057126.png">
@@ -57,7 +57,7 @@
 <meta property="og:image" content="http://example.com/images/image-20210217003035133.png">
 <meta property="og:image" content="http://example.com/images/image-20210217002906737.png">
 <meta property="article:published_time" content="2020-07-07T13:54:24.000Z">
-<meta property="article:modified_time" content="2021-02-17T03:25:59.450Z">
+<meta property="article:modified_time" content="2021-02-17T04:30:35.781Z">
 <meta property="article:author" content="grit">
 <meta property="article:tag" content="AI">
 <meta property="article:tag" content="机器学习">
@@ -268,7 +268,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-02-17 11:25:59" itemprop="dateModified" datetime="2021-02-17T11:25:59+08:00">2021-02-17</time>
+                <time title="修改时间：2021-02-17 12:30:35" itemprop="dateModified" datetime="2021-02-17T12:30:35+08:00">2021-02-17</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -335,10 +335,10 @@
 
 
       
-        <h2 id="引言（Introduction"><a href="#引言（Introduction" class="headerlink" title="引言（Introduction)"></a>引言（Introduction)</h2><h3 id="什么是机器学习"><a href="#什么是机器学习" class="headerlink" title="什么是机器学习"></a>什么是机器学习</h3><p>第一个机器学习定义来源于<strong>Arthur Samuel</strong>,他定义为： 在特定的编程情况下，给予计算机学习能力。<br>另一个年代近一点的定义，由   <strong>Tom Mitchell</strong> 提出，来自卡内基梅隆大学，Tom 定义的机器学习是，一个好的学习问题定义如下，他说，一个程序被认为能从经验 E 中学习，解决任务 T，达到性能度量值P，当且仅当，有了经验 E 后，经过 P 评判，程序在处理 T 时的性能有所提升。我认为经验E 就是程序上万次的自我练习的经验而任务 T 就是下棋。性能度量值 P 呢，就是它在与一些新的对手比赛时，赢得比赛的概率。<strong>简单来说就是从E中学习，解决任务T，达到性能度量值P。并且在经过P评判，和不断学习的过程中，程序在处理T时的性能有所提升.</strong></p>
+        <h2 id="一-引言（Introduction"><a href="#一-引言（Introduction" class="headerlink" title="一.引言（Introduction)"></a>一.引言（Introduction)</h2><h3 id="1-1什么是机器学习"><a href="#1-1什么是机器学习" class="headerlink" title="1.1什么是机器学习"></a>1.1什么是机器学习</h3><p>第一个机器学习定义来源于<strong>Arthur Samuel</strong>,他定义为： 在特定的编程情况下，给予计算机学习能力。<br>另一个年代近一点的定义，由   <strong>Tom Mitchell</strong> 提出，来自卡内基梅隆大学，Tom 定义的机器学习是，一个好的学习问题定义如下，他说，一个程序被认为能从经验 E 中学习，解决任务 T，达到性能度量值P，当且仅当，有了经验 E 后，经过 P 评判，程序在处理 T 时的性能有所提升。我认为经验E 就是程序上万次的自我练习的经验而任务 T 就是下棋。性能度量值 P 呢，就是它在与一些新的对手比赛时，赢得比赛的概率。<strong>简单来说就是从E中学习，解决任务T，达到性能度量值P。并且在经过P评判，和不断学习的过程中，程序在处理T时的性能有所提升.</strong></p>
 <a id="more"></a>
 
-<h3 id="监督学习"><a href="#监督学习" class="headerlink" title="监督学习"></a>监督学习</h3><p>我们用一个例子介绍什么是监督学习把正式的定义放在后面介绍。假如说你想预测房价。</p>
+<h3 id="1-2监督学习"><a href="#1-2监督学习" class="headerlink" title="1.2监督学习"></a>1.2监督学习</h3><p>我们用一个例子介绍什么是监督学习把正式的定义放在后面介绍。假如说你想预测房价。</p>
 <p>前阵子，一个学生从波特兰俄勒冈州的研究所收集了一些房价的数据。你把这些数据画出来，看起来是这个样子：横轴表示房子的面积，单位是平方英尺，纵轴表示房价，单位是千美元。那基于这组数据，假如你有一个朋友，他有一套750平方英尺房子，现在他希望把房子卖掉，他想知道这房子能卖多少钱。</p>
 <p>那么关于这个问题，机器学习算法将会怎么帮助你呢？</p>
 <p><img src="/images/image-20210216224108606.png" alt="image-20210216224108606"></p>
@@ -358,11 +358,11 @@
 <p><img src="/images/image-20210216225452470.png" alt="image-20210216225452470"></p>
 <p>上图中，我列举了总共5种不同的特征，坐标轴上的两种和右边的3种，但是在一些学习问题中，你希望不只用3种或5种特征。相反，你想用无限多种特征，好让你的算法可以利用大量的特征，或者说线索来做推测。那你怎么处理无限多个特征，甚至怎么存储这些特征都存在问题，你电脑的内存肯定不够用。<strong>我们以后会讲一个算法，叫支持向量机，里面有一个巧妙的数学技巧，能让计算机处理无限多个特征。</strong>想象一下，我没有写下这两种和右边的三种特征，而是在一个无限长的列表里面，一直写一直写不停的写，写下无限多个特征，事实上，我们能用算法来处理它们。</p>
 <p><strong>现在来回顾一下，这节课我们介绍了监督学习。其基本思想是，我们数据集中的每个样本都有相应的“正确答案”。再根据这些样本作出预测，就像房子和肿瘤的例子中做的那样。我们还介绍了回归问题，即通过回归来推出一个连续的输出，之后我们介绍了分类问题，其目标是推出一组离散的结果。</strong></p>
-<h3 id="无监督学习"><a href="#无监督学习" class="headerlink" title="无监督学习"></a>无监督学习</h3><p>本次视频中，我们将介绍第二种主要的机器学习问题。叫做无监督学习。</p>
+<h3 id="1-3无监督学习"><a href="#1-3无监督学习" class="headerlink" title="1.3无监督学习"></a>1.3无监督学习</h3><p>本次视频中，我们将介绍第二种主要的机器学习问题。叫做无监督学习。</p>
 <p><img src="/images/image-20210216225824075.png" alt="image-20210216225824075"></p>
 <p>上个视频中，已经介绍了监督学习。回想当时的数据集，如图表所示，这个数据集中每条数据都已经标明是阴性或阳性，即是良性或恶性肿瘤。所以，对于监督学习里的每条数据，我们已经清楚地知道，训练集对应的正确答案，是良性或恶性了。</p>
 <p>在无监督学习中，我们已知的数据。看上去有点不一样，不同于监督学习的数据的样子，<strong>即无监督学习中没有任何的标签或者是有相同的标签或者就是没标签。</strong>所以我们已知数据集，却不知如何处理，也未告知每个数据点是什么。别的都不知道，就是一个数据集。你能从数据中找到某种结构吗？针对数据集，无监督学习就能判断出数据有两个不同的聚集簇。这是一个，那是另一个，二者不同。是的，<strong>无监督学习算法可能会把这些数据分成两个不同的簇。所以叫做聚类算法。</strong>事实证明，它能被用在很多地方。</p>
-<h2 id="单变量线性回归-Linear-Regression-with-One-Variable"><a href="#单变量线性回归-Linear-Regression-with-One-Variable" class="headerlink" title="单变量线性回归(Linear Regression with One Variable)"></a>单变量线性回归(Linear Regression with One Variable)</h2><h3 id="模型表示"><a href="#模型表示" class="headerlink" title="模型表示"></a>模型表示</h3><p>我们的第一个学习算法是线性回归算法。在这段视频中，你会看到这个算法的概况，更重要的是你将会了解监督学习过程完整的流程。</p>
+<h2 id="二-单变量线性回归-Linear-Regression-with-One-Variable"><a href="#二-单变量线性回归-Linear-Regression-with-One-Variable" class="headerlink" title="二.单变量线性回归(Linear Regression with One Variable)"></a>二.单变量线性回归(Linear Regression with One Variable)</h2><h3 id="2-1模型表示"><a href="#2-1模型表示" class="headerlink" title="2.1模型表示"></a>2.1模型表示</h3><p>我们的第一个学习算法是线性回归算法。在这段视频中，你会看到这个算法的概况，更重要的是你将会了解监督学习过程完整的流程。</p>
 <p>让我们通过一个例子来开始：这个例子是预测住房价格的，我们要使用一个数据集，数据集包含俄勒冈州波特兰市的住房价格。在这里，我要根据不同房屋尺寸所售出的价格，画出我的数据集。比方说，如果你朋友的房子是1250平方尺大小，你要告诉他们这房子能卖多少钱。那么，你可以做的一件事就是构建一个模型，也许是条直线，从这个数据模型上来看，也许你可以告诉你的朋友，他能以大约220000(美元)左右的价格卖掉这个房子。这就是监督学习算法的一个例子。</p>
 <p><img src="/images/image-20210216232328225.png" alt="image-20210216232328225"></p>
 <p>它被称作监督学习是因为对于每个数据来说，我们给出了“正确的答案”，即告诉我们：根据我们的数据来说，房子实际的价格是多少，而且，更具体来说，这是一个回归问题。回归一词指的是，我们根据之前的数据预测出一个准确的输出值，对于这个例子就是价格，同时，还有另一种最常见的监督学习方式，叫做分类问题，当我们想要预测离散的输出值，例如，我们正在寻找癌症肿瘤，并想要确定肿瘤是良性的还是恶性的，这就是0/1离散输出的问题。更进一步来说，在监督学习中我们有一个数据集，这个数据集被称训练集。</p>
@@ -379,7 +379,7 @@
 <p>这就是一个监督学习算法的工作方式，我们可以看到这里有我们的训练集里房屋价格<br>我们把它喂给我们的学习算法，学习算法的工作了，然后输出一个函数，通常表示为小写 $h$  表示。$h$  代表<strong>hypothesis</strong>(<strong>假设</strong>)，$h$表示一个函数，输入是房屋尺寸大小，就像你朋友想出售的房屋，因此 $h$ 根据输入的 $x$值来得出 $y$ 值，$y$ 值对应房子的价格 因此，$h$ 是一个从$x$ 到 $y$ 的函数映射。</p>
 <p>我将选择最初的使用规则$h$代表<strong>hypothesis</strong>，因而，要解决房价预测问题，我们实际上是要将训练集“喂”给我们的学习算法，进而学习得到一个假设$h$，然后将我们要预测的房屋的尺寸作为输入变量输入给$h$，预测出该房屋的交易价格作为输出变量输出为结果。那么，对于我们的房价预测问题，我们该如何表达 $h$？</p>
 <p>一种可能的表达方式为：$h_\theta \left( x \right)=\theta_{0} + \theta_{1}x$，因为只含有一个特征/输入变量，因此这样的问题叫作单变量线性回归问题。</p>
-<h3 id="代价函数"><a href="#代价函数" class="headerlink" title="代价函数"></a>代价函数</h3><p>在这段视频中我们将定义代价函数的概念，这有助于我们弄清楚如何把最有可能的直线与我们的数据相拟合。如图：</p>
+<h3 id="2-2代价函数"><a href="#2-2代价函数" class="headerlink" title="2.2代价函数"></a>2.2代价函数</h3><p>在这段视频中我们将定义代价函数的概念，这有助于我们弄清楚如何把最有可能的直线与我们的数据相拟合。如图：</p>
 <p><img src="/images/image-20210216234140487.png" alt="image-20210216234140487"></p>
 <p>在线性回归中我们有一个像这样的训练集，$m$代表了训练样本的数量，比如 $m = 47$。而我们的假设函数，也就是用来进行预测的函数，是这样的线性函数形式：$h_\theta \left( x \right)=\theta_{0}+\theta_{1}x$。</p>
 <p>接下来我们会引入一些术语我们现在要做的便是为我们的模型选择合适的<strong>参数</strong>（<strong>parameters</strong>）$\theta_{0}$ 和 $\theta_{1}$，在房价问题这个例子中便是直线的斜率和在$y$ 轴上的截距。</p>
@@ -393,17 +393,17 @@
 <p>代价函数也被称作平方误差函数，有时也被称为平方误差代价函数。我们之所以要求出误差的平方和，是因为误差平方代价函数，对于大多数问题，特别是回归问题，都是一个合理的选择。还有其他的代价函数也能很好地发挥作用，但是平方误差代价函数可能是解决回归问题最常用的手段了。</p>
 <p>在后续课程中，我们还会谈论其他的代价函数，但我们刚刚讲的选择是对于大多数线性回归问题非常合理的。</p>
 <p>也许这个函数$J(\theta_{0}, \theta_{1})$有点抽象，可能你仍然不知道它的内涵，在接下来的几个视频里，我们要更进一步解释代价函数J的工作原理，并尝试更直观地解释它在计算什么，以及我们使用它的目的。</p>
-<h3 id="代价函数的直观理解"><a href="#代价函数的直观理解" class="headerlink" title="代价函数的直观理解|"></a>代价函数的直观理解|</h3><p>参考视频: 2 - 3 - Cost Function - Intuition I (11 min).mkv</p>
+<h3 id="2-3代价函数的直观理解"><a href="#2-3代价函数的直观理解" class="headerlink" title="2.3代价函数的直观理解|"></a>2.3代价函数的直观理解|</h3><p>参考视频: 2 - 3 - Cost Function - Intuition I (11 min).mkv</p>
 <p>在上一个视频中，我们给了代价函数一个数学上的定义。在这个视频里，让我们通过一些例子来获取一些直观的感受，看看代价函数到底是在干什么。</p>
 <p><img src="/images/image-20210216235141468.png" alt="image-20210216235141468"></p>
 <p><img src="/images/image-20210216235152322.png" alt="image-20210216235152322"></p>
-<h3 id="代价函数的直观理解-1"><a href="#代价函数的直观理解-1" class="headerlink" title="代价函数的直观理解||"></a>代价函数的直观理解||</h3><p><img src="/images/image-20210216235528290.png" alt="image-20210216235528290"></p>
+<h3 id="2-4代价函数的直观理解"><a href="#2-4代价函数的直观理解" class="headerlink" title="2.4代价函数的直观理解||"></a>2.4代价函数的直观理解||</h3><p><img src="/images/image-20210216235528290.png" alt="image-20210216235528290"></p>
 <p>代价函数的样子，等高线图，则可以看出在三维空间中存在一个使得$J(\theta_{0}, \theta_{1})$最小的点。</p>
 <p><img src="/images/image-20210216235547767.png" alt="image-20210216235547767"></p>
 <p>通过这些图形，我希望你能更好地理解这些代价函数$ J$所表达的值是什么样的，它们对应的假设是什么样的，以及什么样的假设对应的点，更接近于代价函数$J$的最小值。</p>
 <p>当然，我们真正需要的是一种有效的算法，能够自动地找出这些使代价函数$J$取最小值的参数$\theta_{0}$和$\theta_{1}$来。</p>
 <p>我们也不希望编个程序把这些点画出来，然后人工的方法来读出这些点的数值，这很明显不是一个好办法。我们会遇到更复杂、更高维度、更多参数的情况，而这些情况是很难画出图的，因此更无法将其可视化，因此我们真正需要的是编写程序来找出这些最小化代价函数的$\theta_{0}$和$\theta_{1}$的值，在下一节视频中，我们将介绍一种算法，能够自动地找出能使代价函数$J$最小化的参数$\theta_{0}$和$\theta_{1}$的值。</p>
-<h3 id="梯度下降"><a href="#梯度下降" class="headerlink" title="梯度下降"></a>梯度下降</h3><p>梯度下降是一个用来求函数最小值的算法，我们将使用梯度下降算法来求出代价函数$J(\theta_{0}, \theta_{1})$ 的最小值。</p>
+<h3 id="2-5梯度下降"><a href="#2-5梯度下降" class="headerlink" title="2.5梯度下降"></a>2.5梯度下降</h3><p>梯度下降是一个用来求函数最小值的算法，我们将使用梯度下降算法来求出代价函数$J(\theta_{0}, \theta_{1})$ 的最小值。</p>
 <p>梯度下降背后的思想是：开始时我们随机选择一个参数的组合$\left( {\theta_{0}},{\theta_{1}},……,{\theta_{n}} \right)$，计算代价函数，然后我们寻找下一个能让代价函数值下降最多的参数组合。我们持续这么做直到找到一个局部最小值（<strong>local minimum</strong>），因为我们并没有尝试完所有的参数组合，所以不能确定我们得到的局部最小值是否便是全局最小值（<strong>global minimum</strong>），选择不同的初始参数组合，可能会找到不同的局部最小值。</p>
 <p><img src="/images/image-20210216235758941.png" alt="image-20210216235758941"></p>
 <p>想象一下你正站立在山的这一点上，站立在你想象的公园这座红色山上，在梯度下降算法中，我们要做的就是旋转360度，看看我们的周围，并问自己要在某个方向上，用小碎步尽快下山。这些小碎步需要朝什么方向？如果我们站在山坡上的这一点，你看一下周围，你会发现最佳的下山方向，你再看看周围，然后再一次想想，我应该从什么方向迈着小碎步下山？然后你按照自己的判断又迈出一步，重复上面的步骤，从这个新的点，你环顾四周，并决定从什么方向将会最快下山，然后又迈进了一小步，并依此类推，直到你接近局部最低点的位置。</p>
@@ -421,7 +421,7 @@
 <p><img src="/images/image-20210217002837122.png" alt="image-20210217002837122"></p>
 <p>如果你不熟悉微积分，不用担心，即使你之前没有看过微积分，或者没有接触过偏导数，在接下来的视频中，你会得到一切你需要知道，如何计算这个微分项的知识。</p>
 <p>下一个视频中，希望我们能够给出实现梯度下降算法的所有知识 。</p>
-<h3 id="梯度下降的直观理解"><a href="#梯度下降的直观理解" class="headerlink" title="梯度下降的直观理解"></a>梯度下降的直观理解</h3><p>在之前的视频中，我们给出了一个数学上关于梯度下降的定义，本次视频我们更深入研究一下，更直观地感受一下这个算法是做什么的，以及梯度下降算法的更新过程有什么意义。梯度下降算法如下：</p>
+<h3 id="2-6梯度下降的直观理解"><a href="#2-6梯度下降的直观理解" class="headerlink" title="2.6梯度下降的直观理解"></a>2.6梯度下降的直观理解</h3><p>在之前的视频中，我们给出了一个数学上关于梯度下降的定义，本次视频我们更深入研究一下，更直观地感受一下这个算法是做什么的，以及梯度下降算法的更新过程有什么意义。梯度下降算法如下：</p>
 <p>${\theta_{j}}:={\theta_{j}}-\alpha \frac{\partial }{\partial {\theta_{j}}}J\left(\theta \right)$</p>
 <p>描述：对$\theta $赋值，使得$J\left( \theta  \right)$按梯度下降最快方向进行，一直迭代下去，最终得到局部最小值。其中$a$是学习率（<strong>learning rate</strong>），它决定了我们沿着能让代价函数下降程度最大的方向向下迈出的步子有多大。</p>
 <p><img src="/images/image-20210217000534228.png" alt="image-20210217000534228"></p>
@@ -442,8 +442,8 @@
 <p><img src="/images/image-20210217003019388.png" alt="image-20210217003019388"></p>
 <p><img src="/images/image-20210217003035133.png" alt="image-20210217003035133"></p>
 <p>则算法改写成：</p>
-<h3 id><a href="#" class="headerlink" title></a><img src="/images/image-20210217002906737.png" alt="image-20210217002906737"></h3><h3 id="梯度下降算法更多内容"><a href="#梯度下降算法更多内容" class="headerlink" title="梯度下降算法更多内容"></a>梯度下降算法更多内容</h3><p>请参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41800366/article/details/86583789?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161349126216780261954075%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161349126216780261954075&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-86583789.first_rank_v2_pc_rank_v29&utm_term=%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95&spm=1018.2226.3001.4187">链接</a></p>
-<h2 id="线性代数回顾-Linear-Algebra-Review"><a href="#线性代数回顾-Linear-Algebra-Review" class="headerlink" title="线性代数回顾(Linear Algebra Review)"></a>线性代数回顾(Linear Algebra Review)</h2><p>参考[链接](</p>
+<h3 id><a href="#" class="headerlink" title></a><img src="/images/image-20210217002906737.png" alt="image-20210217002906737"></h3><h3 id="2-7梯度下降算法更多内容"><a href="#2-7梯度下降算法更多内容" class="headerlink" title="2.7梯度下降算法更多内容"></a>2.7梯度下降算法更多内容</h3><p>请参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41800366/article/details/86583789?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161349126216780261954075%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161349126216780261954075&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-86583789.first_rank_v2_pc_rank_v29&utm_term=%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95&spm=1018.2226.3001.4187">链接</a></p>
+<h2 id="三-线性代数回顾-Linear-Algebra-Review"><a href="#三-线性代数回顾-Linear-Algebra-Review" class="headerlink" title="三.线性代数回顾(Linear Algebra Review)"></a>三.线性代数回顾(Linear Algebra Review)</h2><p>参考[链接](</p>
 
     </div>
 
@@ -544,7 +544,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%95%E8%A8%80%EF%BC%88Introduction"><span class="nav-number">1.</span> <span class="nav-text">引言（Introduction)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0"><span class="nav-number">1.1.</span> <span class="nav-text">什么是机器学习</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="nav-number">1.2.</span> <span class="nav-text">监督学习</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A0%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="nav-number">1.3.</span> <span class="nav-text">无监督学习</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E5%8F%98%E9%87%8F%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92-Linear-Regression-with-One-Variable"><span class="nav-number">2.</span> <span class="nav-text">单变量线性回归(Linear Regression with One Variable)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A8%A1%E5%9E%8B%E8%A1%A8%E7%A4%BA"><span class="nav-number">2.1.</span> <span class="nav-text">模型表示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B0"><span class="nav-number">2.2.</span> <span class="nav-text">代价函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B0%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3"><span class="nav-number">2.3.</span> <span class="nav-text">代价函数的直观理解|</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B0%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3-1"><span class="nav-number">2.4.</span> <span class="nav-text">代价函数的直观理解||</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D"><span class="nav-number">2.5.</span> <span class="nav-text">梯度下降</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3"><span class="nav-number">2.6.</span> <span class="nav-text">梯度下降的直观理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">2.7.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E7%AE%97%E6%B3%95%E6%9B%B4%E5%A4%9A%E5%86%85%E5%AE%B9"><span class="nav-number">2.8.</span> <span class="nav-text">梯度下降算法更多内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%9B%9E%E9%A1%BE-Linear-Algebra-Review"><span class="nav-number">3.</span> <span class="nav-text">线性代数回顾(Linear Algebra Review)</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80-%E5%BC%95%E8%A8%80%EF%BC%88Introduction"><span class="nav-text">一.引言（Introduction)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1%E4%BB%80%E4%B9%88%E6%98%AF%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0"><span class="nav-text">1.1什么是机器学习</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="nav-text">1.2监督学习</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3%E6%97%A0%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="nav-text">1.3无监督学习</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C-%E5%8D%95%E5%8F%98%E9%87%8F%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92-Linear-Regression-with-One-Variable"><span class="nav-text">二.单变量线性回归(Linear Regression with One Variable)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1%E6%A8%A1%E5%9E%8B%E8%A1%A8%E7%A4%BA"><span class="nav-text">2.1模型表示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B0"><span class="nav-text">2.2代价函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B0%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3"><span class="nav-text">2.3代价函数的直观理解|</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4%E4%BB%A3%E4%BB%B7%E5%87%BD%E6%95%B0%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3"><span class="nav-text">2.4代价函数的直观理解||</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D"><span class="nav-text">2.5梯度下降</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-6%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E7%9A%84%E7%9B%B4%E8%A7%82%E7%90%86%E8%A7%A3"><span class="nav-text">2.6梯度下降的直观理解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-text"></span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-7%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E7%AE%97%E6%B3%95%E6%9B%B4%E5%A4%9A%E5%86%85%E5%AE%B9"><span class="nav-text">2.7梯度下降算法更多内容</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89-%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E5%9B%9E%E9%A1%BE-Linear-Algebra-Review"><span class="nav-text">三.线性代数回顾(Linear Algebra Review)</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
