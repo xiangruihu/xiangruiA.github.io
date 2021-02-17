@@ -1,30 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>STM32学习笔记</title>
-    <url>/2021/02/09/STM32%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="STM32-点灯方法"><a href="#STM32-点灯方法" class="headerlink" title="STM32 点灯方法"></a>STM32 点灯方法</h1><ol>
-<li>查看核心板原理图 </li>
-</ol>
-<a id="more"></a>
-
-
-
-<hr>
-<p>第三部分：按键控制LED</p>
-<p><img src="/images/image-20210216191456443.png" alt="image-20210216191456443"></p>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>STM32</tag>
-        <tag>硬件</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown基本用法</title>
     <url>/2021/02/16/Markdown%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</url>
     <content><![CDATA[<h2 id="Block-Elements-块状单元"><a href="#Block-Elements-块状单元" class="headerlink" title="Block Elements(块状单元)"></a>Block Elements(块状单元)</h2><h3 id="Paragraph-and-line-breaks-段落和换行符"><a href="#Paragraph-and-line-breaks-段落和换行符" class="headerlink" title="Paragraph and line breaks(段落和换行符)"></a>Paragraph and line breaks(段落和换行符)</h3><p>按下<code>Return</code> 或者 <code>Shift</code> + <code>Return</code> 换行</p>
@@ -134,6 +110,30 @@
       <tags>
         <tag>技术</tag>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>STM32学习笔记</title>
+    <url>/2021/02/09/STM32%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="STM32-点灯方法"><a href="#STM32-点灯方法" class="headerlink" title="STM32 点灯方法"></a>STM32 点灯方法</h1><ol>
+<li>查看核心板原理图 </li>
+</ol>
+<a id="more"></a>
+
+
+
+<hr>
+<p>第三部分：按键控制LED</p>
+<p><img src="/images/image-20210216191456443.png" alt="image-20210216191456443"></p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>STM32</tag>
+        <tag>硬件</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -267,6 +267,40 @@
       </tags>
   </entry>
   <entry>
+    <title>活着</title>
+    <url>/2021/02/15/%E6%B4%BB%E7%9D%80/</url>
+    <content><![CDATA[<p>活着（葛优、巩俐主演）<br>余华<br>12个想法</p>
+<p>◆ 中文版自序</p>
+<p>&gt;&gt; 人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。</p>
+<p>◆ 麦田新版自序</p>
+<p>&gt;&gt; 生活是属于每个人自己的感受，不属于任何别人的看法。</p>
+<a id="more"></a>
+
+<p>◆ 活着</p>
+<p>&gt;&gt; 这个嫖和赌，就像是胳膊和肩膀连在一起，怎么都分不开。</p>
+<p>◆ 1</p>
+<p>&gt;&gt; 我在水田里站着，看着我娘弯腰叫我的模样，她太使劲了，两只手撑在腿上，免得上面的身体掉到地上。</p>
+<p>祸兮福所倚，福兮祸所伏。<br>&gt;龙二从我身边走过时看了我一眼，我觉得他没认出我来，可走了几步他硬是回过头来，哭着鼻子对我喊道：<br>“福贵，我是替你去死啊。”</p>
+<p>&gt;&gt; 龙二从我身边走过时看了我一眼，我觉得他没认出我来，可走了几步他硬是回过头来，哭着鼻子对我喊道：“福贵，我是替你去死啊。”</p>
+<p>◆ 2</p>
+<p>&gt;&gt; “大伙放心吧，县长说了，只要他不饿死，大伙也都饿不死。”</p>
+<p>◆ 3</p>
+<p>&gt;&gt; “做人不能忘记四条，话不要说错，床不要睡错，门槛不要踏错，口袋不要摸错。”</p>
+<p>&gt;&gt; 少年去游荡，中年想掘藏，老年做和尚。</p>
+<p>◆ 外文版评论摘要</p>
+<p>人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。——余华<br>&gt;当这部沉重的小说结束时，活着的意志，是福贵身上唯一不能被剥夺走的东西。</p>
+<p>&gt;&gt; 当这部沉重的小说结束时，活着的意志，是福贵身上唯一不能被剥夺走的东西。</p>
+<p>◆ 点评</p>
+<p>认为好看<br>人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。——余华</p>
+]]></content>
+      <categories>
+        <category>阅读笔记</category>
+      </categories>
+      <tags>
+        <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第七天</title>
     <url>/2021/02/15/%E7%AC%AC%E4%B8%83%E5%A4%A9/</url>
     <content><![CDATA[<p>第七天（2018版）<br>余华<br>16个想法</p>
@@ -293,40 +327,6 @@
 <p>◆ 点评</p>
 <p>认为好看<br>人的一生，要死去三次，第一次，当你的心跳停止，呼吸消逝，那么你在生物学上被宣告死亡；第二次，当你下葬，人们穿着黑衣出席你的葬礼，怀念你的一生，然后你在社会上被宣告死亡；而第三次死亡，是在这个世界上最后一个记得你的人把你忘记，于是，你真正的死去。<br>他只有一次死亡，太孤单了。</p>
 <p>我是孤零零一个人。给予我养育之恩的父亲杨金彪一年多前身患绝症不辞而别，我的生父生母远在千里之外的北方城市，他们不知道此时此刻我已置身另外一个世界。</p>
-]]></content>
-      <categories>
-        <category>阅读笔记</category>
-      </categories>
-      <tags>
-        <tag>阅读</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>活着</title>
-    <url>/2021/02/15/%E6%B4%BB%E7%9D%80/</url>
-    <content><![CDATA[<p>活着（葛优、巩俐主演）<br>余华<br>12个想法</p>
-<p>◆ 中文版自序</p>
-<p>&gt;&gt; 人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。</p>
-<p>◆ 麦田新版自序</p>
-<p>&gt;&gt; 生活是属于每个人自己的感受，不属于任何别人的看法。</p>
-<a id="more"></a>
-
-<p>◆ 活着</p>
-<p>&gt;&gt; 这个嫖和赌，就像是胳膊和肩膀连在一起，怎么都分不开。</p>
-<p>◆ 1</p>
-<p>&gt;&gt; 我在水田里站着，看着我娘弯腰叫我的模样，她太使劲了，两只手撑在腿上，免得上面的身体掉到地上。</p>
-<p>祸兮福所倚，福兮祸所伏。<br>&gt;龙二从我身边走过时看了我一眼，我觉得他没认出我来，可走了几步他硬是回过头来，哭着鼻子对我喊道：<br>“福贵，我是替你去死啊。”</p>
-<p>&gt;&gt; 龙二从我身边走过时看了我一眼，我觉得他没认出我来，可走了几步他硬是回过头来，哭着鼻子对我喊道：“福贵，我是替你去死啊。”</p>
-<p>◆ 2</p>
-<p>&gt;&gt; “大伙放心吧，县长说了，只要他不饿死，大伙也都饿不死。”</p>
-<p>◆ 3</p>
-<p>&gt;&gt; “做人不能忘记四条，话不要说错，床不要睡错，门槛不要踏错，口袋不要摸错。”</p>
-<p>&gt;&gt; 少年去游荡，中年想掘藏，老年做和尚。</p>
-<p>◆ 外文版评论摘要</p>
-<p>人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。——余华<br>&gt;当这部沉重的小说结束时，活着的意志，是福贵身上唯一不能被剥夺走的东西。</p>
-<p>&gt;&gt; 当这部沉重的小说结束时，活着的意志，是福贵身上唯一不能被剥夺走的东西。</p>
-<p>◆ 点评</p>
-<p>认为好看<br>人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。——余华</p>
 ]]></content>
       <categories>
         <category>阅读笔记</category>
