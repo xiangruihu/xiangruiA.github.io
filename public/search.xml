@@ -1,116 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>月亮与六便士</title>
-    <url>/2021/02/07/%E6%9C%88%E4%BA%AE%E4%B8%8E%E5%85%AD%E4%BE%BF%E5%A3%AB/</url>
-    <content><![CDATA[<p>π 2021/2/7 22:01:52<br>月亮与六便士<br>毛姆<br>63个笔记</p>
-<p>◆ 作家榜推荐词</p>
-<p>&gt;&gt; 爱自已，是一生浪漫的开始。</p>
-<p>◆ 导读</p>
-<p>&gt;&gt; “我不想谋生。我想生活。”</p>
-<p>&gt;&gt; 什么是生活？生活的意义是什么？这些没有人能真正告诉你，需要你自己满怀勇气，像小说主人公那样抛弃一切，用整个灵魂去探索。</p>
+    <title>STM32学习笔记</title>
+    <url>/2021/02/09/STM32%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="STM32-点灯方法"><a href="#STM32-点灯方法" class="headerlink" title="STM32 点灯方法"></a>STM32 点灯方法</h1><ol>
+<li>查看核心板原理图 </li>
+</ol>
 <a id="more"></a>
 
-<p>&gt;&gt; 在这个以物质为上帝的时代，用浅薄的幸福、成功来量死你的世界，你该怎样过完你的人生？人生如梦，你是希望枕着月亮还是六便士？很多人渴望名声，追求利益，很多人希望名利双收；大多数人按部就班，过着平庸乏味的生活；也有一些人忽然如梦方醒，一骨碌爬起，去寻找真正有价值的生活。所以无论如何，这部警世的小说都值得一读。正像小说第五十章中所说： 做自己最想做的事，过自己想过的生活，心平气和，怎么能叫作践自己？做一个有名的外科医生，一年赚一万英镑，娶一位漂亮的妻子，就是成功？我想，这取决于你如何看待生活的意义……</p>
-<p>◆ 第一章</p>
-<p>&gt;&gt; 制造神话，是人类的天性。像那些出类拔萃的名人，人们总是对他们生活中的意外或神秘紧抓不放，深信不疑，缔造传奇，无限狂热。这是对平凡生活的浪漫抗议。</p>
-<p>◆ 第二章</p>
-<p>&gt;&gt; 想不起来是谁说过：为了使灵魂安宁，一个人每天至少该做两件他不喜欢的事。</p>
-<p>◆ 第四章</p>
-<p>&gt;&gt; “她觉得他们有意思。她想跟随潮流。我看她头脑简单，真可怜，她认为我们都很好。反正，她喜欢请我们吃饭，我们对吃饭也不反感。我喜欢她，不外乎这一点。”</p>
-<p>&gt;&gt; “为什么漂亮的女人总是嫁给无趣的男人？”<br>“因为有脑子的男人不娶漂亮的女人。”</p>
-<p>◆ 第七章</p>
-<p>&gt;&gt; 我承认这种生活的社会价值，我也看到它井然有序的幸福，但是，我的血液里有一种强烈的冲动，渴望一种桀骜不驯的旅程。这样的安逸总让我惊惧。我的心渴望更加惊险的生活。只要我能有所改变——改变和不可预知的冒险，我将踏上嶙峋怪石，哪怕激流险滩。</p>
-<p>◆ 第八章</p>
-<p>&gt;&gt; 那时，我还不了解女人根深蒂固的恶习：与任何愿意倾听的人谈论自己的私事。</p>
-<p>◆ 第九章</p>
-<p>&gt;&gt; 既然他把这些秘密和盘托出，那我不妨继续问问。</p>
-<p>&gt;&gt; 事情变得更加复杂，上校怒火中烧，骂骂咧咧，颠三倒四，似乎并不是为了告诉我什么，只图发泄。谢天谢地，当他看到陆海军商店上面的大钟，忽然想起约好了要去俱乐部打牌。于是，他和我分手，穿过圣詹姆斯公园，自己走了。</p>
-<p>◆ 第十章</p>
-<p>&gt;&gt; “只有一种解释，他真的变了。我不知道，是哪个女人控制了他，却把他变成了另一个人。很明显，已经很长时间了。”</p>
-<p>&gt;&gt; 我以为他在俱乐部，实际上，他是在和那个女人鬼混。</p>
-<p>&gt;&gt; 心里藏着如此意外的秘密，却能装作漫不经心，若无其事，很不容易；还得集中精力，打点孩子们上学，真是煞费苦心。斯特里克兰夫人又哽咽了。</p>
-<p>◆ 第十一章</p>
-<p>&gt;&gt; 我那时还不懂得，人性有多矛盾；我不知道，真诚中有多少虚伪，高尚中有多少卑鄙，或者，邪恶中有多少善良。</p>
-<p>&gt;&gt; 那里叫比利时旅馆。但出乎意料，门房说没听过。我听斯特里克兰夫人说过，这家旅馆很大，很豪华，在里沃利大街后边。我们在旅馆名录中找。叫这个名字的旅馆只有一家，在摩纳街。它既不时尚，也不是有钱人住的地方。我摇摇头。</p>
-<p>&gt;&gt; 我上次见他，他整洁一新，可看上去并不自在；现在，他这般邋遢，却神态自若。我不知道，他听了我要讲的一番话后，会作何反应。</p>
-<p>◆ 第十二章</p>
-<p>&gt;&gt; “要是顶多你只能当个三流画家，是不是还要孤注一掷？不管怎样，如果是其他行业，你才华平平，关系不大，可以得过且过；但是，当一个艺术家，完全不同。”<br>“你他妈真是个傻瓜。”他说。<br>“我不知道你为什么这么说，除非我言过其实。”</p>
-<p>&gt;&gt; “我告诉你，我必须画画。我身不由己。一个人掉进水里，他游泳游得好不好没关系，反正他得挣扎，不然就得淹死。”</p>
-<p>◆ 第十三章</p>
-<p>&gt;&gt; 只有诗人和圣贤才会相信，在柏油马路上辛勤浇灌，能培育出百合花来。</p>
-<p>◆ 第十四章</p>
-<p>&gt;&gt; 真是蠢话。不是每个人都会像我这样。大多数人，平平淡淡，知足常乐。</p>
-<p>◆ 第十五章</p>
-<p>&gt;&gt; “只要他是和女人跑的，就还有可能回来。我不相信什么是绝对的。三个月，他就烦死她了。但如果，他不是因为恋爱跑的，那一切都完了。”</p>
-<p>&gt;&gt; “你也不明白吗？”她喊道。<br>“我不敢肯定。你的意思是说：如果他是为了女人离开你，你可以原谅；但如果他是为了理想离开你，你就不能？你觉得前者仿佛比赛，而后者你便无能为力，对吧？”</p>
-<p>&gt;&gt; 你丈夫的行为，也许是情非得已。我想，他已经不是他自己。他似乎鬼迷心窍，被一股力量抓住，朝着别的方向跑去；他就像落入蛛网的苍蝇，已经无力挣扎。他仿佛着了魔。这让我想起，人们常说的那些离奇故事：一个人的身体被另一个人的灵魂占据，将他自己的赶了出去。这个灵魂在体内很不安分，神秘地变来变去。要是过去，大家就会说，查尔斯·斯特里克兰被魔鬼附身了。”</p>
-<p>◆ 第十七章</p>
-<p>&gt;&gt; 常言说，痛苦使人高贵，这不对；让人行动高尚的，有时是自满得意；而痛苦，往往使人变得心胸狭窄，充满仇恨。</p>
-<p>◆ 第十八章</p>
-<p>&gt;&gt; 而我认为，这始终是他挥之不去的幻想，这幻想让他目眩，看不见真相；尽管真相残酷，他却依然用幻想的目光凝望着自己的意大利：浪漫的侠盗，美丽的废墟。他画的是他的理想，尽管贫乏、平庸、陈旧，但终究是理想；这就赋予了他一种独特的魅力。</p>
-<p>◆ 第十九章</p>
-<p>&gt;&gt; 很奇怪，在评判别人的作品时，他的意识如此精准、不落俗套，可他自己陈腐、平庸的画作也让他感到满意，真是难以置信。</p>
-<p>&gt;&gt; “我什么时候走过眼？”德克说，“告诉你，他很有天分。肯定的。一百年以后，如果还有人记得你和我，那是因为我们认识查尔斯·斯特里克兰。”</p>
-<p>&gt;&gt; 不，没有名气。我想，他一幅画也没卖出去。你要是和别人谈起他，没有一个不笑的。可是我知道，他是非常好的画家。说到底，他们不是也笑过马奈嘛。柯罗一张画也没卖出去。</p>
-<p>&gt;&gt; 为什么你认为美——这世上最宝贵的东西，会像沙滩上的卵石，一个漫不经心的路人，随随便便就能捡到？美是美妙，是奇异，艺术家唯有通过灵魂的煎熬，才能从宇宙的混沌中创造出美。而当美出现，它并非为了让每个人都认出它自己。要认识它，你必须重复和艺术家一样的奇异之旅。这是一支他唱给你的旋律，要想再次用心聆听，就需要智慧、感觉以及丰富的想象力。</p>
-<p>◆ 第二十一章</p>
-<p>&gt;&gt; “我不想过去。唯一重要的，是永恒的现在。”</p>
-<p>◆ 第二十二章</p>
-<p>&gt;&gt; 我把大把的时间耗在卢浮宫，因为这是巴黎所有画廊中我感觉最亲切的，也最适合冥想。要不然就是在塞纳河边闲逛，翻一翻路边的旧书，但从来不买。</p>
-<p>◆ 第二十四章</p>
-<p>&gt;&gt; “他大概生病了。”斯特洛夫说。<br>“可能吧，”门房漠不关心地说，“反正，我好几天没看见他了。”</p>
-<p>◆ 第二十五章</p>
-<p>转：王尔德的话，每个人理解不同，举个例子，苏格拉底就因为在当时与众不同的思想，被判处了死刑；意大利思想家布鲁诺因为反对欧洲宗教的地心说，被判为异端，活活烧死；王尔德自己本身，因为坚持同性恋的合法性而进了监狱……真理的蜡烛，常常会烫伤那些举烛人的手。<br>&gt;&gt; 天才是世上最奇妙的东西。但对天才自己而言，却是很大的负担。我们应该容忍他们，要很有耐心。</p>
-<p>&gt;&gt; 天才是世上最奇妙的东西。但对天才自己而言，却是很大的负担。我们应该容忍他们，要很有耐心。</p>
-<p>◆ 第二十八章</p>
-<p>&gt;&gt; “你不知道。她爱上斯特里克兰了。”</p>
-<p>&gt;&gt; “你知道啊，她受不了斯特里克兰。”<br>“你不了解。”他呜咽着说。</p>
-<p>&gt;&gt; “你能把我的衣服收拾一下，放门房那儿吗？明天我过来取。”他强颜欢笑。“再见，亲爱的。谢谢你过去带给我的幸福。”</p>
-<p>◆ 第二十九章</p>
-<p>转：先自沉稳，而后爱人。爱情是双向的奔赴，爱来自骨子里，而非卑微到尘土里。我爱我自己的灵魂，我懂得如何去爱自己，我才能去更好的爱你。<br>&gt;&gt; 我爱她，远远胜过爱我自己。要我说，爱情中如果考虑自尊，只能说明你更爱自己。</p>
-<p>&gt;&gt; 我爱她，远远胜过爱我自己。要我说，爱情中如果考虑自尊，只能说明你更爱自己。</p>
-<p>π 2021/2/7 22:02:42<br>◆ 第三十一章</p>
-<p>转：这世界本就没有感同身受，只有冷暖自知，如果没办法自己默默消化悲痛那只能转移注意力培养新爱好，时间会帮你抚平你的伤痛<br>&gt;&gt; 我想，他是希望他们没有收拾他的东西，这样他就可以见到妻子，没准儿还能劝她回到自己身边。但是当他回去，东西已经在门房那儿了，门房告诉他，布兰奇出去了。要说，他能不向她吐自己的一肚子苦水，我才不信呢。我发现，每个他认识的人，他都会向人家诉说他的不幸；他以为能博得同情，结果只引来嘲笑。</p>
-<p>&gt;&gt; 我想，他是希望他们没有收拾他的东西，这样他就可以见到妻子，没准儿还能劝她回到自己身边。但是当他回去，东西已经在门房那儿了，门房告诉他，布兰奇出去了。要说，他能不向她吐自己的一肚子苦水，我才不信呢。我发现，每个他认识的人，他都会向人家诉说他的不幸；他以为能博得同情，结果只引来嘲笑。</p>
-<p>&gt;&gt; 有时候，一个人的外表和他的灵魂并不相称，这实在糟糕。</p>
-<p>◆ 第三十七章</p>
-<p>&gt;&gt; 巴黎的街头重新带给我欣喜，看着来来往往的行人，我禁不住微笑起来。这一天，天气晴朗，阳光明媚，我感到自己心中有着更为强烈的生之喜悦。我按捺不住；我把斯特洛夫和他的不幸赶出胸中。我要享受生活。</p>
-<p>◆ 第三十八章</p>
-<p>&gt;&gt; 世界冰冷而残酷。没有人知道我们从哪里来，到哪里去。我们必须深怀谦卑。我们必须看到宁静之美。我们必须隐忍地生活，这样命运之神才不会注目我们。让我们去寻求淳朴、善良者的爱吧。他们的无知比我们的知识更可贵。让我们保持沉默，满足于我们小小的角落，像他们一样平静温顺吧。这才是生活的智慧。</p>
-<p>◆ 第四十二章</p>
-<p>&gt;&gt; 这些画，很多后来我又看过，有些见过复制品，都相当熟悉；奇怪的是，当初看到它们时，我居然非常失望。我没感觉到艺术本该带给我的欣喜若狂。</p>
-<p>孤独，从来都是一个人的事，没有人能真切地懂得另一个人的感受，甚至，在别人眼里，这些都是无关痛痒的事，当有一天，你学会了自己咀嚼自己的孤独，你也就不在乎别人的眼光了。<br>&gt;&gt; 我们每个人都孤独地生活在世界上。谁都被囚禁在一座铁塔里，只能凭一些符号与人交流，但这些符号并没有共同的价值，所以它们的意义模糊不定。我们可怜地想把心灵的珍宝传递给别人，但他们却无力接受，因此我们只能踽踽独行，虽然紧挨着，却并不真正在一起，既无法了解别人，也不被别人所了解。我们就像身在异国他乡的陌生人，对他们的语言知之甚少，想表达那些美妙而深刻的事物，只能局限于会话指南上一点平庸的词句。我们的大脑充满了奇想，却只会说“花匠的姑姑有把雨伞在屋里”。</p>
-<p>&gt;&gt; 我们每个人都孤独地生活在世界上。谁都被囚禁在一座铁塔里，只能凭一些符号与人交流，但这些符号并没有共同的价值，所以它们的意义模糊不定。我们可怜地想把心灵的珍宝传递给别人，但他们却无力接受，因此我们只能踽踽独行，虽然紧挨着，却并不真正在一起，既无法了解别人，也不被别人所了解。我们就像身在异国他乡的陌生人，对他们的语言知之甚少，想表达那些美妙而深刻的事物，只能局限于会话指南上一点平庸的词句。我们的大脑充满了奇想，却只会说“花匠的姑姑有把雨伞在屋里”。</p>
-<p>◆ 第四十四章</p>
-<p>&gt;&gt; 在他的笔下，人物都很怪诞，他对这种怪诞感到非常生气；生活不过是一场混乱，充满了种种的荒谬和污秽，只能引人发笑，未免乐极生悲。</p>
-<p>◆ 第四十七章</p>
-<p>&gt;&gt; “更难抽的烟我也用烟斗抽过。”他自嘲地耸了耸肩，补充道。说着，又从我递给他的烟盒里拿了几支雪茄，一根叼在嘴上，其他的揣进了口袋。</p>
-<p>&gt;&gt; 在这里，他们结交了不少和他们一样饥寒交迫的朋友，当他们有时身上一个子儿都没了，晚上又出奇的冷，就会毫不犹豫地向白天偶然赚到一法郎的人借钱交住宿费。这些流浪汉都不吝啬，不管谁有了钱，都会乐于和大家一起花。他们来自不同的国家，但这并不妨碍他们成为朋友；因为他们感觉，他们是同一个国度的自由民，这个国度宽广无垠——一个伟大的安乐之乡。</p>
-<p>◆ 第四十八章</p>
-<p>当理想与现世安稳碰撞，总有些东西被遗弃，被撞碎。也许是小时候的玻璃球，也许是小时候立志成为怎样的人，也许只是春天的一场梦。梦总要醒，但是梦想可以一直都被拥有、追逐。他的行动告诉世人，只要有勇气出发，永远都不会晚，灵魂与梦想经过碰撞，会发现一个极少数人能到达的新世界<br>&gt;&gt; 他那孤独的灵魂怀着怎样的奇想，最终向着激发了他幻想的未知岛屿出发了。我喜欢这样的画面，他的人生在四十七岁定格，当大多数人享受着中年生活的安稳，斯特里克兰却去寻找一个新世界。</p>
-<p>◆ 第五十章</p>
-<p>&gt;&gt; 每当一个人有了意外之举，他周围的人总会认定，原因肯定很丢脸。</p>
-<p>每个人对成功的定义不同。有的人想在自己从事的领域成为专家型的人才；有的人想挣足够几辈子花的钱；有的人想要在官场上步步高升；也有的人想要一辈子平平淡淡做着自己喜欢做的事即可。。。<br>&gt;&gt; “我过得很好，”他说，“但说来奇怪，这一切都是因为我交了好运。”</p>
-<p>&gt;&gt; 做自己最想做的事，过自己想过的生活，心平气和，怎么能叫作践自己？做一个有名的外科医生，一年赚一万英镑，娶一位漂亮的妻子，就是成功？我想，这取决于你如何看待生活的意义，取决于你对社会应尽什么义务，你对自己有什么要求。</p>
-<p>◆ 第五十三章</p>
-<p>&gt;&gt; 我住在环礁岛上，周围是潟湖环绕的低矮小岛，那里的美是碧海蓝天，湖光山色，以及随风摇曳的椰子树；而斯特里克兰住的地方，美得就像伊甸园。啊，我真希望自己能将那儿的魅力说给你听。与世隔绝的偏僻一隅，头顶是湛蓝的天空，到处是郁郁葱葱的树木。这里色彩无尽，馥郁芬芳，清爽无比。真是人间天堂，难以用语言形容。他就住在那儿，与世无争，优哉游哉。</p>
-<p>◆ 第五十五章</p>
-<p>&gt;&gt; 他只不过是一个游手好闲的无赖，宁愿和一个当地女人同居，也不想像别人那样好好干活儿吃饭。天哪，我当时怎么知道，有一天全世界都承认他是天才？</p>
-<p>&gt;&gt; 恐惧让人变得残酷无情……</p>
-<p>◆ 第五十六章</p>
-<p>&gt;&gt; 四面墙上，从地板一直到天花板，一幅幅奇特的、精心绘制的图画铺展开来，那种奇妙、神秘，简直难以形容。库特拉斯几乎屏住了呼吸。一种难以理解、无法参透的感情攫住了他。他感觉，这种敬畏和欣喜，就像一个人看到开天辟地时怀着的那种敬畏和欣喜。这壁画巨大无比，既耽于肉欲，又充满激情，同时，也包含某种恐怖，让他看着十分害怕。绘制这巨作的人，已经深入到大自然的隐秘深处，发现了美妙而惊人的秘密。他知晓了人类从不知晓的事物。他画出的是某种原始的、可怕的东西。这并不属于人类。库特拉斯模糊地感到，这就像巫术，既美丽，又污秽。</p>
-<p>◆ 第五十七章</p>
-<p>&gt;&gt; 他从不抱怨命运，从未失去勇气。直到最后一刻，他依然坦然、平静。</p>
-<p>&gt;&gt; “我想，斯特里克兰也知道，这是一幅杰作。他已经得到了他所追求的东西。他无怨无悔。他创造了一个世界，也看到了这个世界的美好。之后，带着傲慢和不屑，又将它完全毁掉了。”</p>
-<p>◆ 第五十八章</p>
-<p>&gt;&gt; 我生命的一页翻过去了，我感觉，我离不可避免的死亡，又近了一步。</p>
+
+
+<hr>
+<p>第三部分：按键控制LED</p>
+<p><img src="/images/image-20210216191456443.png" alt="image-20210216191456443"></p>
 ]]></content>
       <categories>
-        <category>阅读笔记</category>
+        <category>学习笔记</category>
       </categories>
       <tags>
-        <tag>阅读</tag>
+        <tag>技术</tag>
+        <tag>STM32</tag>
+        <tag>硬件</tag>
+        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -226,37 +137,37 @@
       </tags>
   </entry>
   <entry>
-    <title>活着</title>
-    <url>/2021/02/15/%E6%B4%BB%E7%9D%80/</url>
-    <content><![CDATA[<p>活着（葛优、巩俐主演）<br>余华<br>12个想法</p>
-<p>◆ 中文版自序</p>
-<p>&gt;&gt; 人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。</p>
-<p>◆ 麦田新版自序</p>
-<p>&gt;&gt; 生活是属于每个人自己的感受，不属于任何别人的看法。</p>
+    <title>opencv学习笔记</title>
+    <url>/2021/01/17/opencv%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h3 id="1-ROI-选取"><a href="#1-ROI-选取" class="headerlink" title="1.ROI 选取"></a>1.ROI 选取</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;lena.jpg&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 帽子ROI的红色通道</span></span><br><span class="line">hat_r = img[<span class="number">25</span>:<span class="number">120</span>, <span class="number">50</span>:<span class="number">220</span>, <span class="number">2</span>]</span><br><span class="line">cv2.imshow(<span class="string">&#x27;hat&#x27;</span>, hat_r)</span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 
-<p>◆ 活着</p>
-<p>&gt;&gt; 这个嫖和赌，就像是胳膊和肩膀连在一起，怎么都分不开。</p>
-<p>◆ 1</p>
-<p>&gt;&gt; 我在水田里站着，看着我娘弯腰叫我的模样，她太使劲了，两只手撑在腿上，免得上面的身体掉到地上。</p>
-<p>祸兮福所倚，福兮祸所伏。<br>&gt;龙二从我身边走过时看了我一眼，我觉得他没认出我来，可走了几步他硬是回过头来，哭着鼻子对我喊道：<br>“福贵，我是替你去死啊。”</p>
-<p>&gt;&gt; 龙二从我身边走过时看了我一眼，我觉得他没认出我来，可走了几步他硬是回过头来，哭着鼻子对我喊道：“福贵，我是替你去死啊。”</p>
-<p>◆ 2</p>
-<p>&gt;&gt; “大伙放心吧，县长说了，只要他不饿死，大伙也都饿不死。”</p>
-<p>◆ 3</p>
-<p>&gt;&gt; “做人不能忘记四条，话不要说错，床不要睡错，门槛不要踏错，口袋不要摸错。”</p>
-<p>&gt;&gt; 少年去游荡，中年想掘藏，老年做和尚。</p>
-<p>◆ 外文版评论摘要</p>
-<p>人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。——余华<br>&gt;当这部沉重的小说结束时，活着的意志，是福贵身上唯一不能被剥夺走的东西。</p>
-<p>&gt;&gt; 当这部沉重的小说结束时，活着的意志，是福贵身上唯一不能被剥夺走的东西。</p>
-<p>◆ 点评</p>
-<p>认为好看<br>人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。——余华</p>
+<h3 id="2-图像和像素点的简单处理"><a href="#2-图像和像素点的简单处理" class="headerlink" title="2.图像和像素点的简单处理"></a>2.图像和像素点的简单处理</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line"></span><br><span class="line">img &#x3D; cv2.imread(&#39;lena.jpg&#39;)</span><br><span class="line"></span><br><span class="line"># 1.获取像素的值</span><br><span class="line">px &#x3D; img[100, 90]</span><br><span class="line">print(px)  # [103 98 197]</span><br><span class="line"></span><br><span class="line"># 只获取蓝色blue通道的值</span><br><span class="line">px_blue &#x3D; img[100, 90, 0]</span><br><span class="line">print(px_blue)  # 103</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 2.修改像素的值</span><br><span class="line">img[100, 90] &#x3D; [255, 255, 255]</span><br><span class="line">print(img[100, 90])  # [255 255 255]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 3.图片形状</span><br><span class="line">print(img.shape)  # (263, 247, 3)</span><br><span class="line"># 形状中包括行数、列数和通道数</span><br><span class="line">height, width, channels &#x3D; img.shape</span><br><span class="line"># img是灰度图的话：height, width &#x3D; img.shape</span><br><span class="line"></span><br><span class="line"># 总像素数</span><br><span class="line">print(img.size)  # 263*247*3&#x3D;194883</span><br><span class="line"># 数据类型</span><br><span class="line">print(img.dtype)  # uint8</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 4.ROI截取</span><br><span class="line">face &#x3D; img[100:200, 115:188]</span><br><span class="line">cv2.imshow(&#39;face&#39;, face)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 5.通道分割与合并</span><br><span class="line">b, g, r &#x3D; cv2.split(img)</span><br><span class="line">img &#x3D; cv2.merge((b, g, r))</span><br><span class="line"># 更推荐的获取某一通道方式</span><br><span class="line">b &#x3D; img[:, :, 0]</span><br><span class="line">cv2.imshow(&#39;b&#39;, b)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
+<h3 id="3-改变色彩空间"><a href="#3-改变色彩空间" class="headerlink" title="3.改变色彩空间"></a>3.改变色彩空间</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">img&#x3D;cv2.imread(&#39;lena.jpg&#39;)</span><br><span class="line"></span><br><span class="line">#转灰度图片</span><br><span class="line">img_hsv&#x3D;cv2.cvtColor(img,cv2.COLOR_BGR2HSV)</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;hsv&#39;,img_hsv)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line">img_gray&#x3D;cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)</span><br><span class="line">cv2.imshow(&#39;gray&#39;,img_gray)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line">#获取所有转换模式</span><br><span class="line">flags&#x3D;[i for i in dir(cv2) if i.startswith(&quot;COLOR_&quot;)]</span><br><span class="line">print(flags)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#获取蓝色的HSV</span><br><span class="line"></span><br><span class="line">blue &#x3D;np.uint8([[[255,0,0]]])</span><br><span class="line">hsv_blue &#x3D; cv2.cvtColor(blue,cv2.COLOR_BGR2HSV)</span><br><span class="line">print(hsv_blue)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#追踪蓝色的物体</span><br><span class="line">capature &#x3D;cv2.VideoCapture(0)</span><br><span class="line"></span><br><span class="line">#蓝色范围</span><br><span class="line">blue_lower &#x3D;np.array([100,110,110])</span><br><span class="line">blue_upper &#x3D; np.array([130,255,255])</span><br><span class="line"></span><br><span class="line">while(True):</span><br><span class="line">    ret,frame&#x3D; capature.read()</span><br><span class="line">    gray2&#x3D;cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)</span><br><span class="line"></span><br><span class="line">    # 又BGR 转换为HSV</span><br><span class="line">    hsv &#x3D; cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)</span><br><span class="line"></span><br><span class="line">    #将hsv设置为介于两者之间的</span><br><span class="line"></span><br><span class="line">    mask &#x3D; cv2.inRange(hsv,blue_lower,blue_upper)</span><br><span class="line"></span><br><span class="line">    #只保留图片中的蓝色部分</span><br><span class="line">    res &#x3D; cv2.bitwise_and(frame,frame,mask&#x3D;mask)</span><br><span class="line"></span><br><span class="line">    cv2.imshow(&#39;frame&#39;,frame)</span><br><span class="line">    cv2.imshow(&#39;mask&#39;,mask)</span><br><span class="line">    cv2.imshow(&#39;res&#39;,res)</span><br><span class="line">    cv2.imshow(&#39;gary&#39;,gray2)</span><br><span class="line">    if cv2.waitKey(1) &#x3D;&#x3D; ord(&#39;q&#39;):</span><br><span class="line">        break</span><br></pre></td></tr></table></figure>
+<h3 id="4-对图像进行阈值操作"><a href="#4-对图像进行阈值操作" class="headerlink" title="4.对图像进行阈值操作"></a>4.对图像进行阈值操作</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2 as cv</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line"></span><br><span class="line">#灰度图片读入</span><br><span class="line">img &#x3D; cv.imread(&#39;gradient.jpg&#39;,0)</span><br><span class="line">&#39;&#39;&#39;filename：需要打开图片的路径，可以是绝对路径或者相对路径，路径中不能出现中文。</span><br><span class="line">flag：图像的通道和色彩信息（默认值为1）。</span><br><span class="line">flag &#x3D; -1,   8位深度，原通道</span><br><span class="line">flag &#x3D; 0，   8位深度，1通道</span><br><span class="line">flag &#x3D; 1，   8位深度，3通道</span><br><span class="line">flag &#x3D; 2，   原深度， 1通道</span><br><span class="line">flag &#x3D; 3，   原深度， 3通道</span><br><span class="line">flag &#x3D; 4，   8位深度，3通道&#39;&#39;&#39;</span><br><span class="line">#阈值分割，ret return value 表示当前阈值</span><br><span class="line">ret,th &#x3D;cv.threshold(img,127,255,cv.THRESH_BINARY)</span><br><span class="line">&#39;&#39;&#39;cv2.threshold(img, thresh, maxVal, cv2.xxx)</span><br><span class="line">1</span><br><span class="line">第一个参数是源图像，应该是灰度图；</span><br><span class="line">第二个参数是对图像进行分类的阈值；</span><br><span class="line">第三个参数是最大值，表示如果像素值大于（有时小于）阈值则要给出的值；</span><br><span class="line">第四个参数决定给出不同类型的阈值。包括：</span><br><span class="line">cv2.THRESH_BINARY</span><br><span class="line">- cv2.THRESH_BINARY_INV</span><br><span class="line">- cv2.THRESH_TRUNC</span><br><span class="line">- cv2.THRESH_TOZERO</span><br><span class="line">- cv2.THRESH_TOZERO_INV&#39;&#39;&#39;</span><br><span class="line">#图像二值化处理后</span><br><span class="line">cv.imshow(&#39;thresh&#39;,th)</span><br><span class="line">#未经过二值化处理的图片</span><br><span class="line">cv.imshow(&#39;org&#39;,img)</span><br><span class="line">cv.waitKey(0)</span><br><span class="line"># 应用5种不同的阈值方法</span><br><span class="line">ret, th1 &#x3D; cv.threshold(img, 127, 255, cv.THRESH_BINARY)</span><br><span class="line">ret, th2 &#x3D; cv.threshold(img, 127, 255, cv.THRESH_BINARY_INV)</span><br><span class="line">ret, th3 &#x3D; cv.threshold(img, 127, 255, cv.THRESH_TRUNC)</span><br><span class="line">ret, th4 &#x3D; cv.threshold(img, 127, 255, cv.THRESH_TOZERO)</span><br><span class="line">ret, th5 &#x3D; cv.threshold(img, 127, 255, cv.THRESH_TOZERO_INV)</span><br><span class="line">titles &#x3D; [&#39;Original&#39;, &#39;BINARY&#39;, &#39;BINARY_INV&#39;, &#39;TRUNC&#39;, &#39;TOZERO&#39;, &#39;TOZERO_INV&#39;]</span><br><span class="line">images &#x3D; [img, th1, th2, th3, th4, th5]</span><br><span class="line">for i in range(6):</span><br><span class="line">    plt.subplot(2, 3, i + 1)</span><br><span class="line">    plt.imshow(images[i], &#39;gray&#39;)</span><br><span class="line">    plt.title(titles[i], fontsize&#x3D;8)</span><br><span class="line">    plt.xticks([]), plt.yticks([])  # 隐藏坐标轴</span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#自适应阈值对比固定阈值</span><br><span class="line"></span><br><span class="line">#固定阈值</span><br><span class="line">ret,th1 &#x3D; cv.threshold(img,127,255,cv.THRESH_BINARY)</span><br><span class="line">#自适应阈值</span><br><span class="line">th2&#x3D;cv.adaptiveThreshold(</span><br><span class="line">    img,255,cv.ADAPTIVE_THRESH_GAUSSIAN_C,cv.THRESH_BINARY,11,4</span><br><span class="line">)</span><br><span class="line">th3&#x3D;cv.adaptiveThreshold(</span><br><span class="line">    img,255,cv.ADAPTIVE_THRESH_GAUSSIAN_C,cv.THRESH_BINARY,17,6</span><br><span class="line">)</span><br><span class="line">titles &#x3D; [&#39;Original&#39;, &#39;Global(v &#x3D; 127)&#39;, &#39;Adaptive Mean&#39;, &#39;Adaptive Gaussian&#39;]</span><br><span class="line">images &#x3D; [img, th1, th2, th3]</span><br><span class="line"></span><br><span class="line">for i in range(4):</span><br><span class="line">    plt.subplot(2, 2, i + 1)</span><br><span class="line">    plt.imshow(images[i], &#39;gray&#39;)</span><br><span class="line">    plt.title(titles[i], fontsize&#x3D;8)</span><br><span class="line">    plt.xticks([]), plt.yticks([])</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<h3 id="5-图片几何化处理"><a href="#5-图片几何化处理" class="headerlink" title="5.图片几何化处理"></a>5.图片几何化处理</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import cv2</span><br><span class="line"></span><br><span class="line">img&#x3D; cv2.imread(&#39;drawing.jpg&#39;)</span><br><span class="line">#1将图片进行缩放</span><br><span class="line">res&#x3D;cv2.resize(img,(132,150))</span><br><span class="line">cv2.imshow(&#39;reshape&#39;,res)</span><br><span class="line">cv2.imshow(&#39;org&#39;,img)</span><br><span class="line">#2按照比例进行缩放，x，y轴都扩大为原来的两倍</span><br><span class="line">res2&#x3D;cv2.resize(img,None,fx&#x3D;2,fy&#x3D;2,interpolation&#x3D;cv2.INTER_LINEAR)</span><br><span class="line">cv2.imshow(&#39;res2&#39;,res2)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line">&#39;&#39;&#39;cv2.resize(src,dsize,dst&#x3D;None,fx&#x3D;None,fy&#x3D;None,interpolation&#x3D;None)</span><br><span class="line"></span><br><span class="line">scr:原图</span><br><span class="line"></span><br><span class="line">dsize：输出图像尺寸</span><br><span class="line"></span><br><span class="line">fx:沿水平轴的比例因子</span><br><span class="line"></span><br><span class="line">fy:沿垂直轴的比例因子</span><br><span class="line"></span><br><span class="line">interpolation：插值方法&#39;&#39;&#39;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#3.翻转图片</span><br><span class="line"></span><br><span class="line">dst&#x3D;cv2.flip(img,-1) #1 水平翻转  0 垂直翻转  -1 水平垂直翻转</span><br><span class="line">#np.hstack  横向并排，对比显示</span><br><span class="line">cv2.imshow(&#39;flip&#39;,np.hstack((img,dst)))</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#4.平移图片</span><br><span class="line">#得到图片的长和宽的像素</span><br><span class="line">rows,cols&#x3D; img.shape[:2]</span><br><span class="line"></span><br><span class="line">M &#x3D; np.float32([[1, 0, 100], [0, 1, 50]])#M 为一个2x3的矩阵 (为图片的变化矩阵)</span><br><span class="line">&#39;&#39;&#39;src - 输入图像。</span><br><span class="line">M - 变换矩阵。</span><br><span class="line">dsize - 输出图像的大小。</span><br><span class="line">flags - 插值方法的组合（int 类型！）</span><br><span class="line">borderMode - 边界像素模式（int 类型！）</span><br><span class="line">borderValue - （重点！）边界填充值; 默认情况下，它为0。</span><br><span class="line">上述参数中：</span><br><span class="line">1、M作为仿射变换矩阵，一般反映平移或旋转的关系，为InputArray类型的2×3的变换矩阵。</span><br><span class="line">2、flages表示插值方式，默认为 flags&#x3D;cv2.INTER_LINEAR，表示线性插值，此外还有：cv2.INTER_NEAREST（最近邻插值） cv2.INTER_AREA （区域插值） cv2.INTER_CUBIC（三次样条插值） cv2.INTER_LANCZOS4（Lanczos插值）&#39;&#39;&#39;</span><br><span class="line">dst &#x3D; cv2.warpAffine(img, M, (cols, rows))</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;shift&#39;, dst)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line">#5.将图片顺时针旋转，并且缩小一半</span><br><span class="line">M&#x3D;cv2.getRotationMatrix2D((cols&#x2F;2,rows&#x2F;2),-45,0.5)</span><br><span class="line">&#39;&#39;&#39;M&#x3D;cv2.getRotationMatrix2D(center, angle, scale)</span><br><span class="line">1</span><br><span class="line">函数有三个输入参数：</span><br><span class="line"></span><br><span class="line">center：图片的旋转中心</span><br><span class="line">angle：旋转角度</span><br><span class="line">scale：旋转后图像相比原来的缩放比例</span><br><span class="line">M:计算得到的旋转矩阵&#39;&#39;&#39;</span><br><span class="line"></span><br><span class="line">dst&#x3D;cv2.warpAffine(img,M,(cols,rows))</span><br><span class="line">cv2.imshow(&#39;rotation&#39;,dst)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
+<h3 id="6-图形绘制"><a href="#6-图形绘制" class="headerlink" title="6.图形绘制"></a>6.图形绘制</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">#创建一个黑色图片</span><br><span class="line">img &#x3D;np.zeros((512,512,3),np.uint8)</span><br><span class="line"></span><br><span class="line">#创建一条宽度为5的蓝色斜线  参数起点 终点</span><br><span class="line">cv2.line(img,(0,0),(512,512),5)</span><br><span class="line"></span><br><span class="line">#画一个绿色边框的矩形，参数 左上角，右下角</span><br><span class="line">cv2.rectangle(img,(300,0),(500,100),(0,255,0),3)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#画一个填充红色的圆，参数 圆心坐标，半径</span><br><span class="line">cv2.circle(img,(447,63),63,(255,0,0),-1)</span><br><span class="line"></span><br><span class="line"># 4.在图中心画一个填充的半圆</span><br><span class="line">cv2.ellipse(img, (256, 256), (100, 50), 0, 0, 180, (255, 0, 0), -1)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 5.画一个闭合的四边形</span><br><span class="line"># 定义四个顶点坐标</span><br><span class="line">pts &#x3D; np.array([[10, 5],  [50, 10], [70, 20], [20, 30]], np.int32)</span><br><span class="line"># 顶点个数：4，矩阵变成顶点数*1*2维（注意numpy中-1的用法）</span><br><span class="line">pts &#x3D; pts.reshape((-1, 1, 2))</span><br><span class="line">cv2.polylines(img, [pts], True, (0, 255, 255))</span><br><span class="line"></span><br><span class="line"># 使用cv2.polylines()画多条直线</span><br><span class="line">line1 &#x3D; np.array([[100, 20],  [300, 20]], np.int32).reshape((-1, 1, 2))</span><br><span class="line">line2 &#x3D; np.array([[100, 60],  [300, 60]], np.int32).reshape((-1, 1, 2))</span><br><span class="line">line3 &#x3D; np.array([[100, 100],  [300, 100]], np.int32).reshape((-1, 1, 2))</span><br><span class="line">cv2.polylines(img, [line1, line2, line3], True, (0, 255, 255))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 6.添加文字</span><br><span class="line">font &#x3D; cv2.FONT_HERSHEY_SIMPLEX</span><br><span class="line">cv2.putText(img, &#39;ex2tron&#39;, (10, 500), font,</span><br><span class="line">            4, (255, 255, 255), 2, lineType&#x3D;cv2.LINE_AA)</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;img&#39;, img)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="7-图形融合"><a href="#7-图形融合" class="headerlink" title="7.图形融合"></a>7.图形融合</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">#1.图片相加</span><br><span class="line">x &#x3D; np.uint8([255])</span><br><span class="line">y &#x3D; np.uint8([10])</span><br><span class="line"></span><br><span class="line">print(cv2.add(x,y))# 250+10 &#x3D; 260 &#x3D;&gt; 255 超过了255按照255算 没有超过255 按计算值算</span><br><span class="line">print(x+y)# 250+10 &#x3D; 260 % 256 &#x3D; 4  numpy 中的图片相加相当于%256</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#2.图像混合</span><br><span class="line">img1&#x3D;cv2.imread(&#39;lena_small.jpg&#39;)</span><br><span class="line">img2&#x3D;cv2.imread(&#39;opencv-logo-white.png&#39;)</span><br><span class="line">res&#x3D;cv2.addWeighted(img1,.6,img2,.4,0)</span><br><span class="line">cv2.imshow(&#39;blending&#39;,res)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#3.按位操作</span><br><span class="line">img1&#x3D;cv2.imread(&#39;lena.jpg&#39;)</span><br><span class="line">img2&#x3D;cv2.imread(&#39;opencv-logo-white.png&#39;)</span><br><span class="line">#把logo放在左上角</span><br><span class="line">rows,cows&#x3D;img2.shape[:2]</span><br><span class="line">roi&#x3D;img1[:rows,:cows]</span><br><span class="line"></span><br><span class="line">#创建掩膜</span><br><span class="line">img2gray&#x3D;cv2.cvtColor(img2,cv2.COLOR_BGR2GRAY)</span><br><span class="line">ret,mask &#x3D;cv2.threshold(img2gray,10,255,cv2.THRESH_BINARY)</span><br><span class="line">mask_inv&#x3D;cv2.bitwise_not(mask)</span><br><span class="line"># 保留除logo外的背景</span><br><span class="line">img1_bg &#x3D; cv2.bitwise_and(roi, roi, mask&#x3D;mask_inv)</span><br><span class="line">dst &#x3D; cv2.add(img1_bg, img2)  # 进行融合</span><br><span class="line">img1[:rows, :cows] &#x3D; dst  # 融合后放在原图上</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;result&#39;, img1)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
+<h3 id="8-图片滤波"><a href="#8-图片滤波" class="headerlink" title="8.图片滤波"></a>8.图片滤波</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">img&#x3D;cv2.imread(&#39;lena.jpg&#39;)</span><br><span class="line">#1.均值滤波</span><br><span class="line">blur&#x3D;cv2.blur(img,(12,12))#卷积核尺寸  可以明显观察到经过滤波后的图片模糊很多</span><br><span class="line">cv2.imshow(&#39;img&#39;,img)</span><br><span class="line">cv2.imshow(&#39;blur&#39;,blur)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line">#2.高斯滤波</span><br><span class="line">gau_blur&#x3D;cv2.GaussianBlur(img,(3,3),0)#(3,3)表示高斯矩阵的长和宽都是5，标准差为0</span><br><span class="line"></span><br><span class="line">#三张图片横向对比</span><br><span class="line">res &#x3D; np.hstack((img,blur,gau_blur))</span><br><span class="line">cv2.imshow(&#39;res&#39;,res)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line">#高斯滤波与均值滤波</span><br><span class="line">img&#x3D;cv2.imread(&#39;salt_noise.bmp&#39;)</span><br><span class="line">blur&#x3D;cv2.blur(img,(5,5)) #均值滤波</span><br><span class="line">gaussian &#x3D; cv2.GaussianBlur(img,(5,5),1) #高斯滤波</span><br><span class="line">res &#x3D; np.hstack((img,blur,gaussian))</span><br><span class="line">cv2.imshow(&#39;img,blur,gaussian&#39;,res)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#均值滤波与中值滤波</span><br><span class="line">img&#x3D;cv2.imread(&#39;salt_noise.bmp&#39;,0)</span><br><span class="line"></span><br><span class="line">blur &#x3D; cv2.blur(img, (5, 5))  # 均值滤波</span><br><span class="line">median &#x3D; cv2.medianBlur(img, 5)  # 中值滤波</span><br><span class="line"></span><br><span class="line">res &#x3D; np.hstack((img, blur, median))</span><br><span class="line">cv2.imshow(&#39;median vs average&#39;, res)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"># 4.双边滤波vs高斯滤波</span><br><span class="line">img &#x3D; cv2.imread(&#39;lena.jpg&#39;, 0)</span><br><span class="line">gau &#x3D; cv2.GaussianBlur(img, (5, 5), 0)  # 高斯滤波</span><br><span class="line">blur &#x3D; cv2.bilateralFilter(img, 5, 75, 75)  # 双边滤波</span><br><span class="line"></span><br><span class="line">res &#x3D; np.hstack((img, gau, blur))</span><br><span class="line">cv2.imshow(&#39;res&#39;, res)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
+<h3 id="9-边缘检测1"><a href="#9-边缘检测1" class="headerlink" title="9.边缘检测1"></a>9.边缘检测1</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">#边缘检测</span><br><span class="line">img &#x3D; cv2.imread(&#39;handwriting.jpg&#39;,0)</span><br><span class="line">edges &#x3D;cv2.Canny(img,30,70)</span><br><span class="line">cv2.imshow(&#39;img_edges&#39;,np.hstack((img,edges)))</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#2.先阈值后边缘检测</span><br><span class="line">_,thresh &#x3D;cv2.threshold(img,0,255,cv2.THRESH_BINARY + cv2.THRESH_OTSU)</span><br><span class="line">edges &#x3D; cv2.Canny(thresh,30,70)</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;canny&#39;,np.hstack((img,thresh,edges)))</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="10-边缘检测2"><a href="#10-边缘检测2" class="headerlink" title="10.边缘检测2"></a>10.边缘检测2</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">def track_back(x):</span><br><span class="line">    pass</span><br><span class="line"></span><br><span class="line">img &#x3D;cv2.imread(&#39;sudoku.jpg&#39;,0)</span><br><span class="line">cv2.namedWindow(&#39;window&#39;)</span><br><span class="line"></span><br><span class="line">#创建滑动条</span><br><span class="line">cv2.createTrackbar(&#39;maxVal&#39;,&#39;window&#39;,100,255,track_back)</span><br><span class="line">cv2.createTrackbar(&#39;minVal&#39;,&#39;window&#39;,200,255,track_back)</span><br><span class="line"></span><br><span class="line">while(True):</span><br><span class="line">    #获取滑动条的值</span><br><span class="line">    max_val&#x3D;cv2.getTrackbarPos(&#39;maxVal&#39;,&#39;window&#39;)</span><br><span class="line">    min_val&#x3D;cv2.getTrackbarPos(&#39;minVal&#39;,&#39;window&#39;)</span><br><span class="line"></span><br><span class="line">    edges&#x3D; cv2.Canny(img,min_val,max_val)</span><br><span class="line">    cv2.imshow(&#39;window&#39;,edges)</span><br><span class="line">    if cv2.waitKey(30)&#x3D;&#x3D;27:</span><br><span class="line">        break</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="11-腐蚀和膨胀处理"><a href="#11-腐蚀和膨胀处理" class="headerlink" title="11.腐蚀和膨胀处理"></a>11.腐蚀和膨胀处理</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">#1.腐蚀和膨胀</span><br><span class="line">img &#x3D; cv2.imread(&#39;j.bmp&#39;,0)</span><br><span class="line">kernel &#x3D;np.ones((5,5),np.uint8)</span><br><span class="line">erosion &#x3D;cv2.erode(img,kernel)#腐蚀</span><br><span class="line">dilation &#x3D; cv2.dilate(img,kernel) #膨胀</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;erosion&#x2F;dilation&#39;,np.hstack((img,erosion,dilation)))</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
+
+
 ]]></content>
       <categories>
-        <category>阅读笔记</category>
+        <category>学习笔记</category>
+        <category>cv</category>
       </categories>
       <tags>
-        <tag>阅读</tag>
+        <tag>opencv</tag>
+        <tag>cv</tag>
       </tags>
   </entry>
   <entry>
@@ -316,6 +227,46 @@
       </tags>
   </entry>
   <entry>
+    <title>围城</title>
+    <url>/2020/02/15/%E5%9B%B4%E5%9F%8E/</url>
+    <content><![CDATA[<p>围城<br>钱锺书<br>21个想法</p>
+<p>◆ 重印前记</p>
+<p>围在城里的人想逃出来，城外的人想冲进去，对婚姻也罢，职业也罢，人生的愿望大都如此。</p>
+<a id="more"></a>
+
+<p>&gt;[插图]<br>《围城》一九四七年在上海初版，一九四八年再版，一九四九年三版，以后国内没有重印过。偶然碰见它的新版，那都是香港的“盗印”本。没有看到台湾的“盗印”本，据说在那里它是禁书。美国哥伦比亚大学夏志清教授的英文著作里对它作了过高的评价，导致了一些西方语言的译本。日本京都大学荒井健教授很久以前就通知我他要翻译，近年来也陆续在刊物上发表了译文。现在，人民文学出版社建议重新排印，以便原著在国内较易找着，我感到意外和忻幸。<br>我写完《围城》，就对它不很满意。出版了我现在更不满意的一本文学批评以后，我抽空又写长篇小说，命名《百合心》，也脱胎于法文成语（Le coeur d’artichaut），中心人物是一个女角。大约已写成了两万字。一九四九年夏天，全家从上海迁居北京，手忙脚乱中，我把一叠看来像乱纸的草稿扔到不知哪里去了。兴致大扫，一直没有再鼓起来，倒也从此省心省事。年复一年，创作的冲动随年衰减，创作的能力逐渐消失——也许两者根本上是一回事，我们常把自己的写作冲动误认为自己的写作才能，自以为要写就意味着会写。</p>
+<p>&gt;&gt; 事情没有做成的人老有这类根据不充分的信念；我们对采摘不到的葡萄，不但想象它酸，也很可能想象它是分外地甜。</p>
+<p>◆ 一</p>
+<p>&gt;&gt; 忠厚老实人的恶毒，像饭里的砂砾或者出骨鱼片里未净的刺，会给人一种不期待的伤痛。</p>
+<p>&gt;&gt; 方鸿渐从此死心不敢妄想，开始读叔本华，常聪明地对同学们说：“世间哪有恋爱？压根儿是生殖冲动。</p>
+<p>&gt;&gt; 一个可爱的女人说你像她的未婚夫，等于表示假使她没订婚，你有资格得她的爱。刻薄鬼也许要这样解释，她已经另有未婚夫了，你可以享受她未婚夫的权利而不必履行跟她结婚的义务</p>
+<p>◆ 二</p>
+<p>&gt;&gt; 为什么可爱的女孩子全有父亲呢？她孤独的一个人可以藏匿在心里温存，拖泥带水地牵上了父亲、叔父、兄弟之类，这女孩子就不伶俐洒脱，心里不便窝藏她了，她的可爱里也就搀和渣滓了。许多人谈婚姻，语气仿佛是同性恋爱，不是看中女孩子本人，是羡慕她的老子或她的哥哥。</p>
+<p>&gt;&gt; ‘嫁女必须胜吾家，娶妇必须不若吾家’，一个道理。”</p>
+<p>&gt;&gt; 方鸿渐那时候宛如隆冬早晨起床的人，好容易用最大努力跳出被窝，只有熬着冷穿衣下床，断无缩回去的道理。</p>
+<p>原文 “伯牛有疾，子问之，自牖执其手，曰：“亡之，命矣夫！斯人也而有斯疾也！斯人也而有斯疾也！” (《论语·雍也第六》) “斯人也，而有斯疾也”意思就是说“这样的好人竟会得这样的恶疾啊”<br>&gt;斯人也而有斯疾也</p>
+<p>&gt;&gt; 斯人也而有斯疾也</p>
+<p>&gt;&gt; 张太太等他饭毕走了，便说：“这种人家排场太小了！只吃那么多钱一天的菜！我女儿舒服惯的，过去吃不来苦！”</p>
+<p>&gt;&gt; 张先生跟外国人来往惯了，说话有个特征——也许在洋行、青年会、扶轮社等圈子里，这并没有什么奇特——喜欢中国话里夹无谓的英文字。他并无中文难达的新意，需要借英文来讲；所以他说话里嵌的英文字，还比不得嘴里嵌的金牙，因为金牙不仅妆点，尚可使用，只好比牙缝里嵌的肉屑，表示饭菜吃得好，此外全无用处。他仿美国人读音，维妙维肖，也许鼻音学得太过火了，不像美国人，而像伤风塞鼻子的中国人。</p>
+<p>&gt;&gt; snappy</p>
+<p>◆ 三</p>
+<p>&gt;&gt; 好比睡不着的人，顾不得安眠药片的害处，先要图眼前的舒服。</p>
+<p>&gt;&gt; 世界上大事情像可以随便应付，偏是小事倒丝毫假借不了。</p>
+<p>&gt;&gt; Search me!</p>
+<p>&gt;&gt; 唐小姐感觉方鸿渐说这些话，都为着引起自己对他的注意，心中暗笑，说：“我不知道方先生是侮辱政治还是侮辱女人，至少都不是好话。”</p>
+<p>&gt;&gt; 苏小姐初到家，开口闭口都是方鸿渐，第五天后忽然绝口不提，</p>
+<p>&gt;&gt; 设想自己是唐小姐，用她的眼睛来审定着衣镜里自己的仪表。回国不到一年，额上添了许多皱纹，昨天没睡好，脸色眼神都萎靡黯淡。他这两天有了意中人以后，对自己外表上的缺点，知道得不宽假地详尽，仿佛只有一套出客衣服的穷人知道上面每一个斑渍和补钉。其实旁人看来，他脸色照常，但他自以为今天特别难看，花领带补得脸黄里泛绿，换了三次领带才下去吃早饭。</p>
+<p>&gt;&gt; 不是快乐，而是感激</p>
+<p>&gt;&gt; 教育愈普遍，而写信的人愈少；并非商业上的要务，大家还是怕写信，宁可打电话。我想这因为写信容易出丑，地位很高，讲话很体面的人往往笔动不来。可是，电话可以省掉面目可憎者的拜访，文理不通者的写信，也算是个功德无量的发明。”</p>
+]]></content>
+      <categories>
+        <category>阅读笔记</category>
+      </categories>
+      <tags>
+        <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>第七天</title>
     <url>/2021/02/15/%E7%AC%AC%E4%B8%83%E5%A4%A9/</url>
     <content><![CDATA[<p>第七天（2018版）<br>余华<br>16个想法</p>
@@ -342,6 +293,40 @@
 <p>◆ 点评</p>
 <p>认为好看<br>人的一生，要死去三次，第一次，当你的心跳停止，呼吸消逝，那么你在生物学上被宣告死亡；第二次，当你下葬，人们穿着黑衣出席你的葬礼，怀念你的一生，然后你在社会上被宣告死亡；而第三次死亡，是在这个世界上最后一个记得你的人把你忘记，于是，你真正的死去。<br>他只有一次死亡，太孤单了。</p>
 <p>我是孤零零一个人。给予我养育之恩的父亲杨金彪一年多前身患绝症不辞而别，我的生父生母远在千里之外的北方城市，他们不知道此时此刻我已置身另外一个世界。</p>
+]]></content>
+      <categories>
+        <category>阅读笔记</category>
+      </categories>
+      <tags>
+        <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>活着</title>
+    <url>/2021/02/15/%E6%B4%BB%E7%9D%80/</url>
+    <content><![CDATA[<p>活着（葛优、巩俐主演）<br>余华<br>12个想法</p>
+<p>◆ 中文版自序</p>
+<p>&gt;&gt; 人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。</p>
+<p>◆ 麦田新版自序</p>
+<p>&gt;&gt; 生活是属于每个人自己的感受，不属于任何别人的看法。</p>
+<a id="more"></a>
+
+<p>◆ 活着</p>
+<p>&gt;&gt; 这个嫖和赌，就像是胳膊和肩膀连在一起，怎么都分不开。</p>
+<p>◆ 1</p>
+<p>&gt;&gt; 我在水田里站着，看着我娘弯腰叫我的模样，她太使劲了，两只手撑在腿上，免得上面的身体掉到地上。</p>
+<p>祸兮福所倚，福兮祸所伏。<br>&gt;龙二从我身边走过时看了我一眼，我觉得他没认出我来，可走了几步他硬是回过头来，哭着鼻子对我喊道：<br>“福贵，我是替你去死啊。”</p>
+<p>&gt;&gt; 龙二从我身边走过时看了我一眼，我觉得他没认出我来，可走了几步他硬是回过头来，哭着鼻子对我喊道：“福贵，我是替你去死啊。”</p>
+<p>◆ 2</p>
+<p>&gt;&gt; “大伙放心吧，县长说了，只要他不饿死，大伙也都饿不死。”</p>
+<p>◆ 3</p>
+<p>&gt;&gt; “做人不能忘记四条，话不要说错，床不要睡错，门槛不要踏错，口袋不要摸错。”</p>
+<p>&gt;&gt; 少年去游荡，中年想掘藏，老年做和尚。</p>
+<p>◆ 外文版评论摘要</p>
+<p>人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。——余华<br>&gt;当这部沉重的小说结束时，活着的意志，是福贵身上唯一不能被剥夺走的东西。</p>
+<p>&gt;&gt; 当这部沉重的小说结束时，活着的意志，是福贵身上唯一不能被剥夺走的东西。</p>
+<p>◆ 点评</p>
+<p>认为好看<br>人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。——余华</p>
 ]]></content>
       <categories>
         <category>阅读笔记</category>
@@ -408,64 +393,6 @@
       </tags>
   </entry>
   <entry>
-    <title>STM32学习笔记</title>
-    <url>/2021/02/09/STM32%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="STM32-点灯方法"><a href="#STM32-点灯方法" class="headerlink" title="STM32 点灯方法"></a>STM32 点灯方法</h1><ol>
-<li>查看核心板原理图 </li>
-</ol>
-<a id="more"></a>
-
-
-
-<hr>
-<p>第三部分：按键控制LED</p>
-<p><img src="/images/image-20210216191456443.png" alt="image-20210216191456443"></p>
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-      </categories>
-      <tags>
-        <tag>技术</tag>
-        <tag>STM32</tag>
-        <tag>硬件</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>opencv学习笔记</title>
-    <url>/2021/01/17/opencv%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h3 id="1-ROI-选取"><a href="#1-ROI-选取" class="headerlink" title="1.ROI 选取"></a>1.ROI 选取</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;lena.jpg&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 帽子ROI的红色通道</span></span><br><span class="line">hat_r = img[<span class="number">25</span>:<span class="number">120</span>, <span class="number">50</span>:<span class="number">220</span>, <span class="number">2</span>]</span><br><span class="line">cv2.imshow(<span class="string">&#x27;hat&#x27;</span>, hat_r)</span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-
-<h3 id="2-图像和像素点的简单处理"><a href="#2-图像和像素点的简单处理" class="headerlink" title="2.图像和像素点的简单处理"></a>2.图像和像素点的简单处理</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line"></span><br><span class="line">img &#x3D; cv2.imread(&#39;lena.jpg&#39;)</span><br><span class="line"></span><br><span class="line"># 1.获取像素的值</span><br><span class="line">px &#x3D; img[100, 90]</span><br><span class="line">print(px)  # [103 98 197]</span><br><span class="line"></span><br><span class="line"># 只获取蓝色blue通道的值</span><br><span class="line">px_blue &#x3D; img[100, 90, 0]</span><br><span class="line">print(px_blue)  # 103</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 2.修改像素的值</span><br><span class="line">img[100, 90] &#x3D; [255, 255, 255]</span><br><span class="line">print(img[100, 90])  # [255 255 255]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 3.图片形状</span><br><span class="line">print(img.shape)  # (263, 247, 3)</span><br><span class="line"># 形状中包括行数、列数和通道数</span><br><span class="line">height, width, channels &#x3D; img.shape</span><br><span class="line"># img是灰度图的话：height, width &#x3D; img.shape</span><br><span class="line"></span><br><span class="line"># 总像素数</span><br><span class="line">print(img.size)  # 263*247*3&#x3D;194883</span><br><span class="line"># 数据类型</span><br><span class="line">print(img.dtype)  # uint8</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 4.ROI截取</span><br><span class="line">face &#x3D; img[100:200, 115:188]</span><br><span class="line">cv2.imshow(&#39;face&#39;, face)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 5.通道分割与合并</span><br><span class="line">b, g, r &#x3D; cv2.split(img)</span><br><span class="line">img &#x3D; cv2.merge((b, g, r))</span><br><span class="line"># 更推荐的获取某一通道方式</span><br><span class="line">b &#x3D; img[:, :, 0]</span><br><span class="line">cv2.imshow(&#39;b&#39;, b)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
-<h3 id="3-改变色彩空间"><a href="#3-改变色彩空间" class="headerlink" title="3.改变色彩空间"></a>3.改变色彩空间</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">img&#x3D;cv2.imread(&#39;lena.jpg&#39;)</span><br><span class="line"></span><br><span class="line">#转灰度图片</span><br><span class="line">img_hsv&#x3D;cv2.cvtColor(img,cv2.COLOR_BGR2HSV)</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;hsv&#39;,img_hsv)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line">img_gray&#x3D;cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)</span><br><span class="line">cv2.imshow(&#39;gray&#39;,img_gray)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line">#获取所有转换模式</span><br><span class="line">flags&#x3D;[i for i in dir(cv2) if i.startswith(&quot;COLOR_&quot;)]</span><br><span class="line">print(flags)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#获取蓝色的HSV</span><br><span class="line"></span><br><span class="line">blue &#x3D;np.uint8([[[255,0,0]]])</span><br><span class="line">hsv_blue &#x3D; cv2.cvtColor(blue,cv2.COLOR_BGR2HSV)</span><br><span class="line">print(hsv_blue)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#追踪蓝色的物体</span><br><span class="line">capature &#x3D;cv2.VideoCapture(0)</span><br><span class="line"></span><br><span class="line">#蓝色范围</span><br><span class="line">blue_lower &#x3D;np.array([100,110,110])</span><br><span class="line">blue_upper &#x3D; np.array([130,255,255])</span><br><span class="line"></span><br><span class="line">while(True):</span><br><span class="line">    ret,frame&#x3D; capature.read()</span><br><span class="line">    gray2&#x3D;cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)</span><br><span class="line"></span><br><span class="line">    # 又BGR 转换为HSV</span><br><span class="line">    hsv &#x3D; cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)</span><br><span class="line"></span><br><span class="line">    #将hsv设置为介于两者之间的</span><br><span class="line"></span><br><span class="line">    mask &#x3D; cv2.inRange(hsv,blue_lower,blue_upper)</span><br><span class="line"></span><br><span class="line">    #只保留图片中的蓝色部分</span><br><span class="line">    res &#x3D; cv2.bitwise_and(frame,frame,mask&#x3D;mask)</span><br><span class="line"></span><br><span class="line">    cv2.imshow(&#39;frame&#39;,frame)</span><br><span class="line">    cv2.imshow(&#39;mask&#39;,mask)</span><br><span class="line">    cv2.imshow(&#39;res&#39;,res)</span><br><span class="line">    cv2.imshow(&#39;gary&#39;,gray2)</span><br><span class="line">    if cv2.waitKey(1) &#x3D;&#x3D; ord(&#39;q&#39;):</span><br><span class="line">        break</span><br></pre></td></tr></table></figure>
-<h3 id="4-对图像进行阈值操作"><a href="#4-对图像进行阈值操作" class="headerlink" title="4.对图像进行阈值操作"></a>4.对图像进行阈值操作</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2 as cv</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line"></span><br><span class="line">#灰度图片读入</span><br><span class="line">img &#x3D; cv.imread(&#39;gradient.jpg&#39;,0)</span><br><span class="line">&#39;&#39;&#39;filename：需要打开图片的路径，可以是绝对路径或者相对路径，路径中不能出现中文。</span><br><span class="line">flag：图像的通道和色彩信息（默认值为1）。</span><br><span class="line">flag &#x3D; -1,   8位深度，原通道</span><br><span class="line">flag &#x3D; 0，   8位深度，1通道</span><br><span class="line">flag &#x3D; 1，   8位深度，3通道</span><br><span class="line">flag &#x3D; 2，   原深度， 1通道</span><br><span class="line">flag &#x3D; 3，   原深度， 3通道</span><br><span class="line">flag &#x3D; 4，   8位深度，3通道&#39;&#39;&#39;</span><br><span class="line">#阈值分割，ret return value 表示当前阈值</span><br><span class="line">ret,th &#x3D;cv.threshold(img,127,255,cv.THRESH_BINARY)</span><br><span class="line">&#39;&#39;&#39;cv2.threshold(img, thresh, maxVal, cv2.xxx)</span><br><span class="line">1</span><br><span class="line">第一个参数是源图像，应该是灰度图；</span><br><span class="line">第二个参数是对图像进行分类的阈值；</span><br><span class="line">第三个参数是最大值，表示如果像素值大于（有时小于）阈值则要给出的值；</span><br><span class="line">第四个参数决定给出不同类型的阈值。包括：</span><br><span class="line">cv2.THRESH_BINARY</span><br><span class="line">- cv2.THRESH_BINARY_INV</span><br><span class="line">- cv2.THRESH_TRUNC</span><br><span class="line">- cv2.THRESH_TOZERO</span><br><span class="line">- cv2.THRESH_TOZERO_INV&#39;&#39;&#39;</span><br><span class="line">#图像二值化处理后</span><br><span class="line">cv.imshow(&#39;thresh&#39;,th)</span><br><span class="line">#未经过二值化处理的图片</span><br><span class="line">cv.imshow(&#39;org&#39;,img)</span><br><span class="line">cv.waitKey(0)</span><br><span class="line"># 应用5种不同的阈值方法</span><br><span class="line">ret, th1 &#x3D; cv.threshold(img, 127, 255, cv.THRESH_BINARY)</span><br><span class="line">ret, th2 &#x3D; cv.threshold(img, 127, 255, cv.THRESH_BINARY_INV)</span><br><span class="line">ret, th3 &#x3D; cv.threshold(img, 127, 255, cv.THRESH_TRUNC)</span><br><span class="line">ret, th4 &#x3D; cv.threshold(img, 127, 255, cv.THRESH_TOZERO)</span><br><span class="line">ret, th5 &#x3D; cv.threshold(img, 127, 255, cv.THRESH_TOZERO_INV)</span><br><span class="line">titles &#x3D; [&#39;Original&#39;, &#39;BINARY&#39;, &#39;BINARY_INV&#39;, &#39;TRUNC&#39;, &#39;TOZERO&#39;, &#39;TOZERO_INV&#39;]</span><br><span class="line">images &#x3D; [img, th1, th2, th3, th4, th5]</span><br><span class="line">for i in range(6):</span><br><span class="line">    plt.subplot(2, 3, i + 1)</span><br><span class="line">    plt.imshow(images[i], &#39;gray&#39;)</span><br><span class="line">    plt.title(titles[i], fontsize&#x3D;8)</span><br><span class="line">    plt.xticks([]), plt.yticks([])  # 隐藏坐标轴</span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#自适应阈值对比固定阈值</span><br><span class="line"></span><br><span class="line">#固定阈值</span><br><span class="line">ret,th1 &#x3D; cv.threshold(img,127,255,cv.THRESH_BINARY)</span><br><span class="line">#自适应阈值</span><br><span class="line">th2&#x3D;cv.adaptiveThreshold(</span><br><span class="line">    img,255,cv.ADAPTIVE_THRESH_GAUSSIAN_C,cv.THRESH_BINARY,11,4</span><br><span class="line">)</span><br><span class="line">th3&#x3D;cv.adaptiveThreshold(</span><br><span class="line">    img,255,cv.ADAPTIVE_THRESH_GAUSSIAN_C,cv.THRESH_BINARY,17,6</span><br><span class="line">)</span><br><span class="line">titles &#x3D; [&#39;Original&#39;, &#39;Global(v &#x3D; 127)&#39;, &#39;Adaptive Mean&#39;, &#39;Adaptive Gaussian&#39;]</span><br><span class="line">images &#x3D; [img, th1, th2, th3]</span><br><span class="line"></span><br><span class="line">for i in range(4):</span><br><span class="line">    plt.subplot(2, 2, i + 1)</span><br><span class="line">    plt.imshow(images[i], &#39;gray&#39;)</span><br><span class="line">    plt.title(titles[i], fontsize&#x3D;8)</span><br><span class="line">    plt.xticks([]), plt.yticks([])</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
-<h3 id="5-图片几何化处理"><a href="#5-图片几何化处理" class="headerlink" title="5.图片几何化处理"></a>5.图片几何化处理</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import cv2</span><br><span class="line"></span><br><span class="line">img&#x3D; cv2.imread(&#39;drawing.jpg&#39;)</span><br><span class="line">#1将图片进行缩放</span><br><span class="line">res&#x3D;cv2.resize(img,(132,150))</span><br><span class="line">cv2.imshow(&#39;reshape&#39;,res)</span><br><span class="line">cv2.imshow(&#39;org&#39;,img)</span><br><span class="line">#2按照比例进行缩放，x，y轴都扩大为原来的两倍</span><br><span class="line">res2&#x3D;cv2.resize(img,None,fx&#x3D;2,fy&#x3D;2,interpolation&#x3D;cv2.INTER_LINEAR)</span><br><span class="line">cv2.imshow(&#39;res2&#39;,res2)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line">&#39;&#39;&#39;cv2.resize(src,dsize,dst&#x3D;None,fx&#x3D;None,fy&#x3D;None,interpolation&#x3D;None)</span><br><span class="line"></span><br><span class="line">scr:原图</span><br><span class="line"></span><br><span class="line">dsize：输出图像尺寸</span><br><span class="line"></span><br><span class="line">fx:沿水平轴的比例因子</span><br><span class="line"></span><br><span class="line">fy:沿垂直轴的比例因子</span><br><span class="line"></span><br><span class="line">interpolation：插值方法&#39;&#39;&#39;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#3.翻转图片</span><br><span class="line"></span><br><span class="line">dst&#x3D;cv2.flip(img,-1) #1 水平翻转  0 垂直翻转  -1 水平垂直翻转</span><br><span class="line">#np.hstack  横向并排，对比显示</span><br><span class="line">cv2.imshow(&#39;flip&#39;,np.hstack((img,dst)))</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#4.平移图片</span><br><span class="line">#得到图片的长和宽的像素</span><br><span class="line">rows,cols&#x3D; img.shape[:2]</span><br><span class="line"></span><br><span class="line">M &#x3D; np.float32([[1, 0, 100], [0, 1, 50]])#M 为一个2x3的矩阵 (为图片的变化矩阵)</span><br><span class="line">&#39;&#39;&#39;src - 输入图像。</span><br><span class="line">M - 变换矩阵。</span><br><span class="line">dsize - 输出图像的大小。</span><br><span class="line">flags - 插值方法的组合（int 类型！）</span><br><span class="line">borderMode - 边界像素模式（int 类型！）</span><br><span class="line">borderValue - （重点！）边界填充值; 默认情况下，它为0。</span><br><span class="line">上述参数中：</span><br><span class="line">1、M作为仿射变换矩阵，一般反映平移或旋转的关系，为InputArray类型的2×3的变换矩阵。</span><br><span class="line">2、flages表示插值方式，默认为 flags&#x3D;cv2.INTER_LINEAR，表示线性插值，此外还有：cv2.INTER_NEAREST（最近邻插值） cv2.INTER_AREA （区域插值） cv2.INTER_CUBIC（三次样条插值） cv2.INTER_LANCZOS4（Lanczos插值）&#39;&#39;&#39;</span><br><span class="line">dst &#x3D; cv2.warpAffine(img, M, (cols, rows))</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;shift&#39;, dst)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line">#5.将图片顺时针旋转，并且缩小一半</span><br><span class="line">M&#x3D;cv2.getRotationMatrix2D((cols&#x2F;2,rows&#x2F;2),-45,0.5)</span><br><span class="line">&#39;&#39;&#39;M&#x3D;cv2.getRotationMatrix2D(center, angle, scale)</span><br><span class="line">1</span><br><span class="line">函数有三个输入参数：</span><br><span class="line"></span><br><span class="line">center：图片的旋转中心</span><br><span class="line">angle：旋转角度</span><br><span class="line">scale：旋转后图像相比原来的缩放比例</span><br><span class="line">M:计算得到的旋转矩阵&#39;&#39;&#39;</span><br><span class="line"></span><br><span class="line">dst&#x3D;cv2.warpAffine(img,M,(cols,rows))</span><br><span class="line">cv2.imshow(&#39;rotation&#39;,dst)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
-<h3 id="6-图形绘制"><a href="#6-图形绘制" class="headerlink" title="6.图形绘制"></a>6.图形绘制</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">#创建一个黑色图片</span><br><span class="line">img &#x3D;np.zeros((512,512,3),np.uint8)</span><br><span class="line"></span><br><span class="line">#创建一条宽度为5的蓝色斜线  参数起点 终点</span><br><span class="line">cv2.line(img,(0,0),(512,512),5)</span><br><span class="line"></span><br><span class="line">#画一个绿色边框的矩形，参数 左上角，右下角</span><br><span class="line">cv2.rectangle(img,(300,0),(500,100),(0,255,0),3)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#画一个填充红色的圆，参数 圆心坐标，半径</span><br><span class="line">cv2.circle(img,(447,63),63,(255,0,0),-1)</span><br><span class="line"></span><br><span class="line"># 4.在图中心画一个填充的半圆</span><br><span class="line">cv2.ellipse(img, (256, 256), (100, 50), 0, 0, 180, (255, 0, 0), -1)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 5.画一个闭合的四边形</span><br><span class="line"># 定义四个顶点坐标</span><br><span class="line">pts &#x3D; np.array([[10, 5],  [50, 10], [70, 20], [20, 30]], np.int32)</span><br><span class="line"># 顶点个数：4，矩阵变成顶点数*1*2维（注意numpy中-1的用法）</span><br><span class="line">pts &#x3D; pts.reshape((-1, 1, 2))</span><br><span class="line">cv2.polylines(img, [pts], True, (0, 255, 255))</span><br><span class="line"></span><br><span class="line"># 使用cv2.polylines()画多条直线</span><br><span class="line">line1 &#x3D; np.array([[100, 20],  [300, 20]], np.int32).reshape((-1, 1, 2))</span><br><span class="line">line2 &#x3D; np.array([[100, 60],  [300, 60]], np.int32).reshape((-1, 1, 2))</span><br><span class="line">line3 &#x3D; np.array([[100, 100],  [300, 100]], np.int32).reshape((-1, 1, 2))</span><br><span class="line">cv2.polylines(img, [line1, line2, line3], True, (0, 255, 255))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 6.添加文字</span><br><span class="line">font &#x3D; cv2.FONT_HERSHEY_SIMPLEX</span><br><span class="line">cv2.putText(img, &#39;ex2tron&#39;, (10, 500), font,</span><br><span class="line">            4, (255, 255, 255), 2, lineType&#x3D;cv2.LINE_AA)</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;img&#39;, img)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="7-图形融合"><a href="#7-图形融合" class="headerlink" title="7.图形融合"></a>7.图形融合</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">#1.图片相加</span><br><span class="line">x &#x3D; np.uint8([255])</span><br><span class="line">y &#x3D; np.uint8([10])</span><br><span class="line"></span><br><span class="line">print(cv2.add(x,y))# 250+10 &#x3D; 260 &#x3D;&gt; 255 超过了255按照255算 没有超过255 按计算值算</span><br><span class="line">print(x+y)# 250+10 &#x3D; 260 % 256 &#x3D; 4  numpy 中的图片相加相当于%256</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#2.图像混合</span><br><span class="line">img1&#x3D;cv2.imread(&#39;lena_small.jpg&#39;)</span><br><span class="line">img2&#x3D;cv2.imread(&#39;opencv-logo-white.png&#39;)</span><br><span class="line">res&#x3D;cv2.addWeighted(img1,.6,img2,.4,0)</span><br><span class="line">cv2.imshow(&#39;blending&#39;,res)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#3.按位操作</span><br><span class="line">img1&#x3D;cv2.imread(&#39;lena.jpg&#39;)</span><br><span class="line">img2&#x3D;cv2.imread(&#39;opencv-logo-white.png&#39;)</span><br><span class="line">#把logo放在左上角</span><br><span class="line">rows,cows&#x3D;img2.shape[:2]</span><br><span class="line">roi&#x3D;img1[:rows,:cows]</span><br><span class="line"></span><br><span class="line">#创建掩膜</span><br><span class="line">img2gray&#x3D;cv2.cvtColor(img2,cv2.COLOR_BGR2GRAY)</span><br><span class="line">ret,mask &#x3D;cv2.threshold(img2gray,10,255,cv2.THRESH_BINARY)</span><br><span class="line">mask_inv&#x3D;cv2.bitwise_not(mask)</span><br><span class="line"># 保留除logo外的背景</span><br><span class="line">img1_bg &#x3D; cv2.bitwise_and(roi, roi, mask&#x3D;mask_inv)</span><br><span class="line">dst &#x3D; cv2.add(img1_bg, img2)  # 进行融合</span><br><span class="line">img1[:rows, :cows] &#x3D; dst  # 融合后放在原图上</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;result&#39;, img1)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
-<h3 id="8-图片滤波"><a href="#8-图片滤波" class="headerlink" title="8.图片滤波"></a>8.图片滤波</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">img&#x3D;cv2.imread(&#39;lena.jpg&#39;)</span><br><span class="line">#1.均值滤波</span><br><span class="line">blur&#x3D;cv2.blur(img,(12,12))#卷积核尺寸  可以明显观察到经过滤波后的图片模糊很多</span><br><span class="line">cv2.imshow(&#39;img&#39;,img)</span><br><span class="line">cv2.imshow(&#39;blur&#39;,blur)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line">#2.高斯滤波</span><br><span class="line">gau_blur&#x3D;cv2.GaussianBlur(img,(3,3),0)#(3,3)表示高斯矩阵的长和宽都是5，标准差为0</span><br><span class="line"></span><br><span class="line">#三张图片横向对比</span><br><span class="line">res &#x3D; np.hstack((img,blur,gau_blur))</span><br><span class="line">cv2.imshow(&#39;res&#39;,res)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line">#高斯滤波与均值滤波</span><br><span class="line">img&#x3D;cv2.imread(&#39;salt_noise.bmp&#39;)</span><br><span class="line">blur&#x3D;cv2.blur(img,(5,5)) #均值滤波</span><br><span class="line">gaussian &#x3D; cv2.GaussianBlur(img,(5,5),1) #高斯滤波</span><br><span class="line">res &#x3D; np.hstack((img,blur,gaussian))</span><br><span class="line">cv2.imshow(&#39;img,blur,gaussian&#39;,res)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#均值滤波与中值滤波</span><br><span class="line">img&#x3D;cv2.imread(&#39;salt_noise.bmp&#39;,0)</span><br><span class="line"></span><br><span class="line">blur &#x3D; cv2.blur(img, (5, 5))  # 均值滤波</span><br><span class="line">median &#x3D; cv2.medianBlur(img, 5)  # 中值滤波</span><br><span class="line"></span><br><span class="line">res &#x3D; np.hstack((img, blur, median))</span><br><span class="line">cv2.imshow(&#39;median vs average&#39;, res)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"># 4.双边滤波vs高斯滤波</span><br><span class="line">img &#x3D; cv2.imread(&#39;lena.jpg&#39;, 0)</span><br><span class="line">gau &#x3D; cv2.GaussianBlur(img, (5, 5), 0)  # 高斯滤波</span><br><span class="line">blur &#x3D; cv2.bilateralFilter(img, 5, 75, 75)  # 双边滤波</span><br><span class="line"></span><br><span class="line">res &#x3D; np.hstack((img, gau, blur))</span><br><span class="line">cv2.imshow(&#39;res&#39;, res)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
-<h3 id="9-边缘检测1"><a href="#9-边缘检测1" class="headerlink" title="9.边缘检测1"></a>9.边缘检测1</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">#边缘检测</span><br><span class="line">img &#x3D; cv2.imread(&#39;handwriting.jpg&#39;,0)</span><br><span class="line">edges &#x3D;cv2.Canny(img,30,70)</span><br><span class="line">cv2.imshow(&#39;img_edges&#39;,np.hstack((img,edges)))</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#2.先阈值后边缘检测</span><br><span class="line">_,thresh &#x3D;cv2.threshold(img,0,255,cv2.THRESH_BINARY + cv2.THRESH_OTSU)</span><br><span class="line">edges &#x3D; cv2.Canny(thresh,30,70)</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;canny&#39;,np.hstack((img,thresh,edges)))</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="10-边缘检测2"><a href="#10-边缘检测2" class="headerlink" title="10.边缘检测2"></a>10.边缘检测2</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">def track_back(x):</span><br><span class="line">    pass</span><br><span class="line"></span><br><span class="line">img &#x3D;cv2.imread(&#39;sudoku.jpg&#39;,0)</span><br><span class="line">cv2.namedWindow(&#39;window&#39;)</span><br><span class="line"></span><br><span class="line">#创建滑动条</span><br><span class="line">cv2.createTrackbar(&#39;maxVal&#39;,&#39;window&#39;,100,255,track_back)</span><br><span class="line">cv2.createTrackbar(&#39;minVal&#39;,&#39;window&#39;,200,255,track_back)</span><br><span class="line"></span><br><span class="line">while(True):</span><br><span class="line">    #获取滑动条的值</span><br><span class="line">    max_val&#x3D;cv2.getTrackbarPos(&#39;maxVal&#39;,&#39;window&#39;)</span><br><span class="line">    min_val&#x3D;cv2.getTrackbarPos(&#39;minVal&#39;,&#39;window&#39;)</span><br><span class="line"></span><br><span class="line">    edges&#x3D; cv2.Canny(img,min_val,max_val)</span><br><span class="line">    cv2.imshow(&#39;window&#39;,edges)</span><br><span class="line">    if cv2.waitKey(30)&#x3D;&#x3D;27:</span><br><span class="line">        break</span><br></pre></td></tr></table></figure>
-
-
-<h3 id="11-腐蚀和膨胀处理"><a href="#11-腐蚀和膨胀处理" class="headerlink" title="11.腐蚀和膨胀处理"></a>11.腐蚀和膨胀处理</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">#1.腐蚀和膨胀</span><br><span class="line">img &#x3D; cv2.imread(&#39;j.bmp&#39;,0)</span><br><span class="line">kernel &#x3D;np.ones((5,5),np.uint8)</span><br><span class="line">erosion &#x3D;cv2.erode(img,kernel)#腐蚀</span><br><span class="line">dilation &#x3D; cv2.dilate(img,kernel) #膨胀</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;erosion&#x2F;dilation&#39;,np.hstack((img,erosion,dilation)))</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
-
-
-]]></content>
-      <categories>
-        <category>学习笔记</category>
-        <category>cv</category>
-      </categories>
-      <tags>
-        <tag>opencv</tag>
-        <tag>cv</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>吴恩达机器学习</title>
     <url>/2020/07/10/%E5%90%B4%E6%81%A9%E8%BE%BE%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%20/</url>
     <content><![CDATA[<h2 id="引言（Introduction"><a href="#引言（Introduction" class="headerlink" title="引言（Introduction)"></a>引言（Introduction)</h2><h3 id="什么是机器学习"><a href="#什么是机器学习" class="headerlink" title="什么是机器学习"></a>什么是机器学习</h3><p>第一个机器学习定义来源于<strong>Arthur Samuel</strong>,他定义为： 在特定的编程情况下，给予计算机学习能力。<br>另一个年代近一点的定义，由   <strong>Tom Mitchell</strong> 提出，来自卡内基梅隆大学，Tom 定义的机器学习是，一个好的学习问题定义如下，他说，一个程序被认为能从经验 E 中学习，解决任务 T，达到性能度量值P，当且仅当，有了经验 E 后，经过 P 评判，程序在处理 T 时的性能有所提升。我认为经验E 就是程序上万次的自我练习的经验而任务 T 就是下棋。性能度量值 P 呢，就是它在与一些新的对手比赛时，赢得比赛的概率。<strong>简单来说就是从E中学习，解决任务T，达到性能度量值P。并且在经过P评判，和不断学习的过程中，程序在处理T时的性能有所提升.</strong></p>
@@ -477,6 +404,8 @@
 <p>可以看出，<strong>监督学习指的就是我们给学习算法一个数据集。这个数据集由“正确答案”组成。</strong>在房价的例子中，我们给了一系列房子的数据，我们给定数据集中每个样本的正确价格，即它们实际的售价然后运用学习算法，算出更多的正确答案。比如你朋友那个新房子的价格。用术语来讲，这叫做回归问题。我们试着推测出一个连续值的结果，即房子的价格。</p>
 <p>一般房子的价格会记到美分，所以房价实际上是一系列离散的值，但是我们通常又把房价看成实数，看成是标量，所以又把它看成一个连续的数值。</p>
 <p>回归这个词的意思是，我们在试着推测出这一系列连续值属性。</p>
+<a id="more"></a>
+
 <p>我再举另外一个监督学习的例子。我和一些朋友之前研究过这个。假设说你想通过查看病历来推测乳腺癌良性与否，假如有人检测出乳腺肿瘤，恶性肿瘤有害并且十分危险，而良性的肿瘤危害就没那么大，所以人们显然会很在意这个问题。</p>
 <p><img src="/images/image-20210216225057126.png" alt="image-20210216225057126"></p>
 <p>让我们来看一组数据：这个数据集中，横轴表示肿瘤的大小，纵轴上，我标出1和0表示是或者不是恶性肿瘤。我们之前见过的肿瘤，如果是恶性则记为1，不是恶性，或者说良性记为0。</p>
@@ -587,37 +516,110 @@
       </tags>
   </entry>
   <entry>
-    <title>围城</title>
-    <url>/2020/02/15/%E5%9B%B4%E5%9F%8E/</url>
-    <content><![CDATA[<p>围城<br>钱锺书<br>21个想法</p>
-<p>◆ 重印前记</p>
-<p>围在城里的人想逃出来，城外的人想冲进去，对婚姻也罢，职业也罢，人生的愿望大都如此。</p>
+    <title>月亮与六便士</title>
+    <url>/2021/02/07/%E6%9C%88%E4%BA%AE%E4%B8%8E%E5%85%AD%E4%BE%BF%E5%A3%AB/</url>
+    <content><![CDATA[<p>π 2021/2/7 22:01:52<br>月亮与六便士<br>毛姆<br>63个笔记</p>
+<p>◆ 作家榜推荐词</p>
+<p>&gt;&gt; 爱自已，是一生浪漫的开始。</p>
+<p>◆ 导读</p>
+<p>&gt;&gt; “我不想谋生。我想生活。”</p>
+<p>&gt;&gt; 什么是生活？生活的意义是什么？这些没有人能真正告诉你，需要你自己满怀勇气，像小说主人公那样抛弃一切，用整个灵魂去探索。</p>
 <a id="more"></a>
 
-<p>&gt;[插图]<br>《围城》一九四七年在上海初版，一九四八年再版，一九四九年三版，以后国内没有重印过。偶然碰见它的新版，那都是香港的“盗印”本。没有看到台湾的“盗印”本，据说在那里它是禁书。美国哥伦比亚大学夏志清教授的英文著作里对它作了过高的评价，导致了一些西方语言的译本。日本京都大学荒井健教授很久以前就通知我他要翻译，近年来也陆续在刊物上发表了译文。现在，人民文学出版社建议重新排印，以便原著在国内较易找着，我感到意外和忻幸。<br>我写完《围城》，就对它不很满意。出版了我现在更不满意的一本文学批评以后，我抽空又写长篇小说，命名《百合心》，也脱胎于法文成语（Le coeur d’artichaut），中心人物是一个女角。大约已写成了两万字。一九四九年夏天，全家从上海迁居北京，手忙脚乱中，我把一叠看来像乱纸的草稿扔到不知哪里去了。兴致大扫，一直没有再鼓起来，倒也从此省心省事。年复一年，创作的冲动随年衰减，创作的能力逐渐消失——也许两者根本上是一回事，我们常把自己的写作冲动误认为自己的写作才能，自以为要写就意味着会写。</p>
-<p>&gt;&gt; 事情没有做成的人老有这类根据不充分的信念；我们对采摘不到的葡萄，不但想象它酸，也很可能想象它是分外地甜。</p>
-<p>◆ 一</p>
-<p>&gt;&gt; 忠厚老实人的恶毒，像饭里的砂砾或者出骨鱼片里未净的刺，会给人一种不期待的伤痛。</p>
-<p>&gt;&gt; 方鸿渐从此死心不敢妄想，开始读叔本华，常聪明地对同学们说：“世间哪有恋爱？压根儿是生殖冲动。</p>
-<p>&gt;&gt; 一个可爱的女人说你像她的未婚夫，等于表示假使她没订婚，你有资格得她的爱。刻薄鬼也许要这样解释，她已经另有未婚夫了，你可以享受她未婚夫的权利而不必履行跟她结婚的义务</p>
-<p>◆ 二</p>
-<p>&gt;&gt; 为什么可爱的女孩子全有父亲呢？她孤独的一个人可以藏匿在心里温存，拖泥带水地牵上了父亲、叔父、兄弟之类，这女孩子就不伶俐洒脱，心里不便窝藏她了，她的可爱里也就搀和渣滓了。许多人谈婚姻，语气仿佛是同性恋爱，不是看中女孩子本人，是羡慕她的老子或她的哥哥。</p>
-<p>&gt;&gt; ‘嫁女必须胜吾家，娶妇必须不若吾家’，一个道理。”</p>
-<p>&gt;&gt; 方鸿渐那时候宛如隆冬早晨起床的人，好容易用最大努力跳出被窝，只有熬着冷穿衣下床，断无缩回去的道理。</p>
-<p>原文 “伯牛有疾，子问之，自牖执其手，曰：“亡之，命矣夫！斯人也而有斯疾也！斯人也而有斯疾也！” (《论语·雍也第六》) “斯人也，而有斯疾也”意思就是说“这样的好人竟会得这样的恶疾啊”<br>&gt;斯人也而有斯疾也</p>
-<p>&gt;&gt; 斯人也而有斯疾也</p>
-<p>&gt;&gt; 张太太等他饭毕走了，便说：“这种人家排场太小了！只吃那么多钱一天的菜！我女儿舒服惯的，过去吃不来苦！”</p>
-<p>&gt;&gt; 张先生跟外国人来往惯了，说话有个特征——也许在洋行、青年会、扶轮社等圈子里，这并没有什么奇特——喜欢中国话里夹无谓的英文字。他并无中文难达的新意，需要借英文来讲；所以他说话里嵌的英文字，还比不得嘴里嵌的金牙，因为金牙不仅妆点，尚可使用，只好比牙缝里嵌的肉屑，表示饭菜吃得好，此外全无用处。他仿美国人读音，维妙维肖，也许鼻音学得太过火了，不像美国人，而像伤风塞鼻子的中国人。</p>
-<p>&gt;&gt; snappy</p>
-<p>◆ 三</p>
-<p>&gt;&gt; 好比睡不着的人，顾不得安眠药片的害处，先要图眼前的舒服。</p>
-<p>&gt;&gt; 世界上大事情像可以随便应付，偏是小事倒丝毫假借不了。</p>
-<p>&gt;&gt; Search me!</p>
-<p>&gt;&gt; 唐小姐感觉方鸿渐说这些话，都为着引起自己对他的注意，心中暗笑，说：“我不知道方先生是侮辱政治还是侮辱女人，至少都不是好话。”</p>
-<p>&gt;&gt; 苏小姐初到家，开口闭口都是方鸿渐，第五天后忽然绝口不提，</p>
-<p>&gt;&gt; 设想自己是唐小姐，用她的眼睛来审定着衣镜里自己的仪表。回国不到一年，额上添了许多皱纹，昨天没睡好，脸色眼神都萎靡黯淡。他这两天有了意中人以后，对自己外表上的缺点，知道得不宽假地详尽，仿佛只有一套出客衣服的穷人知道上面每一个斑渍和补钉。其实旁人看来，他脸色照常，但他自以为今天特别难看，花领带补得脸黄里泛绿，换了三次领带才下去吃早饭。</p>
-<p>&gt;&gt; 不是快乐，而是感激</p>
-<p>&gt;&gt; 教育愈普遍，而写信的人愈少；并非商业上的要务，大家还是怕写信，宁可打电话。我想这因为写信容易出丑，地位很高，讲话很体面的人往往笔动不来。可是，电话可以省掉面目可憎者的拜访，文理不通者的写信，也算是个功德无量的发明。”</p>
+<p>&gt;&gt; 在这个以物质为上帝的时代，用浅薄的幸福、成功来量死你的世界，你该怎样过完你的人生？人生如梦，你是希望枕着月亮还是六便士？很多人渴望名声，追求利益，很多人希望名利双收；大多数人按部就班，过着平庸乏味的生活；也有一些人忽然如梦方醒，一骨碌爬起，去寻找真正有价值的生活。所以无论如何，这部警世的小说都值得一读。正像小说第五十章中所说： 做自己最想做的事，过自己想过的生活，心平气和，怎么能叫作践自己？做一个有名的外科医生，一年赚一万英镑，娶一位漂亮的妻子，就是成功？我想，这取决于你如何看待生活的意义……</p>
+<p>◆ 第一章</p>
+<p>&gt;&gt; 制造神话，是人类的天性。像那些出类拔萃的名人，人们总是对他们生活中的意外或神秘紧抓不放，深信不疑，缔造传奇，无限狂热。这是对平凡生活的浪漫抗议。</p>
+<p>◆ 第二章</p>
+<p>&gt;&gt; 想不起来是谁说过：为了使灵魂安宁，一个人每天至少该做两件他不喜欢的事。</p>
+<p>◆ 第四章</p>
+<p>&gt;&gt; “她觉得他们有意思。她想跟随潮流。我看她头脑简单，真可怜，她认为我们都很好。反正，她喜欢请我们吃饭，我们对吃饭也不反感。我喜欢她，不外乎这一点。”</p>
+<p>&gt;&gt; “为什么漂亮的女人总是嫁给无趣的男人？”<br>“因为有脑子的男人不娶漂亮的女人。”</p>
+<p>◆ 第七章</p>
+<p>&gt;&gt; 我承认这种生活的社会价值，我也看到它井然有序的幸福，但是，我的血液里有一种强烈的冲动，渴望一种桀骜不驯的旅程。这样的安逸总让我惊惧。我的心渴望更加惊险的生活。只要我能有所改变——改变和不可预知的冒险，我将踏上嶙峋怪石，哪怕激流险滩。</p>
+<p>◆ 第八章</p>
+<p>&gt;&gt; 那时，我还不了解女人根深蒂固的恶习：与任何愿意倾听的人谈论自己的私事。</p>
+<p>◆ 第九章</p>
+<p>&gt;&gt; 既然他把这些秘密和盘托出，那我不妨继续问问。</p>
+<p>&gt;&gt; 事情变得更加复杂，上校怒火中烧，骂骂咧咧，颠三倒四，似乎并不是为了告诉我什么，只图发泄。谢天谢地，当他看到陆海军商店上面的大钟，忽然想起约好了要去俱乐部打牌。于是，他和我分手，穿过圣詹姆斯公园，自己走了。</p>
+<p>◆ 第十章</p>
+<p>&gt;&gt; “只有一种解释，他真的变了。我不知道，是哪个女人控制了他，却把他变成了另一个人。很明显，已经很长时间了。”</p>
+<p>&gt;&gt; 我以为他在俱乐部，实际上，他是在和那个女人鬼混。</p>
+<p>&gt;&gt; 心里藏着如此意外的秘密，却能装作漫不经心，若无其事，很不容易；还得集中精力，打点孩子们上学，真是煞费苦心。斯特里克兰夫人又哽咽了。</p>
+<p>◆ 第十一章</p>
+<p>&gt;&gt; 我那时还不懂得，人性有多矛盾；我不知道，真诚中有多少虚伪，高尚中有多少卑鄙，或者，邪恶中有多少善良。</p>
+<p>&gt;&gt; 那里叫比利时旅馆。但出乎意料，门房说没听过。我听斯特里克兰夫人说过，这家旅馆很大，很豪华，在里沃利大街后边。我们在旅馆名录中找。叫这个名字的旅馆只有一家，在摩纳街。它既不时尚，也不是有钱人住的地方。我摇摇头。</p>
+<p>&gt;&gt; 我上次见他，他整洁一新，可看上去并不自在；现在，他这般邋遢，却神态自若。我不知道，他听了我要讲的一番话后，会作何反应。</p>
+<p>◆ 第十二章</p>
+<p>&gt;&gt; “要是顶多你只能当个三流画家，是不是还要孤注一掷？不管怎样，如果是其他行业，你才华平平，关系不大，可以得过且过；但是，当一个艺术家，完全不同。”<br>“你他妈真是个傻瓜。”他说。<br>“我不知道你为什么这么说，除非我言过其实。”</p>
+<p>&gt;&gt; “我告诉你，我必须画画。我身不由己。一个人掉进水里，他游泳游得好不好没关系，反正他得挣扎，不然就得淹死。”</p>
+<p>◆ 第十三章</p>
+<p>&gt;&gt; 只有诗人和圣贤才会相信，在柏油马路上辛勤浇灌，能培育出百合花来。</p>
+<p>◆ 第十四章</p>
+<p>&gt;&gt; 真是蠢话。不是每个人都会像我这样。大多数人，平平淡淡，知足常乐。</p>
+<p>◆ 第十五章</p>
+<p>&gt;&gt; “只要他是和女人跑的，就还有可能回来。我不相信什么是绝对的。三个月，他就烦死她了。但如果，他不是因为恋爱跑的，那一切都完了。”</p>
+<p>&gt;&gt; “你也不明白吗？”她喊道。<br>“我不敢肯定。你的意思是说：如果他是为了女人离开你，你可以原谅；但如果他是为了理想离开你，你就不能？你觉得前者仿佛比赛，而后者你便无能为力，对吧？”</p>
+<p>&gt;&gt; 你丈夫的行为，也许是情非得已。我想，他已经不是他自己。他似乎鬼迷心窍，被一股力量抓住，朝着别的方向跑去；他就像落入蛛网的苍蝇，已经无力挣扎。他仿佛着了魔。这让我想起，人们常说的那些离奇故事：一个人的身体被另一个人的灵魂占据，将他自己的赶了出去。这个灵魂在体内很不安分，神秘地变来变去。要是过去，大家就会说，查尔斯·斯特里克兰被魔鬼附身了。”</p>
+<p>◆ 第十七章</p>
+<p>&gt;&gt; 常言说，痛苦使人高贵，这不对；让人行动高尚的，有时是自满得意；而痛苦，往往使人变得心胸狭窄，充满仇恨。</p>
+<p>◆ 第十八章</p>
+<p>&gt;&gt; 而我认为，这始终是他挥之不去的幻想，这幻想让他目眩，看不见真相；尽管真相残酷，他却依然用幻想的目光凝望着自己的意大利：浪漫的侠盗，美丽的废墟。他画的是他的理想，尽管贫乏、平庸、陈旧，但终究是理想；这就赋予了他一种独特的魅力。</p>
+<p>◆ 第十九章</p>
+<p>&gt;&gt; 很奇怪，在评判别人的作品时，他的意识如此精准、不落俗套，可他自己陈腐、平庸的画作也让他感到满意，真是难以置信。</p>
+<p>&gt;&gt; “我什么时候走过眼？”德克说，“告诉你，他很有天分。肯定的。一百年以后，如果还有人记得你和我，那是因为我们认识查尔斯·斯特里克兰。”</p>
+<p>&gt;&gt; 不，没有名气。我想，他一幅画也没卖出去。你要是和别人谈起他，没有一个不笑的。可是我知道，他是非常好的画家。说到底，他们不是也笑过马奈嘛。柯罗一张画也没卖出去。</p>
+<p>&gt;&gt; 为什么你认为美——这世上最宝贵的东西，会像沙滩上的卵石，一个漫不经心的路人，随随便便就能捡到？美是美妙，是奇异，艺术家唯有通过灵魂的煎熬，才能从宇宙的混沌中创造出美。而当美出现，它并非为了让每个人都认出它自己。要认识它，你必须重复和艺术家一样的奇异之旅。这是一支他唱给你的旋律，要想再次用心聆听，就需要智慧、感觉以及丰富的想象力。</p>
+<p>◆ 第二十一章</p>
+<p>&gt;&gt; “我不想过去。唯一重要的，是永恒的现在。”</p>
+<p>◆ 第二十二章</p>
+<p>&gt;&gt; 我把大把的时间耗在卢浮宫，因为这是巴黎所有画廊中我感觉最亲切的，也最适合冥想。要不然就是在塞纳河边闲逛，翻一翻路边的旧书，但从来不买。</p>
+<p>◆ 第二十四章</p>
+<p>&gt;&gt; “他大概生病了。”斯特洛夫说。<br>“可能吧，”门房漠不关心地说，“反正，我好几天没看见他了。”</p>
+<p>◆ 第二十五章</p>
+<p>转：王尔德的话，每个人理解不同，举个例子，苏格拉底就因为在当时与众不同的思想，被判处了死刑；意大利思想家布鲁诺因为反对欧洲宗教的地心说，被判为异端，活活烧死；王尔德自己本身，因为坚持同性恋的合法性而进了监狱……真理的蜡烛，常常会烫伤那些举烛人的手。<br>&gt;&gt; 天才是世上最奇妙的东西。但对天才自己而言，却是很大的负担。我们应该容忍他们，要很有耐心。</p>
+<p>&gt;&gt; 天才是世上最奇妙的东西。但对天才自己而言，却是很大的负担。我们应该容忍他们，要很有耐心。</p>
+<p>◆ 第二十八章</p>
+<p>&gt;&gt; “你不知道。她爱上斯特里克兰了。”</p>
+<p>&gt;&gt; “你知道啊，她受不了斯特里克兰。”<br>“你不了解。”他呜咽着说。</p>
+<p>&gt;&gt; “你能把我的衣服收拾一下，放门房那儿吗？明天我过来取。”他强颜欢笑。“再见，亲爱的。谢谢你过去带给我的幸福。”</p>
+<p>◆ 第二十九章</p>
+<p>转：先自沉稳，而后爱人。爱情是双向的奔赴，爱来自骨子里，而非卑微到尘土里。我爱我自己的灵魂，我懂得如何去爱自己，我才能去更好的爱你。<br>&gt;&gt; 我爱她，远远胜过爱我自己。要我说，爱情中如果考虑自尊，只能说明你更爱自己。</p>
+<p>&gt;&gt; 我爱她，远远胜过爱我自己。要我说，爱情中如果考虑自尊，只能说明你更爱自己。</p>
+<p>π 2021/2/7 22:02:42<br>◆ 第三十一章</p>
+<p>转：这世界本就没有感同身受，只有冷暖自知，如果没办法自己默默消化悲痛那只能转移注意力培养新爱好，时间会帮你抚平你的伤痛<br>&gt;&gt; 我想，他是希望他们没有收拾他的东西，这样他就可以见到妻子，没准儿还能劝她回到自己身边。但是当他回去，东西已经在门房那儿了，门房告诉他，布兰奇出去了。要说，他能不向她吐自己的一肚子苦水，我才不信呢。我发现，每个他认识的人，他都会向人家诉说他的不幸；他以为能博得同情，结果只引来嘲笑。</p>
+<p>&gt;&gt; 我想，他是希望他们没有收拾他的东西，这样他就可以见到妻子，没准儿还能劝她回到自己身边。但是当他回去，东西已经在门房那儿了，门房告诉他，布兰奇出去了。要说，他能不向她吐自己的一肚子苦水，我才不信呢。我发现，每个他认识的人，他都会向人家诉说他的不幸；他以为能博得同情，结果只引来嘲笑。</p>
+<p>&gt;&gt; 有时候，一个人的外表和他的灵魂并不相称，这实在糟糕。</p>
+<p>◆ 第三十七章</p>
+<p>&gt;&gt; 巴黎的街头重新带给我欣喜，看着来来往往的行人，我禁不住微笑起来。这一天，天气晴朗，阳光明媚，我感到自己心中有着更为强烈的生之喜悦。我按捺不住；我把斯特洛夫和他的不幸赶出胸中。我要享受生活。</p>
+<p>◆ 第三十八章</p>
+<p>&gt;&gt; 世界冰冷而残酷。没有人知道我们从哪里来，到哪里去。我们必须深怀谦卑。我们必须看到宁静之美。我们必须隐忍地生活，这样命运之神才不会注目我们。让我们去寻求淳朴、善良者的爱吧。他们的无知比我们的知识更可贵。让我们保持沉默，满足于我们小小的角落，像他们一样平静温顺吧。这才是生活的智慧。</p>
+<p>◆ 第四十二章</p>
+<p>&gt;&gt; 这些画，很多后来我又看过，有些见过复制品，都相当熟悉；奇怪的是，当初看到它们时，我居然非常失望。我没感觉到艺术本该带给我的欣喜若狂。</p>
+<p>孤独，从来都是一个人的事，没有人能真切地懂得另一个人的感受，甚至，在别人眼里，这些都是无关痛痒的事，当有一天，你学会了自己咀嚼自己的孤独，你也就不在乎别人的眼光了。<br>&gt;&gt; 我们每个人都孤独地生活在世界上。谁都被囚禁在一座铁塔里，只能凭一些符号与人交流，但这些符号并没有共同的价值，所以它们的意义模糊不定。我们可怜地想把心灵的珍宝传递给别人，但他们却无力接受，因此我们只能踽踽独行，虽然紧挨着，却并不真正在一起，既无法了解别人，也不被别人所了解。我们就像身在异国他乡的陌生人，对他们的语言知之甚少，想表达那些美妙而深刻的事物，只能局限于会话指南上一点平庸的词句。我们的大脑充满了奇想，却只会说“花匠的姑姑有把雨伞在屋里”。</p>
+<p>&gt;&gt; 我们每个人都孤独地生活在世界上。谁都被囚禁在一座铁塔里，只能凭一些符号与人交流，但这些符号并没有共同的价值，所以它们的意义模糊不定。我们可怜地想把心灵的珍宝传递给别人，但他们却无力接受，因此我们只能踽踽独行，虽然紧挨着，却并不真正在一起，既无法了解别人，也不被别人所了解。我们就像身在异国他乡的陌生人，对他们的语言知之甚少，想表达那些美妙而深刻的事物，只能局限于会话指南上一点平庸的词句。我们的大脑充满了奇想，却只会说“花匠的姑姑有把雨伞在屋里”。</p>
+<p>◆ 第四十四章</p>
+<p>&gt;&gt; 在他的笔下，人物都很怪诞，他对这种怪诞感到非常生气；生活不过是一场混乱，充满了种种的荒谬和污秽，只能引人发笑，未免乐极生悲。</p>
+<p>◆ 第四十七章</p>
+<p>&gt;&gt; “更难抽的烟我也用烟斗抽过。”他自嘲地耸了耸肩，补充道。说着，又从我递给他的烟盒里拿了几支雪茄，一根叼在嘴上，其他的揣进了口袋。</p>
+<p>&gt;&gt; 在这里，他们结交了不少和他们一样饥寒交迫的朋友，当他们有时身上一个子儿都没了，晚上又出奇的冷，就会毫不犹豫地向白天偶然赚到一法郎的人借钱交住宿费。这些流浪汉都不吝啬，不管谁有了钱，都会乐于和大家一起花。他们来自不同的国家，但这并不妨碍他们成为朋友；因为他们感觉，他们是同一个国度的自由民，这个国度宽广无垠——一个伟大的安乐之乡。</p>
+<p>◆ 第四十八章</p>
+<p>当理想与现世安稳碰撞，总有些东西被遗弃，被撞碎。也许是小时候的玻璃球，也许是小时候立志成为怎样的人，也许只是春天的一场梦。梦总要醒，但是梦想可以一直都被拥有、追逐。他的行动告诉世人，只要有勇气出发，永远都不会晚，灵魂与梦想经过碰撞，会发现一个极少数人能到达的新世界<br>&gt;&gt; 他那孤独的灵魂怀着怎样的奇想，最终向着激发了他幻想的未知岛屿出发了。我喜欢这样的画面，他的人生在四十七岁定格，当大多数人享受着中年生活的安稳，斯特里克兰却去寻找一个新世界。</p>
+<p>◆ 第五十章</p>
+<p>&gt;&gt; 每当一个人有了意外之举，他周围的人总会认定，原因肯定很丢脸。</p>
+<p>每个人对成功的定义不同。有的人想在自己从事的领域成为专家型的人才；有的人想挣足够几辈子花的钱；有的人想要在官场上步步高升；也有的人想要一辈子平平淡淡做着自己喜欢做的事即可。。。<br>&gt;&gt; “我过得很好，”他说，“但说来奇怪，这一切都是因为我交了好运。”</p>
+<p>&gt;&gt; 做自己最想做的事，过自己想过的生活，心平气和，怎么能叫作践自己？做一个有名的外科医生，一年赚一万英镑，娶一位漂亮的妻子，就是成功？我想，这取决于你如何看待生活的意义，取决于你对社会应尽什么义务，你对自己有什么要求。</p>
+<p>◆ 第五十三章</p>
+<p>&gt;&gt; 我住在环礁岛上，周围是潟湖环绕的低矮小岛，那里的美是碧海蓝天，湖光山色，以及随风摇曳的椰子树；而斯特里克兰住的地方，美得就像伊甸园。啊，我真希望自己能将那儿的魅力说给你听。与世隔绝的偏僻一隅，头顶是湛蓝的天空，到处是郁郁葱葱的树木。这里色彩无尽，馥郁芬芳，清爽无比。真是人间天堂，难以用语言形容。他就住在那儿，与世无争，优哉游哉。</p>
+<p>◆ 第五十五章</p>
+<p>&gt;&gt; 他只不过是一个游手好闲的无赖，宁愿和一个当地女人同居，也不想像别人那样好好干活儿吃饭。天哪，我当时怎么知道，有一天全世界都承认他是天才？</p>
+<p>&gt;&gt; 恐惧让人变得残酷无情……</p>
+<p>◆ 第五十六章</p>
+<p>&gt;&gt; 四面墙上，从地板一直到天花板，一幅幅奇特的、精心绘制的图画铺展开来，那种奇妙、神秘，简直难以形容。库特拉斯几乎屏住了呼吸。一种难以理解、无法参透的感情攫住了他。他感觉，这种敬畏和欣喜，就像一个人看到开天辟地时怀着的那种敬畏和欣喜。这壁画巨大无比，既耽于肉欲，又充满激情，同时，也包含某种恐怖，让他看着十分害怕。绘制这巨作的人，已经深入到大自然的隐秘深处，发现了美妙而惊人的秘密。他知晓了人类从不知晓的事物。他画出的是某种原始的、可怕的东西。这并不属于人类。库特拉斯模糊地感到，这就像巫术，既美丽，又污秽。</p>
+<p>◆ 第五十七章</p>
+<p>&gt;&gt; 他从不抱怨命运，从未失去勇气。直到最后一刻，他依然坦然、平静。</p>
+<p>&gt;&gt; “我想，斯特里克兰也知道，这是一幅杰作。他已经得到了他所追求的东西。他无怨无悔。他创造了一个世界，也看到了这个世界的美好。之后，带着傲慢和不屑，又将它完全毁掉了。”</p>
+<p>◆ 第五十八章</p>
+<p>&gt;&gt; 我生命的一页翻过去了，我感觉，我离不可避免的死亡，又近了一步。</p>
 ]]></content>
       <categories>
         <category>阅读笔记</category>
