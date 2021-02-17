@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Markdown基本用法</title>
+    <url>/2021/02/16/Markdown%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</url>
+    <content><![CDATA[<h2 id="Block-Elements-块状单元"><a href="#Block-Elements-块状单元" class="headerlink" title="Block Elements(块状单元)"></a>Block Elements(块状单元)</h2><h3 id="Paragraph-and-line-breaks-段落和换行符"><a href="#Paragraph-and-line-breaks-段落和换行符" class="headerlink" title="Paragraph and line breaks(段落和换行符)"></a>Paragraph and line breaks(段落和换行符)</h3><p>按下<code>Return</code> 或者 <code>Shift</code> + <code>Return</code> 换行</p>
+<h3 id="Headers-标题样式"><a href="#Headers-标题样式" class="headerlink" title="Headers(标题样式)"></a>Headers(标题样式)</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># This is an H1</span></span><br><span class="line"><span class="section">## This is an H2</span></span><br><span class="line"><span class="section">### This is an H3</span></span><br><span class="line"><span class="section">#### This is an H4</span></span><br><span class="line"><span class="section">##### This is an H5</span></span><br><span class="line"><span class="section">###### This is an H5</span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+
+
+
+<h3 id="Blockquotes-引用"><a href="#Blockquotes-引用" class="headerlink" title="Blockquotes (引用)"></a>Blockquotes (引用)</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="quote">&gt; This is a blockquote with two parggraphs. This is first paragraph.</span></span><br><span class="line"><span class="quote">&gt; This is another paragraph.</span></span><br></pre></td></tr></table></figure>
+
+
+<p>引用效果如下</p>
+<blockquote>
+<p>this is a quote</p>
+<blockquote>
+<p>this is another quote</p>
+</blockquote>
+</blockquote>
+<h3 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h3><p>输入<code>* list item 1</code> 将创建一个以 * 开头的list</p>
+<p>输入 <code>1. list item 1 </code> 将创建一个以数字开头的list</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">## un-ordered list</span></span><br><span class="line"><span class="bullet">*</span> item1</span><br><span class="line"><span class="bullet">*</span> item2</span><br><span class="line"><span class="section">## ordered list </span></span><br><span class="line"><span class="bullet">1.</span> item1</span><br><span class="line"><span class="bullet">2.</span> item2</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="example"><a href="#example" class="headerlink" title="example"></a>example</h4><ul>
+<li>item1</li>
+<li>item2</li>
+</ul>
+<ol>
+<li>item1</li>
+<li>item2</li>
+</ol>
+<h3 id="Task-List-任务列表"><a href="#Task-List-任务列表" class="headerlink" title="Task List (任务列表)"></a>Task List (任务列表)</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> []  tesk1</span><br><span class="line"><span class="bullet">-</span> []  tesk2</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="example-1"><a href="#example-1" class="headerlink" title="example"></a>example</h4><p>press <code>-</code>+<code> </code> +<code>[ ]</code></p>
+<ul>
+<li><p><input disabled type="checkbox">  a task list item</p>
+</li>
+<li><p><input disabled type="checkbox">  tesk 1</p>
+</li>
+<li><p><input checked disabled type="checkbox">  tesk 2</p>
+</li>
+<li><p><input disabled type="checkbox">  tesk 3</p>
+</li>
+</ul>
+<h3 id="Code-Blocks-代码块"><a href="#Code-Blocks-代码块" class="headerlink" title="Code Blocks (代码块)"></a>Code Blocks (代码块)</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">下面是示例</span><br><span class="line">​<span class="code">```python</span></span><br><span class="line"><span class="code">print(&#x27;hello world&#x27;)```</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>实际效果如下:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&#x27;hello world &#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Math-Blocks-（数学公式块"><a href="#Math-Blocks-（数学公式块" class="headerlink" title="Math Blocks （数学公式块)"></a>Math Blocks （数学公式块)</h3><p>press <code>$$</code> and ‘Enter’</p>
+<h4 id="example-2"><a href="#example-2" class="headerlink" title="example"></a>example</h4><p>$$<br>pi =3.1415926<br>$$</p>
+<h3 id="Tables-（表格"><a href="#Tables-（表格" class="headerlink" title="Tables （表格)"></a>Tables （表格)</h3><table>
+<thead>
+<tr>
+<th align="center">second header</th>
+<th align="center">first header</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">items1</td>
+<td align="center">items2</td>
+</tr>
+</tbody></table>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">输入 | first header| second header| and Enter </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h4 id="高级玩法"><a href="#高级玩法" class="headerlink" title="高级玩法"></a>高级玩法</h4><table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+</tbody></table>
+<h3 id="Footnotes-创建注释"><a href="#Footnotes-创建注释" class="headerlink" title="Footnotes(创建注释)"></a>Footnotes(创建注释)</h3><p>这是一个注释[^footnote]</p>
+<p>[^footnote]: here is <em>text</em> of ** footnote** </p>
+<p>这是一个小的东西[^zhushi]</p>
+<p>[^zhushi]:just like this </p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1. 在需要注释的地方加入[^name]</span><br><span class="line">2. 在下方写入注释内容，格式如下：[^name]:</span><br></pre></td></tr></table></figure>
+
+
+
+
+<h3 id="Horizontal-Rules-（画横线"><a href="#Horizontal-Rules-（画横线" class="headerlink" title="Horizontal Rules （画横线)"></a>Horizontal Rules （画横线)</h3><p>输入 <code>***</code> 或则<code>---</code> 然后按下<code>enter</code> 即可画一道横线</p>
+<hr>
+<hr>
+<h3 id="Links-链接"><a href="#Links-链接" class="headerlink" title="Links(链接)"></a>Links(链接)</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">This is [an example](https:&#x2F;&#x2F;www.baidu.com)</span><br></pre></td></tr></table></figure>
+<h4 id="example-3"><a href="#example-3" class="headerlink" title="example"></a>example</h4><p><a href="https://www.baidu.com/">百度</a></p>
+<h3 id="Emphasis-强调"><a href="#Emphasis-强调" class="headerlink" title="Emphasis (强调)"></a>Emphasis (强调)</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*倾斜*</span></span><br><span class="line"><span class="emphasis">_single underscores_</span></span><br><span class="line"><span class="strong">**加深**</span> </span><br></pre></td></tr></table></figure>
+<p><em>倾斜</em></p>
+<p><em>单下划线</em></p>
+<p><strong>加深</strong></p>
+<h3 id="Strikethrough-删除线"><a href="#Strikethrough-删除线" class="headerlink" title="Strikethrough (删除线)"></a>Strikethrough (删除线)</h3><p><code>~~Misktaken text.~~ </code></p>
+<p><del>Mistaken</del></p>
+<h3 id><a href="#" class="headerlink" title></a></h3><h3 id="Emoji-表情"><a href="#Emoji-表情" class="headerlink" title="Emoji (表情)"></a>Emoji (表情)</h3><p><code>:smile:</code></p>
+<p>:smile:</p>
+<p>:santa:</p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>STM32学习笔记</title>
+    <url>/2021/02/09/STM32%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="STM32-点灯方法"><a href="#STM32-点灯方法" class="headerlink" title="STM32 点灯方法"></a>STM32 点灯方法</h1><ol>
+<li>查看核心板原理图 </li>
+</ol>
+<a id="more"></a>
+
+
+
+<hr>
+<p>第三部分：按键控制LED</p>
+<p><img src="/images/image-20210216191456443.png" alt="image-20210216191456443"></p>
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>技术</tag>
+        <tag>STM32</tag>
+        <tag>硬件</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>opencv学习笔记</title>
+    <url>/2021/01/17/opencv%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h3 id="1-ROI-选取"><a href="#1-ROI-选取" class="headerlink" title="1.ROI 选取"></a>1.ROI 选取</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line">img = cv2.imread(<span class="string">&#x27;lena.jpg&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 帽子ROI的红色通道</span></span><br><span class="line">hat_r = img[<span class="number">25</span>:<span class="number">120</span>, <span class="number">50</span>:<span class="number">220</span>, <span class="number">2</span>]</span><br><span class="line">cv2.imshow(<span class="string">&#x27;hat&#x27;</span>, hat_r)</span><br><span class="line">cv2.waitKey(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+
+<h3 id="2-图像和像素点的简单处理"><a href="#2-图像和像素点的简单处理" class="headerlink" title="2.图像和像素点的简单处理"></a>2.图像和像素点的简单处理</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line"></span><br><span class="line">img &#x3D; cv2.imread(&#39;lena.jpg&#39;)</span><br><span class="line"></span><br><span class="line"># 1.获取像素的值</span><br><span class="line">px &#x3D; img[100, 90]</span><br><span class="line">print(px)  # [103 98 197]</span><br><span class="line"></span><br><span class="line"># 只获取蓝色blue通道的值</span><br><span class="line">px_blue &#x3D; img[100, 90, 0]</span><br><span class="line">print(px_blue)  # 103</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 2.修改像素的值</span><br><span class="line">img[100, 90] &#x3D; [255, 255, 255]</span><br><span class="line">print(img[100, 90])  # [255 255 255]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 3.图片形状</span><br><span class="line">print(img.shape)  # (263, 247, 3)</span><br><span class="line"># 形状中包括行数、列数和通道数</span><br><span class="line">height, width, channels &#x3D; img.shape</span><br><span class="line"># img是灰度图的话：height, width &#x3D; img.shape</span><br><span class="line"></span><br><span class="line"># 总像素数</span><br><span class="line">print(img.size)  # 263*247*3&#x3D;194883</span><br><span class="line"># 数据类型</span><br><span class="line">print(img.dtype)  # uint8</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 4.ROI截取</span><br><span class="line">face &#x3D; img[100:200, 115:188]</span><br><span class="line">cv2.imshow(&#39;face&#39;, face)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 5.通道分割与合并</span><br><span class="line">b, g, r &#x3D; cv2.split(img)</span><br><span class="line">img &#x3D; cv2.merge((b, g, r))</span><br><span class="line"># 更推荐的获取某一通道方式</span><br><span class="line">b &#x3D; img[:, :, 0]</span><br><span class="line">cv2.imshow(&#39;b&#39;, b)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
+<h3 id="3-改变色彩空间"><a href="#3-改变色彩空间" class="headerlink" title="3.改变色彩空间"></a>3.改变色彩空间</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">img&#x3D;cv2.imread(&#39;lena.jpg&#39;)</span><br><span class="line"></span><br><span class="line">#转灰度图片</span><br><span class="line">img_hsv&#x3D;cv2.cvtColor(img,cv2.COLOR_BGR2HSV)</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;hsv&#39;,img_hsv)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line">img_gray&#x3D;cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)</span><br><span class="line">cv2.imshow(&#39;gray&#39;,img_gray)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line">#获取所有转换模式</span><br><span class="line">flags&#x3D;[i for i in dir(cv2) if i.startswith(&quot;COLOR_&quot;)]</span><br><span class="line">print(flags)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#获取蓝色的HSV</span><br><span class="line"></span><br><span class="line">blue &#x3D;np.uint8([[[255,0,0]]])</span><br><span class="line">hsv_blue &#x3D; cv2.cvtColor(blue,cv2.COLOR_BGR2HSV)</span><br><span class="line">print(hsv_blue)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#追踪蓝色的物体</span><br><span class="line">capature &#x3D;cv2.VideoCapture(0)</span><br><span class="line"></span><br><span class="line">#蓝色范围</span><br><span class="line">blue_lower &#x3D;np.array([100,110,110])</span><br><span class="line">blue_upper &#x3D; np.array([130,255,255])</span><br><span class="line"></span><br><span class="line">while(True):</span><br><span class="line">    ret,frame&#x3D; capature.read()</span><br><span class="line">    gray2&#x3D;cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)</span><br><span class="line"></span><br><span class="line">    # 又BGR 转换为HSV</span><br><span class="line">    hsv &#x3D; cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)</span><br><span class="line"></span><br><span class="line">    #将hsv设置为介于两者之间的</span><br><span class="line"></span><br><span class="line">    mask &#x3D; cv2.inRange(hsv,blue_lower,blue_upper)</span><br><span class="line"></span><br><span class="line">    #只保留图片中的蓝色部分</span><br><span class="line">    res &#x3D; cv2.bitwise_and(frame,frame,mask&#x3D;mask)</span><br><span class="line"></span><br><span class="line">    cv2.imshow(&#39;frame&#39;,frame)</span><br><span class="line">    cv2.imshow(&#39;mask&#39;,mask)</span><br><span class="line">    cv2.imshow(&#39;res&#39;,res)</span><br><span class="line">    cv2.imshow(&#39;gary&#39;,gray2)</span><br><span class="line">    if cv2.waitKey(1) &#x3D;&#x3D; ord(&#39;q&#39;):</span><br><span class="line">        break</span><br></pre></td></tr></table></figure>
+<h3 id="4-对图像进行阈值操作"><a href="#4-对图像进行阈值操作" class="headerlink" title="4.对图像进行阈值操作"></a>4.对图像进行阈值操作</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2 as cv</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line"></span><br><span class="line">#灰度图片读入</span><br><span class="line">img &#x3D; cv.imread(&#39;gradient.jpg&#39;,0)</span><br><span class="line">&#39;&#39;&#39;filename：需要打开图片的路径，可以是绝对路径或者相对路径，路径中不能出现中文。</span><br><span class="line">flag：图像的通道和色彩信息（默认值为1）。</span><br><span class="line">flag &#x3D; -1,   8位深度，原通道</span><br><span class="line">flag &#x3D; 0，   8位深度，1通道</span><br><span class="line">flag &#x3D; 1，   8位深度，3通道</span><br><span class="line">flag &#x3D; 2，   原深度， 1通道</span><br><span class="line">flag &#x3D; 3，   原深度， 3通道</span><br><span class="line">flag &#x3D; 4，   8位深度，3通道&#39;&#39;&#39;</span><br><span class="line">#阈值分割，ret return value 表示当前阈值</span><br><span class="line">ret,th &#x3D;cv.threshold(img,127,255,cv.THRESH_BINARY)</span><br><span class="line">&#39;&#39;&#39;cv2.threshold(img, thresh, maxVal, cv2.xxx)</span><br><span class="line">1</span><br><span class="line">第一个参数是源图像，应该是灰度图；</span><br><span class="line">第二个参数是对图像进行分类的阈值；</span><br><span class="line">第三个参数是最大值，表示如果像素值大于（有时小于）阈值则要给出的值；</span><br><span class="line">第四个参数决定给出不同类型的阈值。包括：</span><br><span class="line">cv2.THRESH_BINARY</span><br><span class="line">- cv2.THRESH_BINARY_INV</span><br><span class="line">- cv2.THRESH_TRUNC</span><br><span class="line">- cv2.THRESH_TOZERO</span><br><span class="line">- cv2.THRESH_TOZERO_INV&#39;&#39;&#39;</span><br><span class="line">#图像二值化处理后</span><br><span class="line">cv.imshow(&#39;thresh&#39;,th)</span><br><span class="line">#未经过二值化处理的图片</span><br><span class="line">cv.imshow(&#39;org&#39;,img)</span><br><span class="line">cv.waitKey(0)</span><br><span class="line"># 应用5种不同的阈值方法</span><br><span class="line">ret, th1 &#x3D; cv.threshold(img, 127, 255, cv.THRESH_BINARY)</span><br><span class="line">ret, th2 &#x3D; cv.threshold(img, 127, 255, cv.THRESH_BINARY_INV)</span><br><span class="line">ret, th3 &#x3D; cv.threshold(img, 127, 255, cv.THRESH_TRUNC)</span><br><span class="line">ret, th4 &#x3D; cv.threshold(img, 127, 255, cv.THRESH_TOZERO)</span><br><span class="line">ret, th5 &#x3D; cv.threshold(img, 127, 255, cv.THRESH_TOZERO_INV)</span><br><span class="line">titles &#x3D; [&#39;Original&#39;, &#39;BINARY&#39;, &#39;BINARY_INV&#39;, &#39;TRUNC&#39;, &#39;TOZERO&#39;, &#39;TOZERO_INV&#39;]</span><br><span class="line">images &#x3D; [img, th1, th2, th3, th4, th5]</span><br><span class="line">for i in range(6):</span><br><span class="line">    plt.subplot(2, 3, i + 1)</span><br><span class="line">    plt.imshow(images[i], &#39;gray&#39;)</span><br><span class="line">    plt.title(titles[i], fontsize&#x3D;8)</span><br><span class="line">    plt.xticks([]), plt.yticks([])  # 隐藏坐标轴</span><br><span class="line">plt.show()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#自适应阈值对比固定阈值</span><br><span class="line"></span><br><span class="line">#固定阈值</span><br><span class="line">ret,th1 &#x3D; cv.threshold(img,127,255,cv.THRESH_BINARY)</span><br><span class="line">#自适应阈值</span><br><span class="line">th2&#x3D;cv.adaptiveThreshold(</span><br><span class="line">    img,255,cv.ADAPTIVE_THRESH_GAUSSIAN_C,cv.THRESH_BINARY,11,4</span><br><span class="line">)</span><br><span class="line">th3&#x3D;cv.adaptiveThreshold(</span><br><span class="line">    img,255,cv.ADAPTIVE_THRESH_GAUSSIAN_C,cv.THRESH_BINARY,17,6</span><br><span class="line">)</span><br><span class="line">titles &#x3D; [&#39;Original&#39;, &#39;Global(v &#x3D; 127)&#39;, &#39;Adaptive Mean&#39;, &#39;Adaptive Gaussian&#39;]</span><br><span class="line">images &#x3D; [img, th1, th2, th3]</span><br><span class="line"></span><br><span class="line">for i in range(4):</span><br><span class="line">    plt.subplot(2, 2, i + 1)</span><br><span class="line">    plt.imshow(images[i], &#39;gray&#39;)</span><br><span class="line">    plt.title(titles[i], fontsize&#x3D;8)</span><br><span class="line">    plt.xticks([]), plt.yticks([])</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<h3 id="5-图片几何化处理"><a href="#5-图片几何化处理" class="headerlink" title="5.图片几何化处理"></a>5.图片几何化处理</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import numpy as np</span><br><span class="line">import cv2</span><br><span class="line"></span><br><span class="line">img&#x3D; cv2.imread(&#39;drawing.jpg&#39;)</span><br><span class="line">#1将图片进行缩放</span><br><span class="line">res&#x3D;cv2.resize(img,(132,150))</span><br><span class="line">cv2.imshow(&#39;reshape&#39;,res)</span><br><span class="line">cv2.imshow(&#39;org&#39;,img)</span><br><span class="line">#2按照比例进行缩放，x，y轴都扩大为原来的两倍</span><br><span class="line">res2&#x3D;cv2.resize(img,None,fx&#x3D;2,fy&#x3D;2,interpolation&#x3D;cv2.INTER_LINEAR)</span><br><span class="line">cv2.imshow(&#39;res2&#39;,res2)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line">&#39;&#39;&#39;cv2.resize(src,dsize,dst&#x3D;None,fx&#x3D;None,fy&#x3D;None,interpolation&#x3D;None)</span><br><span class="line"></span><br><span class="line">scr:原图</span><br><span class="line"></span><br><span class="line">dsize：输出图像尺寸</span><br><span class="line"></span><br><span class="line">fx:沿水平轴的比例因子</span><br><span class="line"></span><br><span class="line">fy:沿垂直轴的比例因子</span><br><span class="line"></span><br><span class="line">interpolation：插值方法&#39;&#39;&#39;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#3.翻转图片</span><br><span class="line"></span><br><span class="line">dst&#x3D;cv2.flip(img,-1) #1 水平翻转  0 垂直翻转  -1 水平垂直翻转</span><br><span class="line">#np.hstack  横向并排，对比显示</span><br><span class="line">cv2.imshow(&#39;flip&#39;,np.hstack((img,dst)))</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#4.平移图片</span><br><span class="line">#得到图片的长和宽的像素</span><br><span class="line">rows,cols&#x3D; img.shape[:2]</span><br><span class="line"></span><br><span class="line">M &#x3D; np.float32([[1, 0, 100], [0, 1, 50]])#M 为一个2x3的矩阵 (为图片的变化矩阵)</span><br><span class="line">&#39;&#39;&#39;src - 输入图像。</span><br><span class="line">M - 变换矩阵。</span><br><span class="line">dsize - 输出图像的大小。</span><br><span class="line">flags - 插值方法的组合（int 类型！）</span><br><span class="line">borderMode - 边界像素模式（int 类型！）</span><br><span class="line">borderValue - （重点！）边界填充值; 默认情况下，它为0。</span><br><span class="line">上述参数中：</span><br><span class="line">1、M作为仿射变换矩阵，一般反映平移或旋转的关系，为InputArray类型的2×3的变换矩阵。</span><br><span class="line">2、flages表示插值方式，默认为 flags&#x3D;cv2.INTER_LINEAR，表示线性插值，此外还有：cv2.INTER_NEAREST（最近邻插值） cv2.INTER_AREA （区域插值） cv2.INTER_CUBIC（三次样条插值） cv2.INTER_LANCZOS4（Lanczos插值）&#39;&#39;&#39;</span><br><span class="line">dst &#x3D; cv2.warpAffine(img, M, (cols, rows))</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;shift&#39;, dst)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line">#5.将图片顺时针旋转，并且缩小一半</span><br><span class="line">M&#x3D;cv2.getRotationMatrix2D((cols&#x2F;2,rows&#x2F;2),-45,0.5)</span><br><span class="line">&#39;&#39;&#39;M&#x3D;cv2.getRotationMatrix2D(center, angle, scale)</span><br><span class="line">1</span><br><span class="line">函数有三个输入参数：</span><br><span class="line"></span><br><span class="line">center：图片的旋转中心</span><br><span class="line">angle：旋转角度</span><br><span class="line">scale：旋转后图像相比原来的缩放比例</span><br><span class="line">M:计算得到的旋转矩阵&#39;&#39;&#39;</span><br><span class="line"></span><br><span class="line">dst&#x3D;cv2.warpAffine(img,M,(cols,rows))</span><br><span class="line">cv2.imshow(&#39;rotation&#39;,dst)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
+<h3 id="6-图形绘制"><a href="#6-图形绘制" class="headerlink" title="6.图形绘制"></a>6.图形绘制</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">#创建一个黑色图片</span><br><span class="line">img &#x3D;np.zeros((512,512,3),np.uint8)</span><br><span class="line"></span><br><span class="line">#创建一条宽度为5的蓝色斜线  参数起点 终点</span><br><span class="line">cv2.line(img,(0,0),(512,512),5)</span><br><span class="line"></span><br><span class="line">#画一个绿色边框的矩形，参数 左上角，右下角</span><br><span class="line">cv2.rectangle(img,(300,0),(500,100),(0,255,0),3)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#画一个填充红色的圆，参数 圆心坐标，半径</span><br><span class="line">cv2.circle(img,(447,63),63,(255,0,0),-1)</span><br><span class="line"></span><br><span class="line"># 4.在图中心画一个填充的半圆</span><br><span class="line">cv2.ellipse(img, (256, 256), (100, 50), 0, 0, 180, (255, 0, 0), -1)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 5.画一个闭合的四边形</span><br><span class="line"># 定义四个顶点坐标</span><br><span class="line">pts &#x3D; np.array([[10, 5],  [50, 10], [70, 20], [20, 30]], np.int32)</span><br><span class="line"># 顶点个数：4，矩阵变成顶点数*1*2维（注意numpy中-1的用法）</span><br><span class="line">pts &#x3D; pts.reshape((-1, 1, 2))</span><br><span class="line">cv2.polylines(img, [pts], True, (0, 255, 255))</span><br><span class="line"></span><br><span class="line"># 使用cv2.polylines()画多条直线</span><br><span class="line">line1 &#x3D; np.array([[100, 20],  [300, 20]], np.int32).reshape((-1, 1, 2))</span><br><span class="line">line2 &#x3D; np.array([[100, 60],  [300, 60]], np.int32).reshape((-1, 1, 2))</span><br><span class="line">line3 &#x3D; np.array([[100, 100],  [300, 100]], np.int32).reshape((-1, 1, 2))</span><br><span class="line">cv2.polylines(img, [line1, line2, line3], True, (0, 255, 255))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 6.添加文字</span><br><span class="line">font &#x3D; cv2.FONT_HERSHEY_SIMPLEX</span><br><span class="line">cv2.putText(img, &#39;ex2tron&#39;, (10, 500), font,</span><br><span class="line">            4, (255, 255, 255), 2, lineType&#x3D;cv2.LINE_AA)</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;img&#39;, img)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="7-图形融合"><a href="#7-图形融合" class="headerlink" title="7.图形融合"></a>7.图形融合</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">#1.图片相加</span><br><span class="line">x &#x3D; np.uint8([255])</span><br><span class="line">y &#x3D; np.uint8([10])</span><br><span class="line"></span><br><span class="line">print(cv2.add(x,y))# 250+10 &#x3D; 260 &#x3D;&gt; 255 超过了255按照255算 没有超过255 按计算值算</span><br><span class="line">print(x+y)# 250+10 &#x3D; 260 % 256 &#x3D; 4  numpy 中的图片相加相当于%256</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#2.图像混合</span><br><span class="line">img1&#x3D;cv2.imread(&#39;lena_small.jpg&#39;)</span><br><span class="line">img2&#x3D;cv2.imread(&#39;opencv-logo-white.png&#39;)</span><br><span class="line">res&#x3D;cv2.addWeighted(img1,.6,img2,.4,0)</span><br><span class="line">cv2.imshow(&#39;blending&#39;,res)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#3.按位操作</span><br><span class="line">img1&#x3D;cv2.imread(&#39;lena.jpg&#39;)</span><br><span class="line">img2&#x3D;cv2.imread(&#39;opencv-logo-white.png&#39;)</span><br><span class="line">#把logo放在左上角</span><br><span class="line">rows,cows&#x3D;img2.shape[:2]</span><br><span class="line">roi&#x3D;img1[:rows,:cows]</span><br><span class="line"></span><br><span class="line">#创建掩膜</span><br><span class="line">img2gray&#x3D;cv2.cvtColor(img2,cv2.COLOR_BGR2GRAY)</span><br><span class="line">ret,mask &#x3D;cv2.threshold(img2gray,10,255,cv2.THRESH_BINARY)</span><br><span class="line">mask_inv&#x3D;cv2.bitwise_not(mask)</span><br><span class="line"># 保留除logo外的背景</span><br><span class="line">img1_bg &#x3D; cv2.bitwise_and(roi, roi, mask&#x3D;mask_inv)</span><br><span class="line">dst &#x3D; cv2.add(img1_bg, img2)  # 进行融合</span><br><span class="line">img1[:rows, :cows] &#x3D; dst  # 融合后放在原图上</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;result&#39;, img1)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
+<h3 id="8-图片滤波"><a href="#8-图片滤波" class="headerlink" title="8.图片滤波"></a>8.图片滤波</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line">img&#x3D;cv2.imread(&#39;lena.jpg&#39;)</span><br><span class="line">#1.均值滤波</span><br><span class="line">blur&#x3D;cv2.blur(img,(12,12))#卷积核尺寸  可以明显观察到经过滤波后的图片模糊很多</span><br><span class="line">cv2.imshow(&#39;img&#39;,img)</span><br><span class="line">cv2.imshow(&#39;blur&#39;,blur)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line">#2.高斯滤波</span><br><span class="line">gau_blur&#x3D;cv2.GaussianBlur(img,(3,3),0)#(3,3)表示高斯矩阵的长和宽都是5，标准差为0</span><br><span class="line"></span><br><span class="line">#三张图片横向对比</span><br><span class="line">res &#x3D; np.hstack((img,blur,gau_blur))</span><br><span class="line">cv2.imshow(&#39;res&#39;,res)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line">#高斯滤波与均值滤波</span><br><span class="line">img&#x3D;cv2.imread(&#39;salt_noise.bmp&#39;)</span><br><span class="line">blur&#x3D;cv2.blur(img,(5,5)) #均值滤波</span><br><span class="line">gaussian &#x3D; cv2.GaussianBlur(img,(5,5),1) #高斯滤波</span><br><span class="line">res &#x3D; np.hstack((img,blur,gaussian))</span><br><span class="line">cv2.imshow(&#39;img,blur,gaussian&#39;,res)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#均值滤波与中值滤波</span><br><span class="line">img&#x3D;cv2.imread(&#39;salt_noise.bmp&#39;,0)</span><br><span class="line"></span><br><span class="line">blur &#x3D; cv2.blur(img, (5, 5))  # 均值滤波</span><br><span class="line">median &#x3D; cv2.medianBlur(img, 5)  # 中值滤波</span><br><span class="line"></span><br><span class="line">res &#x3D; np.hstack((img, blur, median))</span><br><span class="line">cv2.imshow(&#39;median vs average&#39;, res)</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"># 4.双边滤波vs高斯滤波</span><br><span class="line">img &#x3D; cv2.imread(&#39;lena.jpg&#39;, 0)</span><br><span class="line">gau &#x3D; cv2.GaussianBlur(img, (5, 5), 0)  # 高斯滤波</span><br><span class="line">blur &#x3D; cv2.bilateralFilter(img, 5, 75, 75)  # 双边滤波</span><br><span class="line"></span><br><span class="line">res &#x3D; np.hstack((img, gau, blur))</span><br><span class="line">cv2.imshow(&#39;res&#39;, res)</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
+<h3 id="9-边缘检测1"><a href="#9-边缘检测1" class="headerlink" title="9.边缘检测1"></a>9.边缘检测1</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">#边缘检测</span><br><span class="line">img &#x3D; cv2.imread(&#39;handwriting.jpg&#39;,0)</span><br><span class="line">edges &#x3D;cv2.Canny(img,30,70)</span><br><span class="line">cv2.imshow(&#39;img_edges&#39;,np.hstack((img,edges)))</span><br><span class="line">cv2.waitKey(0)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#2.先阈值后边缘检测</span><br><span class="line">_,thresh &#x3D;cv2.threshold(img,0,255,cv2.THRESH_BINARY + cv2.THRESH_OTSU)</span><br><span class="line">edges &#x3D; cv2.Canny(thresh,30,70)</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;canny&#39;,np.hstack((img,thresh,edges)))</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="10-边缘检测2"><a href="#10-边缘检测2" class="headerlink" title="10.边缘检测2"></a>10.边缘检测2</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">def track_back(x):</span><br><span class="line">    pass</span><br><span class="line"></span><br><span class="line">img &#x3D;cv2.imread(&#39;sudoku.jpg&#39;,0)</span><br><span class="line">cv2.namedWindow(&#39;window&#39;)</span><br><span class="line"></span><br><span class="line">#创建滑动条</span><br><span class="line">cv2.createTrackbar(&#39;maxVal&#39;,&#39;window&#39;,100,255,track_back)</span><br><span class="line">cv2.createTrackbar(&#39;minVal&#39;,&#39;window&#39;,200,255,track_back)</span><br><span class="line"></span><br><span class="line">while(True):</span><br><span class="line">    #获取滑动条的值</span><br><span class="line">    max_val&#x3D;cv2.getTrackbarPos(&#39;maxVal&#39;,&#39;window&#39;)</span><br><span class="line">    min_val&#x3D;cv2.getTrackbarPos(&#39;minVal&#39;,&#39;window&#39;)</span><br><span class="line"></span><br><span class="line">    edges&#x3D; cv2.Canny(img,min_val,max_val)</span><br><span class="line">    cv2.imshow(&#39;window&#39;,edges)</span><br><span class="line">    if cv2.waitKey(30)&#x3D;&#x3D;27:</span><br><span class="line">        break</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="11-腐蚀和膨胀处理"><a href="#11-腐蚀和膨胀处理" class="headerlink" title="11.腐蚀和膨胀处理"></a>11.腐蚀和膨胀处理</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">#1.腐蚀和膨胀</span><br><span class="line">img &#x3D; cv2.imread(&#39;j.bmp&#39;,0)</span><br><span class="line">kernel &#x3D;np.ones((5,5),np.uint8)</span><br><span class="line">erosion &#x3D;cv2.erode(img,kernel)#腐蚀</span><br><span class="line">dilation &#x3D; cv2.dilate(img,kernel) #膨胀</span><br><span class="line"></span><br><span class="line">cv2.imshow(&#39;erosion&#x2F;dilation&#39;,np.hstack((img,erosion,dilation)))</span><br><span class="line">cv2.waitKey(0)</span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+      <categories>
+        <category>学习笔记</category>
+        <category>cv</category>
+      </categories>
+      <tags>
+        <tag>opencv</tag>
+        <tag>cv</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>人生</title>
+    <url>/2021/02/15/%E4%BA%BA%E7%94%9F/</url>
+    <content><![CDATA[<p>人生<br>路遥<br>23个想法</p>
+<p>◆ 引语</p>
+<p>&gt;&gt; 人生的道路虽然漫长，但紧要处常常只有几步，特别是当人年轻的时候。没有一个人的生活道路是笔直的、没有岔道的。有些岔道口，譬如政治上的岔道口，事业上的岔道口，个人生活上的岔道口，你走错一步，可以影响人生的一个时期，也可以影响一生。</p>
+<a id="more"></a>
+
+<p>◆ 第一章</p>
+<p>&gt;&gt; 第一章农历六月初十，一个阴云密布的傍晚，盛夏热闹纷繁的大地突然沉寂下来；连一些最爱叫唤的虫子也都悄没声响了，似乎处在一种急躁不安的等待中。地上没一丝风尘；河里的青蛙纷纷跳上岸，没命地向两岸的庄稼地和公路上蹦蹿着。天闷热得像一口</p>
+<p>&gt;&gt; 人活低了，就要按低的来哩……</p>
+<p>◆ 第二章</p>
+<p>&gt;&gt; 生活是严酷的，他必须承认他目前的地位——他已经是一个地地道道的农民了！</p>
+<p>◆ 第四章</p>
+<p>李嘉诚说：“当你放下面子赚钱的时候，说明你已经懂事了；当你用钱赚回面子的时候，说明你已经成功了；当你用面子可以赚钱的时候，说明你已经是人物了；而当你一直停留在那里喝酒、吹牛、睡懒觉，啥也不懂还装懂，只爱所谓的面子的时候，说明你这辈子也就这样了。”<br>&gt;他以前听见这样的喊叫，只觉得很好笑。可现在他在心里很佩服这种什么也不顾忌的欢畅舒坦的叫喊声；觉得也是一种很大的本事。他自己明显地感到，他在这个世界里，成了一个最无能的人。</p>
+<p>&gt;&gt; 他以前听见这样的喊叫，只觉得很好笑。可现在他在心里很佩服这种什么也不顾忌的欢畅舒坦的叫喊声；觉得也是一种很大的本事。他自己明显地感到，他在这个世界里，成了一个最无能的人。</p>
+<p>&gt;&gt; 想来想去，没有什么办法了。他站在阅览室的门口踌躇了半天，最后只好决定提着篮子回家去</p>
+<p>◆ 第十一章</p>
+<p>&gt;&gt; “我死不了，她就活着！她一辈子都揣在我心里……”</p>
+<p>◆ 第十二章</p>
+<p>&gt;&gt; 高加林的心中也燃烧着火焰。他把粪车子拉在路边停下来，眼里转着泪花子，望着悄然寂静的城市，心里说：我非要到这里来不可！我有文化，有知识，我比这里生活的年轻人哪一点差？我为什么要受这样的屈辱呢？</p>
+<p>◆ 第十四章</p>
+<p>&gt;&gt; 令人遗憾的是，我们当今的现实生活中有马占胜和高明楼这样的人。他们为了个人的利益，有时毫不顾忌地给这些徘徊在生活十字路口的人当头一棒，使他们对生活更加悲观；有时，还是出于个人目的，他们又一下子把这些人推到生活的顺风船上。转眼时来运转，使得这些人在高兴的同时，也感到自己顺利得有点茫然。</p>
+<p>◆ 第十五章</p>
+<p>转：背后议论别人是件很奇妙的事：背后说人坏话比当面说人坏话更容易惹人恼，因为别人不仅会认为你是没度量的人还会认为你是没勇气的人，只会背后放枪；反之，背后赞美别人也比当面赞美别人更能引起别人的好感，因为别人不仅会认为你很豁达大度还会认为你很和善、很谦虚，能增进别人对你的好感。<br>综上，想要获得好的人际关系，不妨试着将那些在背后说别人的坏话改为好话吧！<br>&gt;“没你说的那么好。头一次写这类文章，很外行，全凭景老师修改。”加林谦虚地说，但他心里很高兴。</p>
+<p>&gt;&gt; “没你说的那么好。头一次写这类文章，很外行，全凭景老师修改。”加林谦虚地说，但他心里很高兴。</p>
+<p>&gt;&gt; 不必隐瞒，她还不能为了爱情而嫁给一个农民；她想她一辈子吃不了那么多苦！</p>
+<p>◆ 第十六章</p>
+<p>转：看到这里，想到传说中的梁朝伟和刘嘉玲两个人的爱情，就是那种爱好相差比较大，但是彼此却能够欣赏、理解对方。但高加林和巧珍却不是。</p>
+<p>其实，还挺难过的。像高加林对巧珍的前后态度转变，说白了其实不就是对巧珍的喜爱没有那么深吗？而且，从这里看来，巧珍与黄亚萍其实代表了两种不同的择偶观:喜欢聊得来的还是漂亮可人的？（而且两人所代表的生活方式，经济都是非常不同的……）</p>
+<p>所以女孩子们，原谅高加林这么纠结吧！如果两个女孩子的优点集齐于一人，那他怎么会纠结？而正是因为不可能出现这种感觉情况，所以他才纠结，这也说明他的心里其实也都明白两个女孩的差别，所以在做选择中。</p>
+<p>因此，我们从中得到的启示应该是:努力提高自己的竞争力（内外兼修，形神俱美），让自己成为选择者，而不是别人的选择对象。<br>&gt;“哎呀哎呀！你快别说了！”加林烦躁地从桌子上拉起一张报纸，脸对着，但并不看。他想起刚才和亚萍那些海阔天空的讨论，多有意思！现在听巧珍说的都是这些叫人感到乏味的话；他心里不免涌上了一股说不出的滋味。</p>
+<p>&gt;&gt; “哎呀哎呀！你快别说了！”加林烦躁地从桌子上拉起一张报纸，脸对着，但并不看。他想起刚才和亚萍那些海阔天空的讨论，多有意思！现在听巧珍说的都是这些叫人感到乏味的话；他心里不免涌上了一股说不出的滋味。</p>
+<p>◆ 第十八章</p>
+<p>&gt;&gt; 生活啊，生活！有时候它把现实变成了梦想，有时候它又把梦想变成了现实！</p>
+<p>◆ 第十九章</p>
+<p>&gt;&gt; “……加林哥，你再别说了！你的意思我都明白了！你……去吧！我决不会连累你！加林哥，你参加工作后，我就想过不知多少次了，我尽管爱你爱得要命，但知道我配不上你了。我一个字不识，给你帮不上忙，还要拖累你的工作……你走你的，到外面找个更好的对象……到外面你多操心，人生地疏，不像咱本乡田地……加林哥，你不知道，我是怎样爱你……”</p>
+<p>◆ 第二十章</p>
+<p>&gt;&gt; 对待社会，我们常说要向前看，对一个人来说，也要向前看。生活总是这样，不能叫人处处都满意。但我们还要热情地活下去。人活一生，值得爱的东西很多，不要因为一个方面不满意，就灰心。</p>
+<p>◆ 第二十一章</p>
+<p>&gt;&gt; 不要抱怨生活！生活永远是公正的！你应该怨你自己！</p>
+<p>◆ 第二十二章</p>
+<p>&gt;&gt; 是的，现实是不能以个人的意志为转移的。谁如果要离开自己的现实，就等于要离开地球。一个人应该有理想，甚至应该有幻想，但他千万不能抛开现实生活，去盲目追求实际上还不能得到的东西。尤其是对于刚踏入生活道路的年轻人来说，这应该是一个最重要的认识。</p>
+<p>◆ 第二十三章</p>
+<p>&gt;&gt; 亲爱的父老乡亲们！他们在一个人走运的时候，也许对你躲得很远；但当你跌了跤的时候，众人却都伸出自己粗壮的手来帮扶你。他们那伟大的同情心，永远都会给予不幸的人！</p>
+<p>&gt;&gt; 一个男子汉，不怕跌跤，就怕跌倒了不往起爬，那就变成个死狗了……”</p>
+<p>◆ 点评</p>
+<p>认为好看</p>
+]]></content>
+      <categories>
+        <category>阅读笔记</category>
+      </categories>
+      <tags>
+        <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>围城</title>
+    <url>/2020/02/15/%E5%9B%B4%E5%9F%8E/</url>
+    <content><![CDATA[<p>围城<br>钱锺书<br>21个想法</p>
+<p>◆ 重印前记</p>
+<p>围在城里的人想逃出来，城外的人想冲进去，对婚姻也罢，职业也罢，人生的愿望大都如此。</p>
+<a id="more"></a>
+
+<p>&gt;[插图]<br>《围城》一九四七年在上海初版，一九四八年再版，一九四九年三版，以后国内没有重印过。偶然碰见它的新版，那都是香港的“盗印”本。没有看到台湾的“盗印”本，据说在那里它是禁书。美国哥伦比亚大学夏志清教授的英文著作里对它作了过高的评价，导致了一些西方语言的译本。日本京都大学荒井健教授很久以前就通知我他要翻译，近年来也陆续在刊物上发表了译文。现在，人民文学出版社建议重新排印，以便原著在国内较易找着，我感到意外和忻幸。<br>我写完《围城》，就对它不很满意。出版了我现在更不满意的一本文学批评以后，我抽空又写长篇小说，命名《百合心》，也脱胎于法文成语（Le coeur d’artichaut），中心人物是一个女角。大约已写成了两万字。一九四九年夏天，全家从上海迁居北京，手忙脚乱中，我把一叠看来像乱纸的草稿扔到不知哪里去了。兴致大扫，一直没有再鼓起来，倒也从此省心省事。年复一年，创作的冲动随年衰减，创作的能力逐渐消失——也许两者根本上是一回事，我们常把自己的写作冲动误认为自己的写作才能，自以为要写就意味着会写。</p>
+<p>&gt;&gt; 事情没有做成的人老有这类根据不充分的信念；我们对采摘不到的葡萄，不但想象它酸，也很可能想象它是分外地甜。</p>
+<p>◆ 一</p>
+<p>&gt;&gt; 忠厚老实人的恶毒，像饭里的砂砾或者出骨鱼片里未净的刺，会给人一种不期待的伤痛。</p>
+<p>&gt;&gt; 方鸿渐从此死心不敢妄想，开始读叔本华，常聪明地对同学们说：“世间哪有恋爱？压根儿是生殖冲动。</p>
+<p>&gt;&gt; 一个可爱的女人说你像她的未婚夫，等于表示假使她没订婚，你有资格得她的爱。刻薄鬼也许要这样解释，她已经另有未婚夫了，你可以享受她未婚夫的权利而不必履行跟她结婚的义务</p>
+<p>◆ 二</p>
+<p>&gt;&gt; 为什么可爱的女孩子全有父亲呢？她孤独的一个人可以藏匿在心里温存，拖泥带水地牵上了父亲、叔父、兄弟之类，这女孩子就不伶俐洒脱，心里不便窝藏她了，她的可爱里也就搀和渣滓了。许多人谈婚姻，语气仿佛是同性恋爱，不是看中女孩子本人，是羡慕她的老子或她的哥哥。</p>
+<p>&gt;&gt; ‘嫁女必须胜吾家，娶妇必须不若吾家’，一个道理。”</p>
+<p>&gt;&gt; 方鸿渐那时候宛如隆冬早晨起床的人，好容易用最大努力跳出被窝，只有熬着冷穿衣下床，断无缩回去的道理。</p>
+<p>原文 “伯牛有疾，子问之，自牖执其手，曰：“亡之，命矣夫！斯人也而有斯疾也！斯人也而有斯疾也！” (《论语·雍也第六》) “斯人也，而有斯疾也”意思就是说“这样的好人竟会得这样的恶疾啊”<br>&gt;斯人也而有斯疾也</p>
+<p>&gt;&gt; 斯人也而有斯疾也</p>
+<p>&gt;&gt; 张太太等他饭毕走了，便说：“这种人家排场太小了！只吃那么多钱一天的菜！我女儿舒服惯的，过去吃不来苦！”</p>
+<p>&gt;&gt; 张先生跟外国人来往惯了，说话有个特征——也许在洋行、青年会、扶轮社等圈子里，这并没有什么奇特——喜欢中国话里夹无谓的英文字。他并无中文难达的新意，需要借英文来讲；所以他说话里嵌的英文字，还比不得嘴里嵌的金牙，因为金牙不仅妆点，尚可使用，只好比牙缝里嵌的肉屑，表示饭菜吃得好，此外全无用处。他仿美国人读音，维妙维肖，也许鼻音学得太过火了，不像美国人，而像伤风塞鼻子的中国人。</p>
+<p>&gt;&gt; snappy</p>
+<p>◆ 三</p>
+<p>&gt;&gt; 好比睡不着的人，顾不得安眠药片的害处，先要图眼前的舒服。</p>
+<p>&gt;&gt; 世界上大事情像可以随便应付，偏是小事倒丝毫假借不了。</p>
+<p>&gt;&gt; Search me!</p>
+<p>&gt;&gt; 唐小姐感觉方鸿渐说这些话，都为着引起自己对他的注意，心中暗笑，说：“我不知道方先生是侮辱政治还是侮辱女人，至少都不是好话。”</p>
+<p>&gt;&gt; 苏小姐初到家，开口闭口都是方鸿渐，第五天后忽然绝口不提，</p>
+<p>&gt;&gt; 设想自己是唐小姐，用她的眼睛来审定着衣镜里自己的仪表。回国不到一年，额上添了许多皱纹，昨天没睡好，脸色眼神都萎靡黯淡。他这两天有了意中人以后，对自己外表上的缺点，知道得不宽假地详尽，仿佛只有一套出客衣服的穷人知道上面每一个斑渍和补钉。其实旁人看来，他脸色照常，但他自以为今天特别难看，花领带补得脸黄里泛绿，换了三次领带才下去吃早饭。</p>
+<p>&gt;&gt; 不是快乐，而是感激</p>
+<p>&gt;&gt; 教育愈普遍，而写信的人愈少；并非商业上的要务，大家还是怕写信，宁可打电话。我想这因为写信容易出丑，地位很高，讲话很体面的人往往笔动不来。可是，电话可以省掉面目可憎者的拜访，文理不通者的写信，也算是个功德无量的发明。”</p>
+]]></content>
+      <categories>
+        <category>阅读笔记</category>
+      </categories>
+      <tags>
+        <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第七天</title>
+    <url>/2021/02/15/%E7%AC%AC%E4%B8%83%E5%A4%A9/</url>
+    <content><![CDATA[<p>第七天（2018版）<br>余华<br>16个想法</p>
+<p>◆ 第一天</p>
+<p>人的一生，要死去三次，第一次，当你的心跳停止，呼吸消逝，那么你在生物学上被宣告死亡；第二次，当你下葬，人们穿着黑衣出席你的葬礼，怀念你的一生，然后你在社会上被宣告死亡；而第三次死亡，是在这个世界上最后一个记得你的人把你忘记，于是，你真正的死去。<br>他只有一次死亡，太孤单了。<br>&gt;我是孤零零一个人。给予我养育之恩的父亲杨金彪一年多前身患绝症不辞而别，我的生父生母远在千里之外的北方城市，他们不知道此时此刻我已置身另外一个世界。</p>
+<a id="more"></a>
+<p>&gt;&gt; 我是孤零零一个人。给予我养育之恩的父亲杨金彪一年多前身患绝症不辞而别，我的生父生母远在千里之外的北方城市，他们不知道此时此刻我已置身另外一个世界。</p>
+<p>&gt;&gt; “为什么非要等到市长烧了，才烧我们？”那个候烧者问。</p>
+<p>&gt;&gt; 市长微微点点头，跟随身穿蓝色衣服的向前走去，大厅里面有两扇巨大的门徐徐打开，市长走进去之后，两扇门徐徐合上。沙发那边的贵宾们没有了声音，豪华贵宾室镇住了沙发贵宾区，金钱在权力面前自惭形秽。</p>
+<p>&gt;&gt; 他声音里的无奈很像我的无奈，我说每小时三十元吧，他停顿一会儿后连着说了三声谢谢。</p>
+<p>&gt;&gt; 父亲得了绝症后为了不拖累我，独自一人走了</p>
+<p>&gt;&gt; 然后一位教授出现在电视画面上，他是我曾经就读过的大学的法律系教授，他侃侃而谈，先是指责下午发生的暴力事件，此后说了一堆民众应该相信政府理解政府支持政府的话。</p>
+<p>有时候当别人不舒服的时候一定不要再多嘴的去问候，也许在你看来是关心可在他看来那是赤裸裸的嘲讽，想告诉你的必然会告诉你不想告诉你的问了也会说 没事。你只可默默的陪在身边 沉默。<br>&gt;我点点头。可能是我神色暗淡，他没有像往常那样坐下来和我说话，将果盘放下后转身离去。</p>
+<p>◆ 第四天</p>
+<p>事不关己，高高挂起。<br>&gt;有网友劝她别跳河，说是大冬天的，河水冰冷刺骨，应该找个暖和的地方自杀，说自杀也得善待自己。她问这个网友怎么才能暖和地自杀，这个网友建议她买两瓶安眠药，一口气吞下去，裹着被子做着美梦死去。别的网友说这是胡扯，医院一次只会给她十来片安眠药，她要攒足两瓶的话，自杀时间起码推迟半年。她表示不会推迟自杀时间，她决定穿上羽绒服跳楼自杀，地点定在她地下住处出口对面的居民楼的楼顶，她说出这个居民小区后，有两个住在那里的网友求她别死在他们家门口，说是会给他们带来晦气的。其中一个建议她想办法爬到市政府大楼顶上往下跳，说那样才威武，其他网友说不可能，市政府门口有武警把守，会把她当成上访的给拘押起来。她最终选择鹏飞大厦，这幢五十八层的商务楼是我们这个城市的地标建筑，这次没有网友反对了，还有网友称赞那个地方不错，说死之前可以高瞻远瞩一下。</p>
+<p>&gt;&gt; 有一个警察对他的几个朋友说，平日里背着包来公安局的都是送礼的，谁也没想到这个人从包里拿出来的不是礼物，是一把杀人的刀。</p>
+<p>◆ 第五天</p>
+<p>除去皮囊，又有几个人认识你？<br>&gt;我看着那些瘦到只剩下骨骼的人，不知道如何描述我的父亲了。</p>
+<p>◆ 第六天</p>
+<p>他和自己的影子站在一起<br>&gt;这里车来人往，声音喧哗，他和自己的影子站在一起。</p>
+<p>&gt;&gt; 这里车来人往，声音喧哗，他和自己的影子站在一起。</p>
+<p>现实…<br>&gt;他告诉伍超，他在农村老家有一个相处了三年的女朋友，他想娶她，可是女方家里提出来要先盖好一幢楼房，才可以娶她过去。他就出来打工，打工挣到的钱少得可怜，他要干上八年十年才能挣到盖一幢楼房的钱。那时候他的女朋友早就被别人娶走了，他急需盖楼的钱，所以就来卖肾，他说：<br>“这钱来得快。”</p>
+<p>&gt;&gt; “只要一家人在一起，在哪里都一样。”</p>
+<p>◆ 点评</p>
+<p>认为好看<br>人的一生，要死去三次，第一次，当你的心跳停止，呼吸消逝，那么你在生物学上被宣告死亡；第二次，当你下葬，人们穿着黑衣出席你的葬礼，怀念你的一生，然后你在社会上被宣告死亡；而第三次死亡，是在这个世界上最后一个记得你的人把你忘记，于是，你真正的死去。<br>他只有一次死亡，太孤单了。</p>
+<p>我是孤零零一个人。给予我养育之恩的父亲杨金彪一年多前身患绝症不辞而别，我的生父生母远在千里之外的北方城市，他们不知道此时此刻我已置身另外一个世界。</p>
+]]></content>
+      <categories>
+        <category>阅读笔记</category>
+      </categories>
+      <tags>
+        <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>活着</title>
+    <url>/2021/02/15/%E6%B4%BB%E7%9D%80/</url>
+    <content><![CDATA[<p>活着（葛优、巩俐主演）<br>余华<br>12个想法</p>
+<p>◆ 中文版自序</p>
+<p>&gt;&gt; 人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。</p>
+<p>◆ 麦田新版自序</p>
+<p>&gt;&gt; 生活是属于每个人自己的感受，不属于任何别人的看法。</p>
+<a id="more"></a>
+
+<p>◆ 活着</p>
+<p>&gt;&gt; 这个嫖和赌，就像是胳膊和肩膀连在一起，怎么都分不开。</p>
+<p>◆ 1</p>
+<p>&gt;&gt; 我在水田里站着，看着我娘弯腰叫我的模样，她太使劲了，两只手撑在腿上，免得上面的身体掉到地上。</p>
+<p>祸兮福所倚，福兮祸所伏。<br>&gt;龙二从我身边走过时看了我一眼，我觉得他没认出我来，可走了几步他硬是回过头来，哭着鼻子对我喊道：<br>“福贵，我是替你去死啊。”</p>
+<p>&gt;&gt; 龙二从我身边走过时看了我一眼，我觉得他没认出我来，可走了几步他硬是回过头来，哭着鼻子对我喊道：“福贵，我是替你去死啊。”</p>
+<p>◆ 2</p>
+<p>&gt;&gt; “大伙放心吧，县长说了，只要他不饿死，大伙也都饿不死。”</p>
+<p>◆ 3</p>
+<p>&gt;&gt; “做人不能忘记四条，话不要说错，床不要睡错，门槛不要踏错，口袋不要摸错。”</p>
+<p>&gt;&gt; 少年去游荡，中年想掘藏，老年做和尚。</p>
+<p>◆ 外文版评论摘要</p>
+<p>人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。——余华<br>&gt;当这部沉重的小说结束时，活着的意志，是福贵身上唯一不能被剥夺走的东西。</p>
+<p>&gt;&gt; 当这部沉重的小说结束时，活着的意志，是福贵身上唯一不能被剥夺走的东西。</p>
+<p>◆ 点评</p>
+<p>认为好看<br>人是为活着本身而活着的，而不是为了活着之外的任何事物所活着。——余华</p>
+]]></content>
+      <categories>
+        <category>阅读笔记</category>
+      </categories>
+      <tags>
+        <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>霍乱时期的爱情</title>
+    <url>/2021/02/15/%E9%9C%8D%E4%B9%B1%E6%97%B6%E6%9C%9F%E7%9A%84%E7%88%B1%E6%83%85/</url>
+    <content><![CDATA[<p>霍乱时期的爱情<br>加西亚·马尔克斯<br>37个想法</p>
+<p>◆ 1</p>
+<p>想说的话不要拖到后面，想做的事情不要拖到明天，想去表达爱的意思就要乘早，时光很短暂，我们要舒服的度过一生。<br>&gt;她恳求上帝能够给她哪怕片刻的时间，好让丈夫在离去之前知道，无论两人间有过什么样的猜疑，她始终是那么爱他。她感到一种无法抗拒的强烈愿望，希望能与他从头再来，重新开始生活，好让两人把所有没说出口的话都告诉对方，把所有过去做错了的事重新做好。但面对毫不让步的死神，她只得投降。</p>
+<a id="more"></a>
+
+<p>◆ 3</p>
+<p>&gt;&gt; 有时，他会用这样的信念来安慰自己：在醉人的婚礼中，甚至在火热的蜜月里，费尔明娜·达萨会有那么片刻的心痛，至少有片刻，无论怎样，一定会有那么片刻，她的心里会浮现出这个被嘲弄，被侮辱，被唾弃了的恋人的影子，而她的幸福也将会荡然无存。</p>
+<p>&gt;&gt; 。从那一刻起，他就再没有闻到海湾的臭气，只闻到弥漫在城市中的费尔明娜·达萨特有的气息。一切都散发着她的味道。</p>
+<p>◆ 4</p>
+<p>&gt;&gt; 人不是从娘胎里出来就一成不变的，相反，生活会逼迫他一次又一次地脱胎换骨。</p>
+<p>&gt;&gt; 他明白了一个人意识到自己开始变老，是源于他发现自己开始长得像父亲了。</p>
+<p>&gt;&gt; 直到他们有了第一个孩子，才在一次偶然的谈话中发现，原来两人的信是同一位代笔先生所写。</p>
+<p>&gt;&gt; 。若干年后，当弗洛伦蒂诺·阿里萨终于自己有钱出版这部书时，又费了很大努力才接受了这些情书已经过时的现实。</p>
+<p>&gt;&gt; 他变成了另外一个人：虽然他抱着坚定的决心，也付出了热切的努力，想回到遭受爱情致命打击前的那个他，但事与愿违。</p>
+<p>&gt;&gt; 此后的很多年，他都一直在猎捕夜间的孤鸟，幻想能减轻费尔明娜·达萨之痛。但到后来，他已说不清这绝望的通奸习惯到底是出于内心需要，还是单纯的身体恶习。</p>
+<p>&gt;&gt; 这个女人用她那老狗一样的智慧，将他上下左右结结实实地调教了一番，让他彻头彻尾地重生了一次，同时，也击碎了他那些精妙绝伦的理论，给他上了一堂唯一该上的爱之课——谁也别妄图当生活的老师。</p>
+<p>&gt;&gt; 然而他知道，易得的幸福无法持久，这点体会更多地是源自教训而非经验。</p>
+<p>易得的幸福无法持久。<br>&gt;然而他知道，易得的幸福无法持久，这点体会更多地是源自教训而非经验。</p>
+<p>&gt;&gt; 弗洛伦蒂诺·阿里萨又一次感到自卑得恶心。</p>
+<p>&gt;&gt; 弗洛伦蒂诺·阿里萨无法忍受他那种与生俱来的出众。他用词精准流畅，身上散发出隐隐的樟脑味，魅力独特，风度翩翩，谈吐高雅，就连最为轻浮的言词，只因从他口中说出，也变得精妙无穷。</p>
+<p>&gt;&gt; 她辩解说，爱情，首先是一种本能，“要么生下来就会，要么永远都不会”。</p>
+<p>&gt;&gt; 他一口咽下白兰地，尽一切可能表达他的怒火，然后没有告别便扬长而去了。从此再没有见过面。<br>同萨拉·诺列加在一起是弗洛伦蒂诺·阿里萨最为持久和稳定的一段关系，虽说并不是他那五年中唯一的关系。他发现自己虽然在她身边感觉也挺不错，尤其是在床上，但她始终无法取代费尔明娜·达萨，于是他夜晚孤独狩猎的毛病又犯了。他把自己的时间和体力分配得井井有条，以让它们物尽其用。但无论如何，萨拉·诺列加曾一度奇迹般地减轻了他的痛楚。至少现在，他见不到费尔明娜·达萨也能正常生活了，不像从前，常常要随时放下手中的事，凭着自己的猜想四处去寻找她的踪迹，漫无目的地徘徊在一些最不可能的街道，以及她无论如何也不会出现的虚幻之地，只要一刻见不到她，他内心的渴望便一刻不能停歇。</p>
+<p>&gt;&gt; 社交生活的关键在于学会控制恐惧，夫妻生活的关键在于学会控制厌恶。</p>
+<p>是啊，人们总是对不能得到的东西充满了好奇。<br>&gt;但与她猜想的不同，事实上，弗洛伦蒂诺·阿里萨还活着。当她和丈夫、儿子乘着金色四轮马车到达法国远洋轮船的码头时，他就在那里看着他们从车上走下来，与他曾无数次在公共庆典上看见他们的样子分毫不差：依旧是那么完美无瑕。他们带着儿子同行，从那男孩现在的教养便能看出，他成年后将会是什么模样。胡维纳尔·乌尔比诺医生高兴地向弗洛伦蒂诺·阿里萨脱帽致意：“我们要去远征弗兰德。”费尔明娜·达萨向他点了点头。弗洛伦蒂诺·阿里萨脱下帽子，微微鞠躬。她看着他，对他那过早谢顶的惨状没有半点同情的表示。他就像她所看见的那样，是某个她从不认识的人的影子。<br>那段日子也不是弗洛伦蒂诺·阿里萨最走运的时期。工作日益繁重，对偷欢之事也日益厌倦，岁月蹉跎。此外，特兰西多·阿里萨也已到了生命的最后时光，她已丧失了记忆：几乎是一片空白。</p>
+<p>◆ 5</p>
+<p>&gt;&gt; 他爱恋的形象曾在那里占据了两个小时之久。</p>
+<p>爱得疯狂<br>&gt;他爱恋的形象曾在那里占据了两个小时之久。</p>
+<p>&gt;&gt; 人们从窗口撒下暴风雨般的彩带和花瓣，两人则挥手回应人们的欢呼。她是如此炫目，从脚上精致的高跟鞋，到颈上的狐尾围脖，再到头上的钟形帽，全身上下都闪耀着属于皇室的金色，在人群中显得格外出挑。</p>
+<p>&gt;&gt; 。但就在那天下午，他发挥了无边的想象力，问自己这种残酷的冷漠会不会是一种掩饰，底下隐藏的其实是一场爱情的风暴？仅仅是这样一个设想便使他旧梦复苏。他又开始在费尔明娜·达萨的别墅周围徘徊，怀着多年以前盘桓在福音花园时同样的渴望。但他心里盘算的并非是让她看见自己，而只是想看看她，知道她还活在这个世界上。</p>
+<p>&gt;&gt; 在这座城市里，一切都保不了密，甚至有很多事在发生之前就尽人皆知，特别是有关富人的事。</p>
+<p>&gt;&gt; 可几乎两年过去了，无论他，还是她，都没有找到一条回头之路，因为每条路都被他们的骄傲暗中捣毁。</p>
+<p>&gt;&gt; 弗洛伦蒂诺·阿里萨一想到自己多年来的努力很可能因为这个意想不到的状况在最后关头功亏一篑，不禁浑身发抖。他宁愿放弃一切、丢开一切，宁愿死，也不愿有负于费尔明娜·达萨。</p>
+<p>&gt;&gt; 然而，这个时刻终于来临，他却并不像他在无数个不眠之夜中预见的那样，因胜利的激动而颤抖万分，相反，他颤抖是因为被一种恐惧感所包围：他以某种令人难以置信的清醒意识到，如果他死了，丧钟也会这样为他而敲。</p>
+<p>&gt;&gt; 他甚至相信自己闻到了凋谢的栀子花的夜间芬芳，因为在惊喜的第一瞬间，他的心就把一切告诉了他：这就是半个多世纪以来，他一刻也无法平静地等待的，那封信。</p>
+<p>◆ 6</p>
+<p>&gt;&gt; 当她在成为寡妇后的第一个早晨醒来，闭着眼睛在床上翻了个身，想找一个更舒服的姿势继续睡下去，就在这一刻，她才真正意识到他死了。</p>
+<p>&gt;&gt; 女人们对问题中隐含的意思比对问题本身想得更多</p>
+<p>&gt;&gt; 他唯一感兴趣的是这封信本身给了他机会，甚至是承认了他有权回复。进一步说，她其实是在要求他做出答复。这样一来，生活此刻正处于他期望中的转捩点。剩下的一切就看他的了，他十分确信，自己那持续了半个多世纪的私人地狱还会将很多生死考验摆到他面前，而他也准备好了带着前所未有的热情、痛苦和爱去面对它们，因为这将是最后的考验。</p>
+<p>&gt;&gt; 你要永远记住，对于一对恩爱夫妻，最重要的不是幸福，而是稳定。</p>
+<p>&gt;&gt; 让时间流逝吧，我们会看到它究竟带来了什么。</p>
+<p>&gt;&gt; 他在灾难的瓦砾中找到了一线希望之光，因为他觉得，费尔明娜·达萨的不幸使她得到升华，愤怒使她更加美丽，对世界的怨恨使她恢复了二十岁时那桀骜的个性。</p>
+<p>&gt;&gt; 乌尔比诺·达萨医生没有勇气和她对峙，从来如此。但他的妻子为他解了围，平静地辩解道，任何年龄的爱情都是合情合理的。奥菲利娅失去了控制。“我们这个年龄的爱情已属荒唐，”她叫喊道，“到了他们那个年龄，那就是卑鄙！”</p>
+<p>&gt;&gt; 一个世纪前，人们毁掉了我和这个可怜男人的生活，因为我们太年轻；现在，他们又想在我们身上故伎重施，因为我们太老了。</p>
+<p>&gt;&gt; 他像遭遇了海难一般向妻子投去求助的一瞥，想为自己的彷徨无助寻找支点，但遇到的却是一双冰冷的眼睛。她严厉地低声说：“难道你也一样？”是的，他也一样，同他的妹妹奥菲利娅一样，认为爱情到一定年龄就变得不体面了。</p>
+<p>◆ 点评</p>
+<p>认为好看</p>
+]]></content>
+      <categories>
+        <category>阅读笔记</category>
+      </categories>
+      <tags>
+        <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>吴恩达机器学习</title>
+    <url>/2020/07/10/%E5%90%B4%E6%81%A9%E8%BE%BE%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%20/</url>
+    <content><![CDATA[<h2 id="引言（Introduction"><a href="#引言（Introduction" class="headerlink" title="引言（Introduction)"></a>引言（Introduction)</h2><h3 id="什么是机器学习"><a href="#什么是机器学习" class="headerlink" title="什么是机器学习"></a>什么是机器学习</h3><p>第一个机器学习定义来源于<strong>Arthur Samuel</strong>,他定义为： 在特定的编程情况下，给予计算机学习能力。<br>另一个年代近一点的定义，由   <strong>Tom Mitchell</strong> 提出，来自卡内基梅隆大学，Tom 定义的机器学习是，一个好的学习问题定义如下，他说，一个程序被认为能从经验 E 中学习，解决任务 T，达到性能度量值P，当且仅当，有了经验 E 后，经过 P 评判，程序在处理 T 时的性能有所提升。我认为经验E 就是程序上万次的自我练习的经验而任务 T 就是下棋。性能度量值 P 呢，就是它在与一些新的对手比赛时，赢得比赛的概率。<strong>简单来说就是从E中学习，解决任务T，达到性能度量值P。并且在经过P评判，和不断学习的过程中，程序在处理T时的性能有所提升.</strong></p>
+<a id="more"></a>
+
+<h3 id="监督学习"><a href="#监督学习" class="headerlink" title="监督学习"></a>监督学习</h3><p>我们用一个例子介绍什么是监督学习把正式的定义放在后面介绍。假如说你想预测房价。</p>
+<p>前阵子，一个学生从波特兰俄勒冈州的研究所收集了一些房价的数据。你把这些数据画出来，看起来是这个样子：横轴表示房子的面积，单位是平方英尺，纵轴表示房价，单位是千美元。那基于这组数据，假如你有一个朋友，他有一套750平方英尺房子，现在他希望把房子卖掉，他想知道这房子能卖多少钱。</p>
+<p>那么关于这个问题，机器学习算法将会怎么帮助你呢？</p>
+<p><img src="/images/image-20210216224108606.png" alt="image-20210216224108606"></p>
+<p>我们应用学习算法，可以在这组数据中画一条直线，或者换句话说，拟合一条直线，根据这条线我们可以推测出，这套房子可能卖$$150,000$，当然这不是唯一的算法。可能还有更好的，比如我们不用直线拟合这些数据，用二次方程去拟合可能效果会更好。根据二次方程的曲线，我们可以从这个点推测出，这套房子能卖接近$$200,000$。稍后我们将讨论如何选择学习算法，如何决定用直线还是二次方程来拟合。两个方案中有一个能让你朋友的房子出售得更合理。这些都是学习算法里面很好的例子。以上就是监督学习的例子。</p>
+<p>可以看出，<strong>监督学习指的就是我们给学习算法一个数据集。这个数据集由“正确答案”组成。</strong>在房价的例子中，我们给了一系列房子的数据，我们给定数据集中每个样本的正确价格，即它们实际的售价然后运用学习算法，算出更多的正确答案。比如你朋友那个新房子的价格。用术语来讲，这叫做回归问题。我们试着推测出一个连续值的结果，即房子的价格。</p>
+<p>一般房子的价格会记到美分，所以房价实际上是一系列离散的值，但是我们通常又把房价看成实数，看成是标量，所以又把它看成一个连续的数值。</p>
+<p>回归这个词的意思是，我们在试着推测出这一系列连续值属性。</p>
+<p>我再举另外一个监督学习的例子。我和一些朋友之前研究过这个。假设说你想通过查看病历来推测乳腺癌良性与否，假如有人检测出乳腺肿瘤，恶性肿瘤有害并且十分危险，而良性的肿瘤危害就没那么大，所以人们显然会很在意这个问题。</p>
+<p><img src="/images/image-20210216225057126.png" alt="image-20210216225057126"></p>
+<p>让我们来看一组数据：这个数据集中，横轴表示肿瘤的大小，纵轴上，我标出1和0表示是或者不是恶性肿瘤。我们之前见过的肿瘤，如果是恶性则记为1，不是恶性，或者说良性记为0。</p>
+<p>我有5个良性肿瘤样本，在1的位置有5个恶性肿瘤样本。现在我们有一个朋友很不幸检查出乳腺肿瘤。假设说她的肿瘤大概这么大，那么机器学习的问题就在于，你能否估算出肿瘤是恶性的或是良性的概率。用术语来讲，这是一个分类问题。</p>
+<p>分类指的是，我们试着推测出离散的输出值：0或1良性或恶性，而事实上在分类问题中，输出可能不止两个值。比如说可能有三种乳腺癌，所以你希望预测离散输出0、1、2、3。0 代表良性，1 表示第1类乳腺癌，2表示第2类癌症，3表示第3类，但这也是分类问题。</p>
+<p>因为这几个离散的输出分别对应良性，第一类第二类或者第三类癌症，在分类问题中我们可以用另一种方式绘制这些数据点。</p>
+<p>现在我用不同的符号来表示这些数据。既然我们把肿瘤的尺寸看做区分恶性或良性的特征，那么我可以这么画，我用不同的符号来表示良性和恶性肿瘤。或者说是负样本和正样本现在我们不全部画<strong>X</strong>，良性的肿瘤改成用 <strong>O</strong> 表示，恶性的继续用 <strong>X</strong> 表示。来预测肿瘤的恶性与否。</p>
+<p>在其它一些机器学习问题中，可能会遇到不止一种特征。举个例子，我们不仅知道肿瘤的尺寸，还知道对应患者的年龄。在其他机器学习问题中，我们通常有更多的特征，我朋友研究这个问题时，通常采用这些特征，比如肿块密度，肿瘤细胞尺寸的一致性和形状的一致性等等，还有一些其他的特征。这就是我们即将学到最有趣的学习算法之一。</p>
+<p>那种算法不仅能处理2种3种或5种特征，即使有无限多种特征都可以处理。</p>
+<p><img src="/images/image-20210216225452470.png" alt="image-20210216225452470"></p>
+<p>上图中，我列举了总共5种不同的特征，坐标轴上的两种和右边的3种，但是在一些学习问题中，你希望不只用3种或5种特征。相反，你想用无限多种特征，好让你的算法可以利用大量的特征，或者说线索来做推测。那你怎么处理无限多个特征，甚至怎么存储这些特征都存在问题，你电脑的内存肯定不够用。<strong>我们以后会讲一个算法，叫支持向量机，里面有一个巧妙的数学技巧，能让计算机处理无限多个特征。</strong>想象一下，我没有写下这两种和右边的三种特征，而是在一个无限长的列表里面，一直写一直写不停的写，写下无限多个特征，事实上，我们能用算法来处理它们。</p>
+<p><strong>现在来回顾一下，这节课我们介绍了监督学习。其基本思想是，我们数据集中的每个样本都有相应的“正确答案”。再根据这些样本作出预测，就像房子和肿瘤的例子中做的那样。我们还介绍了回归问题，即通过回归来推出一个连续的输出，之后我们介绍了分类问题，其目标是推出一组离散的结果。</strong></p>
+<h3 id="无监督学习"><a href="#无监督学习" class="headerlink" title="无监督学习"></a>无监督学习</h3><p>本次视频中，我们将介绍第二种主要的机器学习问题。叫做无监督学习。</p>
+<p><img src="/images/image-20210216225824075.png" alt="image-20210216225824075"></p>
+<p>上个视频中，已经介绍了监督学习。回想当时的数据集，如图表所示，这个数据集中每条数据都已经标明是阴性或阳性，即是良性或恶性肿瘤。所以，对于监督学习里的每条数据，我们已经清楚地知道，训练集对应的正确答案，是良性或恶性了。</p>
+<p>在无监督学习中，我们已知的数据。看上去有点不一样，不同于监督学习的数据的样子，<strong>即无监督学习中没有任何的标签或者是有相同的标签或者就是没标签。</strong>所以我们已知数据集，却不知如何处理，也未告知每个数据点是什么。别的都不知道，就是一个数据集。你能从数据中找到某种结构吗？针对数据集，无监督学习就能判断出数据有两个不同的聚集簇。这是一个，那是另一个，二者不同。是的，<strong>无监督学习算法可能会把这些数据分成两个不同的簇。所以叫做聚类算法。</strong>事实证明，它能被用在很多地方。</p>
+<h2 id="单变量线性回归-Linear-Regression-with-One-Variable"><a href="#单变量线性回归-Linear-Regression-with-One-Variable" class="headerlink" title="单变量线性回归(Linear Regression with One Variable)"></a>单变量线性回归(Linear Regression with One Variable)</h2><h3 id="模型表示"><a href="#模型表示" class="headerlink" title="模型表示"></a>模型表示</h3><p>我们的第一个学习算法是线性回归算法。在这段视频中，你会看到这个算法的概况，更重要的是你将会了解监督学习过程完整的流程。</p>
+<p>让我们通过一个例子来开始：这个例子是预测住房价格的，我们要使用一个数据集，数据集包含俄勒冈州波特兰市的住房价格。在这里，我要根据不同房屋尺寸所售出的价格，画出我的数据集。比方说，如果你朋友的房子是1250平方尺大小，你要告诉他们这房子能卖多少钱。那么，你可以做的一件事就是构建一个模型，也许是条直线，从这个数据模型上来看，也许你可以告诉你的朋友，他能以大约220000(美元)左右的价格卖掉这个房子。这就是监督学习算法的一个例子。</p>
+<p><img src="/images/image-20210216232328225.png" alt="image-20210216232328225"></p>
+<p>它被称作监督学习是因为对于每个数据来说，我们给出了“正确的答案”，即告诉我们：根据我们的数据来说，房子实际的价格是多少，而且，更具体来说，这是一个回归问题。回归一词指的是，我们根据之前的数据预测出一个准确的输出值，对于这个例子就是价格，同时，还有另一种最常见的监督学习方式，叫做分类问题，当我们想要预测离散的输出值，例如，我们正在寻找癌症肿瘤，并想要确定肿瘤是良性的还是恶性的，这就是0/1离散输出的问题。更进一步来说，在监督学习中我们有一个数据集，这个数据集被称训练集。</p>
+<p><strong>我将在整个课程中用小写的$m$来表示训练样本的数目。</strong></p>
+<p>以之前的房屋交易问题为例，假使我们回归问题的训练集（<strong>Training Set</strong>）如下表所示：</p>
+<p><img src="/images/image-20210216232438960.png" alt="image-20210216232438960"></p>
+<p>我们将要用来描述这个回归问题的标记如下:</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$m$ 代表训练集中实例的数量</span><br><span class="line"></span><br><span class="line">$x$  代表特征/输入变量</span><br><span class="line"></span><br><span class="line">$y$ 代表目标变量/输出变量</span><br><span class="line"></span><br><span class="line">$\left( x,y \right)$ 代表训练集中的实例</span><br><span class="line"></span><br><span class="line">$(&#123;&#123;x&#125;^&#123;(i)&#125;&#125;,&#123;&#123;y&#125;^&#123;(i)&#125;&#125;)$ 代表第$i$ 个观察实例</span><br><span class="line"></span><br><span class="line">$h$  代表学习算法的解决方案或函数也称为假设（<span class="strong">**hypothesis**</span>）</span><br></pre></td></tr></table></figure>
+
+
+
+
+<p><img src="/images/image-20210216232605293.png" alt="image-20210216232605293"></p>
+<p>这就是一个监督学习算法的工作方式，我们可以看到这里有我们的训练集里房屋价格<br>我们把它喂给我们的学习算法，学习算法的工作了，然后输出一个函数，通常表示为小写 $h$  表示。$h$  代表<strong>hypothesis</strong>(<strong>假设</strong>)，$h$表示一个函数，输入是房屋尺寸大小，就像你朋友想出售的房屋，因此 $h$ 根据输入的 $x$值来得出 $y$ 值，$y$ 值对应房子的价格 因此，$h$ 是一个从$x$ 到 $y$ 的函数映射。</p>
+<p>我将选择最初的使用规则$h$代表<strong>hypothesis</strong>，因而，要解决房价预测问题，我们实际上是要将训练集“喂”给我们的学习算法，进而学习得到一个假设$h$，然后将我们要预测的房屋的尺寸作为输入变量输入给$h$，预测出该房屋的交易价格作为输出变量输出为结果。那么，对于我们的房价预测问题，我们该如何表达 $h$？</p>
+<p>一种可能的表达方式为：$h_\theta \left( x \right)=\theta_{0} + \theta_{1}x$，因为只含有一个特征/输入变量，因此这样的问题叫作单变量线性回归问题。</p>
+<h3 id="代价函数"><a href="#代价函数" class="headerlink" title="代价函数"></a>代价函数</h3><p>在这段视频中我们将定义代价函数的概念，这有助于我们弄清楚如何把最有可能的直线与我们的数据相拟合。如图：</p>
+<p><img src="/images/image-20210216234140487.png" alt="image-20210216234140487"></p>
+<p>在线性回归中我们有一个像这样的训练集，$m$代表了训练样本的数量，比如 $m = 47$。而我们的假设函数，也就是用来进行预测的函数，是这样的线性函数形式：$h_\theta \left( x \right)=\theta_{0}+\theta_{1}x$。</p>
+<p>接下来我们会引入一些术语我们现在要做的便是为我们的模型选择合适的<strong>参数</strong>（<strong>parameters</strong>）$\theta_{0}$ 和 $\theta_{1}$，在房价问题这个例子中便是直线的斜率和在$y$ 轴上的截距。</p>
+<p>我们选择的参数决定了我们得到的直线相对于我们的训练集的准确程度，模型所预测的值与训练集中实际值之间的差距（下图中蓝线所指）就是<strong>建模误差</strong>（<strong>modeling error</strong>）。</p>
+<p><img src="/images/image-20210216234256392.png" alt="image-20210216234256392"></p>
+<p>我们的目标便是选择出可以使得建模误差的平方和能够最小的模型参数。 即使得代价函数 $J \left( \theta_0, \theta_1 \right) = \frac{1}{2m}\sum\limits_{i=1}^m \left( h_{\theta}(x^{(i)})-y^{(i)} \right)^{2}$最小。</p>
+<p>我们绘制一个等高线图，三个坐标分别为$\theta_{0}$和$\theta_{1}$ 和$J(\theta_{0}, \theta_{1})$：</p>
+<p><img src="/images/image-20210216234547570.png" alt="image-20210216234547570"></p>
+<p><strong>通过不断调节theta_{0}, theta_{1}的值，使代价函数的值最小，此时得到的theta_{0}, theta_{1}变是我们期望得到的值。</strong></p>
+<p>则可以看出在三维空间中存在一个使得$J(\theta_{0}, \theta_{1})$最小的点。</p>
+<p>代价函数也被称作平方误差函数，有时也被称为平方误差代价函数。我们之所以要求出误差的平方和，是因为误差平方代价函数，对于大多数问题，特别是回归问题，都是一个合理的选择。还有其他的代价函数也能很好地发挥作用，但是平方误差代价函数可能是解决回归问题最常用的手段了。</p>
+<p>在后续课程中，我们还会谈论其他的代价函数，但我们刚刚讲的选择是对于大多数线性回归问题非常合理的。</p>
+<p>也许这个函数$J(\theta_{0}, \theta_{1})$有点抽象，可能你仍然不知道它的内涵，在接下来的几个视频里，我们要更进一步解释代价函数J的工作原理，并尝试更直观地解释它在计算什么，以及我们使用它的目的。</p>
+<h3 id="代价函数的直观理解"><a href="#代价函数的直观理解" class="headerlink" title="代价函数的直观理解|"></a>代价函数的直观理解|</h3><p>参考视频: 2 - 3 - Cost Function - Intuition I (11 min).mkv</p>
+<p>在上一个视频中，我们给了代价函数一个数学上的定义。在这个视频里，让我们通过一些例子来获取一些直观的感受，看看代价函数到底是在干什么。</p>
+<p><img src="/images/image-20210216235141468.png" alt="image-20210216235141468"></p>
+<p><img src="/images/image-20210216235152322.png" alt="image-20210216235152322"></p>
+<h3 id="代价函数的直观理解-1"><a href="#代价函数的直观理解-1" class="headerlink" title="代价函数的直观理解||"></a>代价函数的直观理解||</h3><p><img src="/images/image-20210216235528290.png" alt="image-20210216235528290"></p>
+<p>代价函数的样子，等高线图，则可以看出在三维空间中存在一个使得$J(\theta_{0}, \theta_{1})$最小的点。</p>
+<p><img src="/images/image-20210216235547767.png" alt="image-20210216235547767"></p>
+<p>通过这些图形，我希望你能更好地理解这些代价函数$ J$所表达的值是什么样的，它们对应的假设是什么样的，以及什么样的假设对应的点，更接近于代价函数$J$的最小值。</p>
+<p>当然，我们真正需要的是一种有效的算法，能够自动地找出这些使代价函数$J$取最小值的参数$\theta_{0}$和$\theta_{1}$来。</p>
+<p>我们也不希望编个程序把这些点画出来，然后人工的方法来读出这些点的数值，这很明显不是一个好办法。我们会遇到更复杂、更高维度、更多参数的情况，而这些情况是很难画出图的，因此更无法将其可视化，因此我们真正需要的是编写程序来找出这些最小化代价函数的$\theta_{0}$和$\theta_{1}$的值，在下一节视频中，我们将介绍一种算法，能够自动地找出能使代价函数$J$最小化的参数$\theta_{0}$和$\theta_{1}$的值。</p>
+<h3 id="梯度下降"><a href="#梯度下降" class="headerlink" title="梯度下降"></a>梯度下降</h3><p>梯度下降是一个用来求函数最小值的算法，我们将使用梯度下降算法来求出代价函数$J(\theta_{0}, \theta_{1})$ 的最小值。</p>
+<p>梯度下降背后的思想是：开始时我们随机选择一个参数的组合$\left( {\theta_{0}},{\theta_{1}},……,{\theta_{n}} \right)$，计算代价函数，然后我们寻找下一个能让代价函数值下降最多的参数组合。我们持续这么做直到找到一个局部最小值（<strong>local minimum</strong>），因为我们并没有尝试完所有的参数组合，所以不能确定我们得到的局部最小值是否便是全局最小值（<strong>global minimum</strong>），选择不同的初始参数组合，可能会找到不同的局部最小值。</p>
+<p><img src="/images/image-20210216235758941.png" alt="image-20210216235758941"></p>
+<p>想象一下你正站立在山的这一点上，站立在你想象的公园这座红色山上，在梯度下降算法中，我们要做的就是旋转360度，看看我们的周围，并问自己要在某个方向上，用小碎步尽快下山。这些小碎步需要朝什么方向？如果我们站在山坡上的这一点，你看一下周围，你会发现最佳的下山方向，你再看看周围，然后再一次想想，我应该从什么方向迈着小碎步下山？然后你按照自己的判断又迈出一步，重复上面的步骤，从这个新的点，你环顾四周，并决定从什么方向将会最快下山，然后又迈进了一小步，并依此类推，直到你接近局部最低点的位置。</p>
+<p>批量梯度下降（<strong>batch gradient descent</strong>）算法的公式为：</p>
+<p><img src="/images/image-20210217000026099.png" alt="image-20210217000026099"></p>
+<p>其中$a$是学习率（<strong>learning rate</strong>），它决定了我们沿着能让代价函数下降程度最大的方向向下迈出的步子有多大，在批量梯度下降中，我们每一次都同时让所有的参数减去学习速率乘以代价函数的导数。</p>
+<p><img src="/images/image-20210217000338121.png" alt="image-20210217000338121"></p>
+<p>在梯度下降算法中，还有一个更微妙的问题，梯度下降中，我们要更新${\theta_{0}}$和${\theta_{1}}$ ，当 $j=0$ 和$j=1$时，会产生更新，所以你将更新$J\left( {\theta_{0}} \right)$和$J\left( {\theta_{1}} \right)$。实现梯度下降算法的微妙之处是，在这个表达式中，如果你要更新这个等式，你需要同时更新${\theta_{0}}$和${\theta_{1}}$，我的意思是在这个等式中，我们要这样更新：</p>
+<p>${\theta_{0}}$:= ${\theta_{0}}$ ，并更新${\theta_{1}}$:= ${\theta_{1}}$。</p>
+<p>实现方法是：你应该计算公式右边的部分，通过那一部分计算出${\theta_{0}}$和${\theta_{1}}$的值，然后同时更新${\theta_{0}}$和${\theta_{1}}$。</p>
+<p>让我进一步阐述这个过程：</p>
+<p><img src="/images/image-20210217000401134.png" alt="image-20210217000401134"></p>
+<p>在梯度下降算法中，这是正确实现同时更新的方法。我不打算解释为什么你需要同时更新，同时更新是梯度下降中的一种常用方法。我们之后会讲到，同步更新是更自然的实现方法。当人们谈到梯度下降时，他们的意思就是同步更新。</p>
+<p>在接下来的视频中，我们要进入这个微分项的细节之中。我已经写了出来但没有真正定义，如果你已经修过微积分课程，如果你熟悉偏导数和导数，这其实就是这个微分项：</p>
+<p><img src="/images/image-20210217002837122.png" alt="image-20210217002837122"></p>
+<p>如果你不熟悉微积分，不用担心，即使你之前没有看过微积分，或者没有接触过偏导数，在接下来的视频中，你会得到一切你需要知道，如何计算这个微分项的知识。</p>
+<p>下一个视频中，希望我们能够给出实现梯度下降算法的所有知识 。</p>
+<h3 id="梯度下降的直观理解"><a href="#梯度下降的直观理解" class="headerlink" title="梯度下降的直观理解"></a>梯度下降的直观理解</h3><p>在之前的视频中，我们给出了一个数学上关于梯度下降的定义，本次视频我们更深入研究一下，更直观地感受一下这个算法是做什么的，以及梯度下降算法的更新过程有什么意义。梯度下降算法如下：</p>
+<p>${\theta_{j}}:={\theta_{j}}-\alpha \frac{\partial }{\partial {\theta_{j}}}J\left(\theta \right)$</p>
+<p>描述：对$\theta $赋值，使得$J\left( \theta  \right)$按梯度下降最快方向进行，一直迭代下去，最终得到局部最小值。其中$a$是学习率（<strong>learning rate</strong>），它决定了我们沿着能让代价函数下降程度最大的方向向下迈出的步子有多大。</p>
+<p><img src="/images/image-20210217000534228.png" alt="image-20210217000534228"></p>
+<p>对于这个问题，求导的目的，基本上可以说取这个红点的切线，就是这样一条红色的直线，刚好与函数相切于这一点，让我们看看这条红色直线的斜率，就是这条刚好与函数曲线相切的这条直线，这条直线的斜率正好是这个三角形的高度除以这个水平长度，现在，这条线有一个正斜率，也就是说它有正导数，因此，我得到的新的${\theta_{1}}$，${\theta_{1}}$更新后等于${\theta_{1}}$减去一个正数乘以$a$。</p>
+<p>这就是我梯度下降法的更新规则：${\theta_{j}}:={\theta_{j}}-\alpha \frac{\partial }{\partial {\theta_{j}}}J\left( \theta  \right)$</p>
+<p>让我们来看看如果$a$太小或$a$太大会出现什么情况：</p>
+<p>如果$a$太小了，即我的学习速率太小，结果就是只能这样像小宝宝一样一点点地挪动，去努力接近最低点，这样就需要很多步才能到达最低点，所以如果$a$太小的话，可能会很慢，因为它会一点点挪动，它会需要很多步才能到达全局最低点。</p>
+<p>如果$a$太大，那么梯度下降法可能会越过最低点，甚至可能无法收敛，下一次迭代又移动了一大步，越过一次，又越过一次，一次次越过最低点，直到你发现实际上离最低点越来越远，所以，如果$a$太大，它会导致无法收敛，甚至发散。</p>
+<p>现在，我还有一个问题，当我第一次学习这个地方时，我花了很长一段时间才理解这个问题，如果我们预先把${\theta_{1}}$放在一个局部的最低点，你认为下一步梯度下降法会怎样工作？</p>
+<p>假设你将${\theta_{1}}$初始化在局部最低点，在这儿，它已经在一个局部的最优处或局部最低点。结果是局部最优点的导数将等于零，因为它是那条切线的斜率。这意味着你已经在局部最优点，它使得${\theta_{1}}$不再改变，也就是新的${\theta_{1}}$等于原来的${\theta_{1}}$，因此，如果你的参数已经处于局部最低点，那么梯度下降法更新其实什么都没做，它不会改变参数的值。这也解释了为什么即使学习速率$a$保持不变时，梯度下降也可以收敛到局部最低点。</p>
+<p>我们来看一个例子，这是代价函数$J\left( \theta  \right)$。</p>
+<p><img src="/images/image-20210217000553809.png" alt="image-20210217000553809"></p>
+<p>我想找到它的最小值，首先初始化我的梯度下降算法，在那个品红色的点初始化，如果我更新一步梯度下降，也许它会带我到这个点，因为这个点的导数是相当陡的。现在，在这个绿色的点，如果我再更新一步，你会发现我的导数，也即斜率，是没那么陡的。随着我接近最低点，我的导数越来越接近零，所以，梯度下降一步后，新的导数会变小一点点。然后我想再梯度下降一步，在这个绿点，我自然会用一个稍微跟刚才在那个品红点时比，再小一点的一步，到了新的红色点，更接近全局最低点了，因此这点的导数会比在绿点时更小。所以，我再进行一步梯度下降时，我的导数项是更小的，${\theta_{1}}$更新的幅度就会更小。所以随着梯度下降法的运行，你移动的幅度会自动变得越来越小，直到最终移动幅度非常小，你会发现，已经收敛到局部极小值。</p>
+<p>回顾一下，在梯度下降法中，当我们接近局部最低点时，梯度下降法会自动采取更小的幅度，这是因为当我们接近局部最低点时，很显然在局部最低时导数等于零，所以当我们接近局部最低时，导数值会自动变得越来越小，所以梯度下降将自动采取较小的幅度，这就是梯度下降的做法。所以实际上没有必要再另外减小$a$。</p>
+<p>这就是梯度下降算法，你可以用它来最小化任何代价函数$J$，不只是线性回归中的代价函数$J$。</p>
+<p>在接下来的视频中，我们要用代价函数$J$，回到它的本质，线性回归中的代价函数。也就是我们前面得出的平方误差函数，结合梯度下降法，以及平方代价函数，我们会得出第一个机器学习算法，即线性回归算法。</p>
+<p><img src="/images/image-20210217002957464.png" alt="image-20210217002957464"></p>
+<p><img src="/images/image-20210217003019388.png" alt="image-20210217003019388"></p>
+<p><img src="/images/image-20210217003035133.png" alt="image-20210217003035133"></p>
+<p>则算法改写成：</p>
+<h3 id><a href="#" class="headerlink" title></a><img src="/images/image-20210217002906737.png" alt="image-20210217002906737"></h3><h3 id="梯度下降算法更多内容"><a href="#梯度下降算法更多内容" class="headerlink" title="梯度下降算法更多内容"></a>梯度下降算法更多内容</h3><p>请参考<a href="https://blog.csdn.net/qq_41800366/article/details/86583789?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161349126216780261954075%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161349126216780261954075&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-86583789.first_rank_v2_pc_rank_v29&utm_term=%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95&spm=1018.2226.3001.4187">链接</a></p>
+<h2 id="线性代数回顾-Linear-Algebra-Review"><a href="#线性代数回顾-Linear-Algebra-Review" class="headerlink" title="线性代数回顾(Linear Algebra Review)"></a>线性代数回顾(Linear Algebra Review)</h2><p>参考<a href="https://github.com/fengdu78/Coursera-ML-AndrewNg-Notes">链接</a></p>
+]]></content>
+      <categories>
+        <category>AI</category>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+        <tag>MachineLearning</tag>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>月亮与六便士</title>
+    <url>/2021/02/07/%E6%9C%88%E4%BA%AE%E4%B8%8E%E5%85%AD%E4%BE%BF%E5%A3%AB/</url>
+    <content><![CDATA[<p>π 2021/2/7 22:01:52<br>月亮与六便士<br>毛姆<br>63个笔记</p>
+<p>◆ 作家榜推荐词</p>
+<p>&gt;&gt; 爱自已，是一生浪漫的开始。</p>
+<p>◆ 导读</p>
+<p>&gt;&gt; “我不想谋生。我想生活。”</p>
+<p>&gt;&gt; 什么是生活？生活的意义是什么？这些没有人能真正告诉你，需要你自己满怀勇气，像小说主人公那样抛弃一切，用整个灵魂去探索。</p>
+<a id="more"></a>
+
+<p>&gt;&gt; 在这个以物质为上帝的时代，用浅薄的幸福、成功来量死你的世界，你该怎样过完你的人生？人生如梦，你是希望枕着月亮还是六便士？很多人渴望名声，追求利益，很多人希望名利双收；大多数人按部就班，过着平庸乏味的生活；也有一些人忽然如梦方醒，一骨碌爬起，去寻找真正有价值的生活。所以无论如何，这部警世的小说都值得一读。正像小说第五十章中所说： 做自己最想做的事，过自己想过的生活，心平气和，怎么能叫作践自己？做一个有名的外科医生，一年赚一万英镑，娶一位漂亮的妻子，就是成功？我想，这取决于你如何看待生活的意义……</p>
+<p>◆ 第一章</p>
+<p>&gt;&gt; 制造神话，是人类的天性。像那些出类拔萃的名人，人们总是对他们生活中的意外或神秘紧抓不放，深信不疑，缔造传奇，无限狂热。这是对平凡生活的浪漫抗议。</p>
+<p>◆ 第二章</p>
+<p>&gt;&gt; 想不起来是谁说过：为了使灵魂安宁，一个人每天至少该做两件他不喜欢的事。</p>
+<p>◆ 第四章</p>
+<p>&gt;&gt; “她觉得他们有意思。她想跟随潮流。我看她头脑简单，真可怜，她认为我们都很好。反正，她喜欢请我们吃饭，我们对吃饭也不反感。我喜欢她，不外乎这一点。”</p>
+<p>&gt;&gt; “为什么漂亮的女人总是嫁给无趣的男人？”<br>“因为有脑子的男人不娶漂亮的女人。”</p>
+<p>◆ 第七章</p>
+<p>&gt;&gt; 我承认这种生活的社会价值，我也看到它井然有序的幸福，但是，我的血液里有一种强烈的冲动，渴望一种桀骜不驯的旅程。这样的安逸总让我惊惧。我的心渴望更加惊险的生活。只要我能有所改变——改变和不可预知的冒险，我将踏上嶙峋怪石，哪怕激流险滩。</p>
+<p>◆ 第八章</p>
+<p>&gt;&gt; 那时，我还不了解女人根深蒂固的恶习：与任何愿意倾听的人谈论自己的私事。</p>
+<p>◆ 第九章</p>
+<p>&gt;&gt; 既然他把这些秘密和盘托出，那我不妨继续问问。</p>
+<p>&gt;&gt; 事情变得更加复杂，上校怒火中烧，骂骂咧咧，颠三倒四，似乎并不是为了告诉我什么，只图发泄。谢天谢地，当他看到陆海军商店上面的大钟，忽然想起约好了要去俱乐部打牌。于是，他和我分手，穿过圣詹姆斯公园，自己走了。</p>
+<p>◆ 第十章</p>
+<p>&gt;&gt; “只有一种解释，他真的变了。我不知道，是哪个女人控制了他，却把他变成了另一个人。很明显，已经很长时间了。”</p>
+<p>&gt;&gt; 我以为他在俱乐部，实际上，他是在和那个女人鬼混。</p>
+<p>&gt;&gt; 心里藏着如此意外的秘密，却能装作漫不经心，若无其事，很不容易；还得集中精力，打点孩子们上学，真是煞费苦心。斯特里克兰夫人又哽咽了。</p>
+<p>◆ 第十一章</p>
+<p>&gt;&gt; 我那时还不懂得，人性有多矛盾；我不知道，真诚中有多少虚伪，高尚中有多少卑鄙，或者，邪恶中有多少善良。</p>
+<p>&gt;&gt; 那里叫比利时旅馆。但出乎意料，门房说没听过。我听斯特里克兰夫人说过，这家旅馆很大，很豪华，在里沃利大街后边。我们在旅馆名录中找。叫这个名字的旅馆只有一家，在摩纳街。它既不时尚，也不是有钱人住的地方。我摇摇头。</p>
+<p>&gt;&gt; 我上次见他，他整洁一新，可看上去并不自在；现在，他这般邋遢，却神态自若。我不知道，他听了我要讲的一番话后，会作何反应。</p>
+<p>◆ 第十二章</p>
+<p>&gt;&gt; “要是顶多你只能当个三流画家，是不是还要孤注一掷？不管怎样，如果是其他行业，你才华平平，关系不大，可以得过且过；但是，当一个艺术家，完全不同。”<br>“你他妈真是个傻瓜。”他说。<br>“我不知道你为什么这么说，除非我言过其实。”</p>
+<p>&gt;&gt; “我告诉你，我必须画画。我身不由己。一个人掉进水里，他游泳游得好不好没关系，反正他得挣扎，不然就得淹死。”</p>
+<p>◆ 第十三章</p>
+<p>&gt;&gt; 只有诗人和圣贤才会相信，在柏油马路上辛勤浇灌，能培育出百合花来。</p>
+<p>◆ 第十四章</p>
+<p>&gt;&gt; 真是蠢话。不是每个人都会像我这样。大多数人，平平淡淡，知足常乐。</p>
+<p>◆ 第十五章</p>
+<p>&gt;&gt; “只要他是和女人跑的，就还有可能回来。我不相信什么是绝对的。三个月，他就烦死她了。但如果，他不是因为恋爱跑的，那一切都完了。”</p>
+<p>&gt;&gt; “你也不明白吗？”她喊道。<br>“我不敢肯定。你的意思是说：如果他是为了女人离开你，你可以原谅；但如果他是为了理想离开你，你就不能？你觉得前者仿佛比赛，而后者你便无能为力，对吧？”</p>
+<p>&gt;&gt; 你丈夫的行为，也许是情非得已。我想，他已经不是他自己。他似乎鬼迷心窍，被一股力量抓住，朝着别的方向跑去；他就像落入蛛网的苍蝇，已经无力挣扎。他仿佛着了魔。这让我想起，人们常说的那些离奇故事：一个人的身体被另一个人的灵魂占据，将他自己的赶了出去。这个灵魂在体内很不安分，神秘地变来变去。要是过去，大家就会说，查尔斯·斯特里克兰被魔鬼附身了。”</p>
+<p>◆ 第十七章</p>
+<p>&gt;&gt; 常言说，痛苦使人高贵，这不对；让人行动高尚的，有时是自满得意；而痛苦，往往使人变得心胸狭窄，充满仇恨。</p>
+<p>◆ 第十八章</p>
+<p>&gt;&gt; 而我认为，这始终是他挥之不去的幻想，这幻想让他目眩，看不见真相；尽管真相残酷，他却依然用幻想的目光凝望着自己的意大利：浪漫的侠盗，美丽的废墟。他画的是他的理想，尽管贫乏、平庸、陈旧，但终究是理想；这就赋予了他一种独特的魅力。</p>
+<p>◆ 第十九章</p>
+<p>&gt;&gt; 很奇怪，在评判别人的作品时，他的意识如此精准、不落俗套，可他自己陈腐、平庸的画作也让他感到满意，真是难以置信。</p>
+<p>&gt;&gt; “我什么时候走过眼？”德克说，“告诉你，他很有天分。肯定的。一百年以后，如果还有人记得你和我，那是因为我们认识查尔斯·斯特里克兰。”</p>
+<p>&gt;&gt; 不，没有名气。我想，他一幅画也没卖出去。你要是和别人谈起他，没有一个不笑的。可是我知道，他是非常好的画家。说到底，他们不是也笑过马奈嘛。柯罗一张画也没卖出去。</p>
+<p>&gt;&gt; 为什么你认为美——这世上最宝贵的东西，会像沙滩上的卵石，一个漫不经心的路人，随随便便就能捡到？美是美妙，是奇异，艺术家唯有通过灵魂的煎熬，才能从宇宙的混沌中创造出美。而当美出现，它并非为了让每个人都认出它自己。要认识它，你必须重复和艺术家一样的奇异之旅。这是一支他唱给你的旋律，要想再次用心聆听，就需要智慧、感觉以及丰富的想象力。</p>
+<p>◆ 第二十一章</p>
+<p>&gt;&gt; “我不想过去。唯一重要的，是永恒的现在。”</p>
+<p>◆ 第二十二章</p>
+<p>&gt;&gt; 我把大把的时间耗在卢浮宫，因为这是巴黎所有画廊中我感觉最亲切的，也最适合冥想。要不然就是在塞纳河边闲逛，翻一翻路边的旧书，但从来不买。</p>
+<p>◆ 第二十四章</p>
+<p>&gt;&gt; “他大概生病了。”斯特洛夫说。<br>“可能吧，”门房漠不关心地说，“反正，我好几天没看见他了。”</p>
+<p>◆ 第二十五章</p>
+<p>转：王尔德的话，每个人理解不同，举个例子，苏格拉底就因为在当时与众不同的思想，被判处了死刑；意大利思想家布鲁诺因为反对欧洲宗教的地心说，被判为异端，活活烧死；王尔德自己本身，因为坚持同性恋的合法性而进了监狱……真理的蜡烛，常常会烫伤那些举烛人的手。<br>&gt;&gt; 天才是世上最奇妙的东西。但对天才自己而言，却是很大的负担。我们应该容忍他们，要很有耐心。</p>
+<p>&gt;&gt; 天才是世上最奇妙的东西。但对天才自己而言，却是很大的负担。我们应该容忍他们，要很有耐心。</p>
+<p>◆ 第二十八章</p>
+<p>&gt;&gt; “你不知道。她爱上斯特里克兰了。”</p>
+<p>&gt;&gt; “你知道啊，她受不了斯特里克兰。”<br>“你不了解。”他呜咽着说。</p>
+<p>&gt;&gt; “你能把我的衣服收拾一下，放门房那儿吗？明天我过来取。”他强颜欢笑。“再见，亲爱的。谢谢你过去带给我的幸福。”</p>
+<p>◆ 第二十九章</p>
+<p>转：先自沉稳，而后爱人。爱情是双向的奔赴，爱来自骨子里，而非卑微到尘土里。我爱我自己的灵魂，我懂得如何去爱自己，我才能去更好的爱你。<br>&gt;&gt; 我爱她，远远胜过爱我自己。要我说，爱情中如果考虑自尊，只能说明你更爱自己。</p>
+<p>&gt;&gt; 我爱她，远远胜过爱我自己。要我说，爱情中如果考虑自尊，只能说明你更爱自己。</p>
+<p>π 2021/2/7 22:02:42<br>◆ 第三十一章</p>
+<p>转：这世界本就没有感同身受，只有冷暖自知，如果没办法自己默默消化悲痛那只能转移注意力培养新爱好，时间会帮你抚平你的伤痛<br>&gt;&gt; 我想，他是希望他们没有收拾他的东西，这样他就可以见到妻子，没准儿还能劝她回到自己身边。但是当他回去，东西已经在门房那儿了，门房告诉他，布兰奇出去了。要说，他能不向她吐自己的一肚子苦水，我才不信呢。我发现，每个他认识的人，他都会向人家诉说他的不幸；他以为能博得同情，结果只引来嘲笑。</p>
+<p>&gt;&gt; 我想，他是希望他们没有收拾他的东西，这样他就可以见到妻子，没准儿还能劝她回到自己身边。但是当他回去，东西已经在门房那儿了，门房告诉他，布兰奇出去了。要说，他能不向她吐自己的一肚子苦水，我才不信呢。我发现，每个他认识的人，他都会向人家诉说他的不幸；他以为能博得同情，结果只引来嘲笑。</p>
+<p>&gt;&gt; 有时候，一个人的外表和他的灵魂并不相称，这实在糟糕。</p>
+<p>◆ 第三十七章</p>
+<p>&gt;&gt; 巴黎的街头重新带给我欣喜，看着来来往往的行人，我禁不住微笑起来。这一天，天气晴朗，阳光明媚，我感到自己心中有着更为强烈的生之喜悦。我按捺不住；我把斯特洛夫和他的不幸赶出胸中。我要享受生活。</p>
+<p>◆ 第三十八章</p>
+<p>&gt;&gt; 世界冰冷而残酷。没有人知道我们从哪里来，到哪里去。我们必须深怀谦卑。我们必须看到宁静之美。我们必须隐忍地生活，这样命运之神才不会注目我们。让我们去寻求淳朴、善良者的爱吧。他们的无知比我们的知识更可贵。让我们保持沉默，满足于我们小小的角落，像他们一样平静温顺吧。这才是生活的智慧。</p>
+<p>◆ 第四十二章</p>
+<p>&gt;&gt; 这些画，很多后来我又看过，有些见过复制品，都相当熟悉；奇怪的是，当初看到它们时，我居然非常失望。我没感觉到艺术本该带给我的欣喜若狂。</p>
+<p>孤独，从来都是一个人的事，没有人能真切地懂得另一个人的感受，甚至，在别人眼里，这些都是无关痛痒的事，当有一天，你学会了自己咀嚼自己的孤独，你也就不在乎别人的眼光了。<br>&gt;&gt; 我们每个人都孤独地生活在世界上。谁都被囚禁在一座铁塔里，只能凭一些符号与人交流，但这些符号并没有共同的价值，所以它们的意义模糊不定。我们可怜地想把心灵的珍宝传递给别人，但他们却无力接受，因此我们只能踽踽独行，虽然紧挨着，却并不真正在一起，既无法了解别人，也不被别人所了解。我们就像身在异国他乡的陌生人，对他们的语言知之甚少，想表达那些美妙而深刻的事物，只能局限于会话指南上一点平庸的词句。我们的大脑充满了奇想，却只会说“花匠的姑姑有把雨伞在屋里”。</p>
+<p>&gt;&gt; 我们每个人都孤独地生活在世界上。谁都被囚禁在一座铁塔里，只能凭一些符号与人交流，但这些符号并没有共同的价值，所以它们的意义模糊不定。我们可怜地想把心灵的珍宝传递给别人，但他们却无力接受，因此我们只能踽踽独行，虽然紧挨着，却并不真正在一起，既无法了解别人，也不被别人所了解。我们就像身在异国他乡的陌生人，对他们的语言知之甚少，想表达那些美妙而深刻的事物，只能局限于会话指南上一点平庸的词句。我们的大脑充满了奇想，却只会说“花匠的姑姑有把雨伞在屋里”。</p>
+<p>◆ 第四十四章</p>
+<p>&gt;&gt; 在他的笔下，人物都很怪诞，他对这种怪诞感到非常生气；生活不过是一场混乱，充满了种种的荒谬和污秽，只能引人发笑，未免乐极生悲。</p>
+<p>◆ 第四十七章</p>
+<p>&gt;&gt; “更难抽的烟我也用烟斗抽过。”他自嘲地耸了耸肩，补充道。说着，又从我递给他的烟盒里拿了几支雪茄，一根叼在嘴上，其他的揣进了口袋。</p>
+<p>&gt;&gt; 在这里，他们结交了不少和他们一样饥寒交迫的朋友，当他们有时身上一个子儿都没了，晚上又出奇的冷，就会毫不犹豫地向白天偶然赚到一法郎的人借钱交住宿费。这些流浪汉都不吝啬，不管谁有了钱，都会乐于和大家一起花。他们来自不同的国家，但这并不妨碍他们成为朋友；因为他们感觉，他们是同一个国度的自由民，这个国度宽广无垠——一个伟大的安乐之乡。</p>
+<p>◆ 第四十八章</p>
+<p>当理想与现世安稳碰撞，总有些东西被遗弃，被撞碎。也许是小时候的玻璃球，也许是小时候立志成为怎样的人，也许只是春天的一场梦。梦总要醒，但是梦想可以一直都被拥有、追逐。他的行动告诉世人，只要有勇气出发，永远都不会晚，灵魂与梦想经过碰撞，会发现一个极少数人能到达的新世界<br>&gt;&gt; 他那孤独的灵魂怀着怎样的奇想，最终向着激发了他幻想的未知岛屿出发了。我喜欢这样的画面，他的人生在四十七岁定格，当大多数人享受着中年生活的安稳，斯特里克兰却去寻找一个新世界。</p>
+<p>◆ 第五十章</p>
+<p>&gt;&gt; 每当一个人有了意外之举，他周围的人总会认定，原因肯定很丢脸。</p>
+<p>每个人对成功的定义不同。有的人想在自己从事的领域成为专家型的人才；有的人想挣足够几辈子花的钱；有的人想要在官场上步步高升；也有的人想要一辈子平平淡淡做着自己喜欢做的事即可。。。<br>&gt;&gt; “我过得很好，”他说，“但说来奇怪，这一切都是因为我交了好运。”</p>
+<p>&gt;&gt; 做自己最想做的事，过自己想过的生活，心平气和，怎么能叫作践自己？做一个有名的外科医生，一年赚一万英镑，娶一位漂亮的妻子，就是成功？我想，这取决于你如何看待生活的意义，取决于你对社会应尽什么义务，你对自己有什么要求。</p>
+<p>◆ 第五十三章</p>
+<p>&gt;&gt; 我住在环礁岛上，周围是潟湖环绕的低矮小岛，那里的美是碧海蓝天，湖光山色，以及随风摇曳的椰子树；而斯特里克兰住的地方，美得就像伊甸园。啊，我真希望自己能将那儿的魅力说给你听。与世隔绝的偏僻一隅，头顶是湛蓝的天空，到处是郁郁葱葱的树木。这里色彩无尽，馥郁芬芳，清爽无比。真是人间天堂，难以用语言形容。他就住在那儿，与世无争，优哉游哉。</p>
+<p>◆ 第五十五章</p>
+<p>&gt;&gt; 他只不过是一个游手好闲的无赖，宁愿和一个当地女人同居，也不想像别人那样好好干活儿吃饭。天哪，我当时怎么知道，有一天全世界都承认他是天才？</p>
+<p>&gt;&gt; 恐惧让人变得残酷无情……</p>
+<p>◆ 第五十六章</p>
+<p>&gt;&gt; 四面墙上，从地板一直到天花板，一幅幅奇特的、精心绘制的图画铺展开来，那种奇妙、神秘，简直难以形容。库特拉斯几乎屏住了呼吸。一种难以理解、无法参透的感情攫住了他。他感觉，这种敬畏和欣喜，就像一个人看到开天辟地时怀着的那种敬畏和欣喜。这壁画巨大无比，既耽于肉欲，又充满激情，同时，也包含某种恐怖，让他看着十分害怕。绘制这巨作的人，已经深入到大自然的隐秘深处，发现了美妙而惊人的秘密。他知晓了人类从不知晓的事物。他画出的是某种原始的、可怕的东西。这并不属于人类。库特拉斯模糊地感到，这就像巫术，既美丽，又污秽。</p>
+<p>◆ 第五十七章</p>
+<p>&gt;&gt; 他从不抱怨命运，从未失去勇气。直到最后一刻，他依然坦然、平静。</p>
+<p>&gt;&gt; “我想，斯特里克兰也知道，这是一幅杰作。他已经得到了他所追求的东西。他无怨无悔。他创造了一个世界，也看到了这个世界的美好。之后，带着傲慢和不屑，又将它完全毁掉了。”</p>
+<p>◆ 第五十八章</p>
+<p>&gt;&gt; 我生命的一页翻过去了，我感觉，我离不可避免的死亡，又近了一步。</p>
+]]></content>
+      <categories>
+        <category>阅读笔记</category>
+      </categories>
+      <tags>
+        <tag>阅读</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>pytorch入门</title>
+    <url>/2021/02/17/pytorch%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<p><img src="/images/image-20210217110558704.png" alt="image-20210217110558704"></p>
+]]></content>
+      <tags>
+        <tag>cv</tag>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>吴恩达机器学习笔记</title>
+    <url>/2020/07/07/%E5%90%B4%E6%81%A9%E8%BE%BE%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="引言（Introduction"><a href="#引言（Introduction" class="headerlink" title="引言（Introduction)"></a>引言（Introduction)</h2><h3 id="什么是机器学习"><a href="#什么是机器学习" class="headerlink" title="什么是机器学习"></a>什么是机器学习</h3><p>第一个机器学习定义来源于<strong>Arthur Samuel</strong>,他定义为： 在特定的编程情况下，给予计算机学习能力。<br>另一个年代近一点的定义，由   <strong>Tom Mitchell</strong> 提出，来自卡内基梅隆大学，Tom 定义的机器学习是，一个好的学习问题定义如下，他说，一个程序被认为能从经验 E 中学习，解决任务 T，达到性能度量值P，当且仅当，有了经验 E 后，经过 P 评判，程序在处理 T 时的性能有所提升。我认为经验E 就是程序上万次的自我练习的经验而任务 T 就是下棋。性能度量值 P 呢，就是它在与一些新的对手比赛时，赢得比赛的概率。<strong>简单来说就是从E中学习，解决任务T，达到性能度量值P。并且在经过P评判，和不断学习的过程中，程序在处理T时的性能有所提升.</strong></p>
+<a id="more"></a>
+
+<h3 id="监督学习"><a href="#监督学习" class="headerlink" title="监督学习"></a>监督学习</h3><p>我们用一个例子介绍什么是监督学习把正式的定义放在后面介绍。假如说你想预测房价。</p>
+<p>前阵子，一个学生从波特兰俄勒冈州的研究所收集了一些房价的数据。你把这些数据画出来，看起来是这个样子：横轴表示房子的面积，单位是平方英尺，纵轴表示房价，单位是千美元。那基于这组数据，假如你有一个朋友，他有一套750平方英尺房子，现在他希望把房子卖掉，他想知道这房子能卖多少钱。</p>
+<p>那么关于这个问题，机器学习算法将会怎么帮助你呢？</p>
+<p><img src="/images/image-20210216224108606.png" alt="image-20210216224108606"></p>
+<p>我们应用学习算法，可以在这组数据中画一条直线，或者换句话说，拟合一条直线，根据这条线我们可以推测出，这套房子可能卖$$150,000$，当然这不是唯一的算法。可能还有更好的，比如我们不用直线拟合这些数据，用二次方程去拟合可能效果会更好。根据二次方程的曲线，我们可以从这个点推测出，这套房子能卖接近$$200,000$。稍后我们将讨论如何选择学习算法，如何决定用直线还是二次方程来拟合。两个方案中有一个能让你朋友的房子出售得更合理。这些都是学习算法里面很好的例子。以上就是监督学习的例子。</p>
+<p>可以看出，<strong>监督学习指的就是我们给学习算法一个数据集。这个数据集由“正确答案”组成。</strong>在房价的例子中，我们给了一系列房子的数据，我们给定数据集中每个样本的正确价格，即它们实际的售价然后运用学习算法，算出更多的正确答案。比如你朋友那个新房子的价格。用术语来讲，这叫做回归问题。我们试着推测出一个连续值的结果，即房子的价格。</p>
+<p>一般房子的价格会记到美分，所以房价实际上是一系列离散的值，但是我们通常又把房价看成实数，看成是标量，所以又把它看成一个连续的数值。</p>
+<p>回归这个词的意思是，我们在试着推测出这一系列连续值属性。</p>
+<p>我再举另外一个监督学习的例子。我和一些朋友之前研究过这个。假设说你想通过查看病历来推测乳腺癌良性与否，假如有人检测出乳腺肿瘤，恶性肿瘤有害并且十分危险，而良性的肿瘤危害就没那么大，所以人们显然会很在意这个问题。</p>
+<p><img src="/images/image-20210216225057126.png" alt="image-20210216225057126"></p>
+<p>让我们来看一组数据：这个数据集中，横轴表示肿瘤的大小，纵轴上，我标出1和0表示是或者不是恶性肿瘤。我们之前见过的肿瘤，如果是恶性则记为1，不是恶性，或者说良性记为0。</p>
+<p>我有5个良性肿瘤样本，在1的位置有5个恶性肿瘤样本。现在我们有一个朋友很不幸检查出乳腺肿瘤。假设说她的肿瘤大概这么大，那么机器学习的问题就在于，你能否估算出肿瘤是恶性的或是良性的概率。用术语来讲，这是一个分类问题。</p>
+<p>分类指的是，我们试着推测出离散的输出值：0或1良性或恶性，而事实上在分类问题中，输出可能不止两个值。比如说可能有三种乳腺癌，所以你希望预测离散输出0、1、2、3。0 代表良性，1 表示第1类乳腺癌，2表示第2类癌症，3表示第3类，但这也是分类问题。</p>
+<p>因为这几个离散的输出分别对应良性，第一类第二类或者第三类癌症，在分类问题中我们可以用另一种方式绘制这些数据点。</p>
+<p>现在我用不同的符号来表示这些数据。既然我们把肿瘤的尺寸看做区分恶性或良性的特征，那么我可以这么画，我用不同的符号来表示良性和恶性肿瘤。或者说是负样本和正样本现在我们不全部画<strong>X</strong>，良性的肿瘤改成用 <strong>O</strong> 表示，恶性的继续用 <strong>X</strong> 表示。来预测肿瘤的恶性与否。</p>
+<p>在其它一些机器学习问题中，可能会遇到不止一种特征。举个例子，我们不仅知道肿瘤的尺寸，还知道对应患者的年龄。在其他机器学习问题中，我们通常有更多的特征，我朋友研究这个问题时，通常采用这些特征，比如肿块密度，肿瘤细胞尺寸的一致性和形状的一致性等等，还有一些其他的特征。这就是我们即将学到最有趣的学习算法之一。</p>
+<p>那种算法不仅能处理2种3种或5种特征，即使有无限多种特征都可以处理。</p>
+<p><img src="/images/image-20210216225452470.png" alt="image-20210216225452470"></p>
+<p>上图中，我列举了总共5种不同的特征，坐标轴上的两种和右边的3种，但是在一些学习问题中，你希望不只用3种或5种特征。相反，你想用无限多种特征，好让你的算法可以利用大量的特征，或者说线索来做推测。那你怎么处理无限多个特征，甚至怎么存储这些特征都存在问题，你电脑的内存肯定不够用。<strong>我们以后会讲一个算法，叫支持向量机，里面有一个巧妙的数学技巧，能让计算机处理无限多个特征。</strong>想象一下，我没有写下这两种和右边的三种特征，而是在一个无限长的列表里面，一直写一直写不停的写，写下无限多个特征，事实上，我们能用算法来处理它们。</p>
+<p><strong>现在来回顾一下，这节课我们介绍了监督学习。其基本思想是，我们数据集中的每个样本都有相应的“正确答案”。再根据这些样本作出预测，就像房子和肿瘤的例子中做的那样。我们还介绍了回归问题，即通过回归来推出一个连续的输出，之后我们介绍了分类问题，其目标是推出一组离散的结果。</strong></p>
+<h3 id="无监督学习"><a href="#无监督学习" class="headerlink" title="无监督学习"></a>无监督学习</h3><p>本次视频中，我们将介绍第二种主要的机器学习问题。叫做无监督学习。</p>
+<p><img src="/images/image-20210216225824075.png" alt="image-20210216225824075"></p>
+<p>上个视频中，已经介绍了监督学习。回想当时的数据集，如图表所示，这个数据集中每条数据都已经标明是阴性或阳性，即是良性或恶性肿瘤。所以，对于监督学习里的每条数据，我们已经清楚地知道，训练集对应的正确答案，是良性或恶性了。</p>
+<p>在无监督学习中，我们已知的数据。看上去有点不一样，不同于监督学习的数据的样子，<strong>即无监督学习中没有任何的标签或者是有相同的标签或者就是没标签。</strong>所以我们已知数据集，却不知如何处理，也未告知每个数据点是什么。别的都不知道，就是一个数据集。你能从数据中找到某种结构吗？针对数据集，无监督学习就能判断出数据有两个不同的聚集簇。这是一个，那是另一个，二者不同。是的，<strong>无监督学习算法可能会把这些数据分成两个不同的簇。所以叫做聚类算法。</strong>事实证明，它能被用在很多地方。</p>
+<h2 id="单变量线性回归-Linear-Regression-with-One-Variable"><a href="#单变量线性回归-Linear-Regression-with-One-Variable" class="headerlink" title="单变量线性回归(Linear Regression with One Variable)"></a>单变量线性回归(Linear Regression with One Variable)</h2><h3 id="模型表示"><a href="#模型表示" class="headerlink" title="模型表示"></a>模型表示</h3><p>我们的第一个学习算法是线性回归算法。在这段视频中，你会看到这个算法的概况，更重要的是你将会了解监督学习过程完整的流程。</p>
+<p>让我们通过一个例子来开始：这个例子是预测住房价格的，我们要使用一个数据集，数据集包含俄勒冈州波特兰市的住房价格。在这里，我要根据不同房屋尺寸所售出的价格，画出我的数据集。比方说，如果你朋友的房子是1250平方尺大小，你要告诉他们这房子能卖多少钱。那么，你可以做的一件事就是构建一个模型，也许是条直线，从这个数据模型上来看，也许你可以告诉你的朋友，他能以大约220000(美元)左右的价格卖掉这个房子。这就是监督学习算法的一个例子。</p>
+<p><img src="/images/image-20210216232328225.png" alt="image-20210216232328225"></p>
+<p>它被称作监督学习是因为对于每个数据来说，我们给出了“正确的答案”，即告诉我们：根据我们的数据来说，房子实际的价格是多少，而且，更具体来说，这是一个回归问题。回归一词指的是，我们根据之前的数据预测出一个准确的输出值，对于这个例子就是价格，同时，还有另一种最常见的监督学习方式，叫做分类问题，当我们想要预测离散的输出值，例如，我们正在寻找癌症肿瘤，并想要确定肿瘤是良性的还是恶性的，这就是0/1离散输出的问题。更进一步来说，在监督学习中我们有一个数据集，这个数据集被称训练集。</p>
+<p><strong>我将在整个课程中用小写的$m$来表示训练样本的数目。</strong></p>
+<p>以之前的房屋交易问题为例，假使我们回归问题的训练集（<strong>Training Set</strong>）如下表所示：</p>
+<p><img src="/images/image-20210216232438960.png" alt="image-20210216232438960"></p>
+<p>我们将要用来描述这个回归问题的标记如下:</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$m$ 代表训练集中实例的数量</span><br><span class="line"></span><br><span class="line">$x$  代表特征/输入变量</span><br><span class="line"></span><br><span class="line">$y$ 代表目标变量/输出变量</span><br><span class="line"></span><br><span class="line">$\left( x,y \right)$ 代表训练集中的实例</span><br><span class="line"></span><br><span class="line">$(&#123;&#123;x&#125;^&#123;(i)&#125;&#125;,&#123;&#123;y&#125;^&#123;(i)&#125;&#125;)$ 代表第$i$ 个观察实例</span><br><span class="line"></span><br><span class="line">$h$  代表学习算法的解决方案或函数也称为假设（<span class="strong">**hypothesis**</span>）</span><br></pre></td></tr></table></figure>
+
+
+
+
+<p><img src="/images/image-20210216232605293.png" alt="image-20210216232605293"></p>
+<p>这就是一个监督学习算法的工作方式，我们可以看到这里有我们的训练集里房屋价格<br>我们把它喂给我们的学习算法，学习算法的工作了，然后输出一个函数，通常表示为小写 $h$  表示。$h$  代表<strong>hypothesis</strong>(<strong>假设</strong>)，$h$表示一个函数，输入是房屋尺寸大小，就像你朋友想出售的房屋，因此 $h$ 根据输入的 $x$值来得出 $y$ 值，$y$ 值对应房子的价格 因此，$h$ 是一个从$x$ 到 $y$ 的函数映射。</p>
+<p>我将选择最初的使用规则$h$代表<strong>hypothesis</strong>，因而，要解决房价预测问题，我们实际上是要将训练集“喂”给我们的学习算法，进而学习得到一个假设$h$，然后将我们要预测的房屋的尺寸作为输入变量输入给$h$，预测出该房屋的交易价格作为输出变量输出为结果。那么，对于我们的房价预测问题，我们该如何表达 $h$？</p>
+<p>一种可能的表达方式为：$h_\theta \left( x \right)=\theta_{0} + \theta_{1}x$，因为只含有一个特征/输入变量，因此这样的问题叫作单变量线性回归问题。</p>
+<h3 id="代价函数"><a href="#代价函数" class="headerlink" title="代价函数"></a>代价函数</h3><p>在这段视频中我们将定义代价函数的概念，这有助于我们弄清楚如何把最有可能的直线与我们的数据相拟合。如图：</p>
+<p><img src="/images/image-20210216234140487.png" alt="image-20210216234140487"></p>
+<p>在线性回归中我们有一个像这样的训练集，$m$代表了训练样本的数量，比如 $m = 47$。而我们的假设函数，也就是用来进行预测的函数，是这样的线性函数形式：$h_\theta \left( x \right)=\theta_{0}+\theta_{1}x$。</p>
+<p>接下来我们会引入一些术语我们现在要做的便是为我们的模型选择合适的<strong>参数</strong>（<strong>parameters</strong>）$\theta_{0}$ 和 $\theta_{1}$，在房价问题这个例子中便是直线的斜率和在$y$ 轴上的截距。</p>
+<p>我们选择的参数决定了我们得到的直线相对于我们的训练集的准确程度，模型所预测的值与训练集中实际值之间的差距（下图中蓝线所指）就是<strong>建模误差</strong>（<strong>modeling error</strong>）。</p>
+<p><img src="/images/image-20210216234256392.png" alt="image-20210216234256392"></p>
+<p>我们的目标便是选择出可以使得建模误差的平方和能够最小的模型参数。 即使得代价函数 $J \left( \theta_0, \theta_1 \right) = \frac{1}{2m}\sum\limits_{i=1}^m \left( h_{\theta}(x^{(i)})-y^{(i)} \right)^{2}$最小。</p>
+<p>我们绘制一个等高线图，三个坐标分别为$\theta_{0}$和$\theta_{1}$ 和$J(\theta_{0}, \theta_{1})$：</p>
+<p><img src="/images/image-20210216234547570.png" alt="image-20210216234547570"></p>
+<p><strong>通过不断调节theta_{0}, theta_{1}的值，使代价函数的值最小，此时得到的theta_{0}, theta_{1}变是我们期望得到的值。</strong></p>
+<p>则可以看出在三维空间中存在一个使得$J(\theta_{0}, \theta_{1})$最小的点。</p>
+<p>代价函数也被称作平方误差函数，有时也被称为平方误差代价函数。我们之所以要求出误差的平方和，是因为误差平方代价函数，对于大多数问题，特别是回归问题，都是一个合理的选择。还有其他的代价函数也能很好地发挥作用，但是平方误差代价函数可能是解决回归问题最常用的手段了。</p>
+<p>在后续课程中，我们还会谈论其他的代价函数，但我们刚刚讲的选择是对于大多数线性回归问题非常合理的。</p>
+<p>也许这个函数$J(\theta_{0}, \theta_{1})$有点抽象，可能你仍然不知道它的内涵，在接下来的几个视频里，我们要更进一步解释代价函数J的工作原理，并尝试更直观地解释它在计算什么，以及我们使用它的目的。</p>
+<h3 id="代价函数的直观理解"><a href="#代价函数的直观理解" class="headerlink" title="代价函数的直观理解|"></a>代价函数的直观理解|</h3><p>参考视频: 2 - 3 - Cost Function - Intuition I (11 min).mkv</p>
+<p>在上一个视频中，我们给了代价函数一个数学上的定义。在这个视频里，让我们通过一些例子来获取一些直观的感受，看看代价函数到底是在干什么。</p>
+<p><img src="/images/image-20210216235141468.png" alt="image-20210216235141468"></p>
+<p><img src="/images/image-20210216235152322.png" alt="image-20210216235152322"></p>
+<h3 id="代价函数的直观理解-1"><a href="#代价函数的直观理解-1" class="headerlink" title="代价函数的直观理解||"></a>代价函数的直观理解||</h3><p><img src="/images/image-20210216235528290.png" alt="image-20210216235528290"></p>
+<p>代价函数的样子，等高线图，则可以看出在三维空间中存在一个使得$J(\theta_{0}, \theta_{1})$最小的点。</p>
+<p><img src="/images/image-20210216235547767.png" alt="image-20210216235547767"></p>
+<p>通过这些图形，我希望你能更好地理解这些代价函数$ J$所表达的值是什么样的，它们对应的假设是什么样的，以及什么样的假设对应的点，更接近于代价函数$J$的最小值。</p>
+<p>当然，我们真正需要的是一种有效的算法，能够自动地找出这些使代价函数$J$取最小值的参数$\theta_{0}$和$\theta_{1}$来。</p>
+<p>我们也不希望编个程序把这些点画出来，然后人工的方法来读出这些点的数值，这很明显不是一个好办法。我们会遇到更复杂、更高维度、更多参数的情况，而这些情况是很难画出图的，因此更无法将其可视化，因此我们真正需要的是编写程序来找出这些最小化代价函数的$\theta_{0}$和$\theta_{1}$的值，在下一节视频中，我们将介绍一种算法，能够自动地找出能使代价函数$J$最小化的参数$\theta_{0}$和$\theta_{1}$的值。</p>
+<h3 id="梯度下降"><a href="#梯度下降" class="headerlink" title="梯度下降"></a>梯度下降</h3><p>梯度下降是一个用来求函数最小值的算法，我们将使用梯度下降算法来求出代价函数$J(\theta_{0}, \theta_{1})$ 的最小值。</p>
+<p>梯度下降背后的思想是：开始时我们随机选择一个参数的组合$\left( {\theta_{0}},{\theta_{1}},……,{\theta_{n}} \right)$，计算代价函数，然后我们寻找下一个能让代价函数值下降最多的参数组合。我们持续这么做直到找到一个局部最小值（<strong>local minimum</strong>），因为我们并没有尝试完所有的参数组合，所以不能确定我们得到的局部最小值是否便是全局最小值（<strong>global minimum</strong>），选择不同的初始参数组合，可能会找到不同的局部最小值。</p>
+<p><img src="/images/image-20210216235758941.png" alt="image-20210216235758941"></p>
+<p>想象一下你正站立在山的这一点上，站立在你想象的公园这座红色山上，在梯度下降算法中，我们要做的就是旋转360度，看看我们的周围，并问自己要在某个方向上，用小碎步尽快下山。这些小碎步需要朝什么方向？如果我们站在山坡上的这一点，你看一下周围，你会发现最佳的下山方向，你再看看周围，然后再一次想想，我应该从什么方向迈着小碎步下山？然后你按照自己的判断又迈出一步，重复上面的步骤，从这个新的点，你环顾四周，并决定从什么方向将会最快下山，然后又迈进了一小步，并依此类推，直到你接近局部最低点的位置。</p>
+<p>批量梯度下降（<strong>batch gradient descent</strong>）算法的公式为：</p>
+<p><img src="/images/image-20210217000026099.png" alt="image-20210217000026099"></p>
+<p>其中$a$是学习率（<strong>learning rate</strong>），它决定了我们沿着能让代价函数下降程度最大的方向向下迈出的步子有多大，在批量梯度下降中，我们每一次都同时让所有的参数减去学习速率乘以代价函数的导数。</p>
+<p><img src="/images/image-20210217000338121.png" alt="image-20210217000338121"></p>
+<p>在梯度下降算法中，还有一个更微妙的问题，梯度下降中，我们要更新${\theta_{0}}$和${\theta_{1}}$ ，当 $j=0$ 和$j=1$时，会产生更新，所以你将更新$J\left( {\theta_{0}} \right)$和$J\left( {\theta_{1}} \right)$。实现梯度下降算法的微妙之处是，在这个表达式中，如果你要更新这个等式，你需要同时更新${\theta_{0}}$和${\theta_{1}}$，我的意思是在这个等式中，我们要这样更新：</p>
+<p>${\theta_{0}}$:= ${\theta_{0}}$ ，并更新${\theta_{1}}$:= ${\theta_{1}}$。</p>
+<p>实现方法是：你应该计算公式右边的部分，通过那一部分计算出${\theta_{0}}$和${\theta_{1}}$的值，然后同时更新${\theta_{0}}$和${\theta_{1}}$。</p>
+<p>让我进一步阐述这个过程：</p>
+<p><img src="/images/image-20210217000401134.png" alt="image-20210217000401134"></p>
+<p>在梯度下降算法中，这是正确实现同时更新的方法。我不打算解释为什么你需要同时更新，同时更新是梯度下降中的一种常用方法。我们之后会讲到，同步更新是更自然的实现方法。当人们谈到梯度下降时，他们的意思就是同步更新。</p>
+<p>在接下来的视频中，我们要进入这个微分项的细节之中。我已经写了出来但没有真正定义，如果你已经修过微积分课程，如果你熟悉偏导数和导数，这其实就是这个微分项：</p>
+<p><img src="/images/image-20210217002837122.png" alt="image-20210217002837122"></p>
+<p>如果你不熟悉微积分，不用担心，即使你之前没有看过微积分，或者没有接触过偏导数，在接下来的视频中，你会得到一切你需要知道，如何计算这个微分项的知识。</p>
+<p>下一个视频中，希望我们能够给出实现梯度下降算法的所有知识 。</p>
+<h3 id="梯度下降的直观理解"><a href="#梯度下降的直观理解" class="headerlink" title="梯度下降的直观理解"></a>梯度下降的直观理解</h3><p>在之前的视频中，我们给出了一个数学上关于梯度下降的定义，本次视频我们更深入研究一下，更直观地感受一下这个算法是做什么的，以及梯度下降算法的更新过程有什么意义。梯度下降算法如下：</p>
+<p>${\theta_{j}}:={\theta_{j}}-\alpha \frac{\partial }{\partial {\theta_{j}}}J\left(\theta \right)$</p>
+<p>描述：对$\theta $赋值，使得$J\left( \theta  \right)$按梯度下降最快方向进行，一直迭代下去，最终得到局部最小值。其中$a$是学习率（<strong>learning rate</strong>），它决定了我们沿着能让代价函数下降程度最大的方向向下迈出的步子有多大。</p>
+<p><img src="/images/image-20210217000534228.png" alt="image-20210217000534228"></p>
+<p>对于这个问题，求导的目的，基本上可以说取这个红点的切线，就是这样一条红色的直线，刚好与函数相切于这一点，让我们看看这条红色直线的斜率，就是这条刚好与函数曲线相切的这条直线，这条直线的斜率正好是这个三角形的高度除以这个水平长度，现在，这条线有一个正斜率，也就是说它有正导数，因此，我得到的新的${\theta_{1}}$，${\theta_{1}}$更新后等于${\theta_{1}}$减去一个正数乘以$a$。</p>
+<p>这就是我梯度下降法的更新规则：${\theta_{j}}:={\theta_{j}}-\alpha \frac{\partial }{\partial {\theta_{j}}}J\left( \theta  \right)$</p>
+<p>让我们来看看如果$a$太小或$a$太大会出现什么情况：</p>
+<p>如果$a$太小了，即我的学习速率太小，结果就是只能这样像小宝宝一样一点点地挪动，去努力接近最低点，这样就需要很多步才能到达最低点，所以如果$a$太小的话，可能会很慢，因为它会一点点挪动，它会需要很多步才能到达全局最低点。</p>
+<p>如果$a$太大，那么梯度下降法可能会越过最低点，甚至可能无法收敛，下一次迭代又移动了一大步，越过一次，又越过一次，一次次越过最低点，直到你发现实际上离最低点越来越远，所以，如果$a$太大，它会导致无法收敛，甚至发散。</p>
+<p>现在，我还有一个问题，当我第一次学习这个地方时，我花了很长一段时间才理解这个问题，如果我们预先把${\theta_{1}}$放在一个局部的最低点，你认为下一步梯度下降法会怎样工作？</p>
+<p>假设你将${\theta_{1}}$初始化在局部最低点，在这儿，它已经在一个局部的最优处或局部最低点。结果是局部最优点的导数将等于零，因为它是那条切线的斜率。这意味着你已经在局部最优点，它使得${\theta_{1}}$不再改变，也就是新的${\theta_{1}}$等于原来的${\theta_{1}}$，因此，如果你的参数已经处于局部最低点，那么梯度下降法更新其实什么都没做，它不会改变参数的值。这也解释了为什么即使学习速率$a$保持不变时，梯度下降也可以收敛到局部最低点。</p>
+<p>我们来看一个例子，这是代价函数$J\left( \theta  \right)$。</p>
+<p><img src="/images/image-20210217000553809.png" alt="image-20210217000553809"></p>
+<p>我想找到它的最小值，首先初始化我的梯度下降算法，在那个品红色的点初始化，如果我更新一步梯度下降，也许它会带我到这个点，因为这个点的导数是相当陡的。现在，在这个绿色的点，如果我再更新一步，你会发现我的导数，也即斜率，是没那么陡的。随着我接近最低点，我的导数越来越接近零，所以，梯度下降一步后，新的导数会变小一点点。然后我想再梯度下降一步，在这个绿点，我自然会用一个稍微跟刚才在那个品红点时比，再小一点的一步，到了新的红色点，更接近全局最低点了，因此这点的导数会比在绿点时更小。所以，我再进行一步梯度下降时，我的导数项是更小的，${\theta_{1}}$更新的幅度就会更小。所以随着梯度下降法的运行，你移动的幅度会自动变得越来越小，直到最终移动幅度非常小，你会发现，已经收敛到局部极小值。</p>
+<p>回顾一下，在梯度下降法中，当我们接近局部最低点时，梯度下降法会自动采取更小的幅度，这是因为当我们接近局部最低点时，很显然在局部最低时导数等于零，所以当我们接近局部最低时，导数值会自动变得越来越小，所以梯度下降将自动采取较小的幅度，这就是梯度下降的做法。所以实际上没有必要再另外减小$a$。</p>
+<p>这就是梯度下降算法，你可以用它来最小化任何代价函数$J$，不只是线性回归中的代价函数$J$。</p>
+<p>在接下来的视频中，我们要用代价函数$J$，回到它的本质，线性回归中的代价函数。也就是我们前面得出的平方误差函数，结合梯度下降法，以及平方代价函数，我们会得出第一个机器学习算法，即线性回归算法。</p>
+<p><img src="/images/image-20210217002957464.png" alt="image-20210217002957464"></p>
+<p><img src="/images/image-20210217003019388.png" alt="image-20210217003019388"></p>
+<p><img src="/images/image-20210217003035133.png" alt="image-20210217003035133"></p>
+<p>则算法改写成：</p>
+<h3 id><a href="#" class="headerlink" title></a><img src="/images/image-20210217002906737.png" alt="image-20210217002906737"></h3><h3 id="梯度下降算法更多内容"><a href="#梯度下降算法更多内容" class="headerlink" title="梯度下降算法更多内容"></a>梯度下降算法更多内容</h3><p>请参考<a href="https://blog.csdn.net/qq_41800366/article/details/86583789?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161349126216780261954075%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=161349126216780261954075&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-2-86583789.first_rank_v2_pc_rank_v29&utm_term=%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95&spm=1018.2226.3001.4187">链接</a></p>
+<h2 id="线性代数回顾-Linear-Algebra-Review"><a href="#线性代数回顾-Linear-Algebra-Review" class="headerlink" title="线性代数回顾(Linear Algebra Review)"></a>线性代数回顾(Linear Algebra Review)</h2><p>参考[链接](</p>
+]]></content>
+      <categories>
+        <category>AI</category>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>机器学习</tag>
+        <tag>MachineLearning</tag>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+</search>
