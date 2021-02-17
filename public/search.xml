@@ -114,6 +114,16 @@
       </tags>
   </entry>
   <entry>
+    <title>pytorch入门</title>
+    <url>/2021/02/17/pytorch%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<p><img src="/2021/02/17/pytorch%E5%85%A5%E9%97%A8/images/image-20210217110240972.png" alt="image-20210217110240972"></p>
+]]></content>
+      <tags>
+        <tag>cv</tag>
+        <tag>AI</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown基本用法</title>
     <url>/2021/02/16/Markdown%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</url>
     <content><![CDATA[<h2 id="Block-Elements-块状单元"><a href="#Block-Elements-块状单元" class="headerlink" title="Block Elements(块状单元)"></a>Block Elements(块状单元)</h2><h3 id="Paragraph-and-line-breaks-段落和换行符"><a href="#Paragraph-and-line-breaks-段落和换行符" class="headerlink" title="Paragraph and line breaks(段落和换行符)"></a>Paragraph and line breaks(段落和换行符)</h3><p>按下<code>Return</code> 或者 <code>Shift</code> + <code>Return</code> 换行</p>
