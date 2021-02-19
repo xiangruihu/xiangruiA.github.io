@@ -411,13 +411,24 @@ pi =3.1415926</script><h3 id="Tables-（表格"><a href="#Tables-（表格" clas
   <entry>
     <title>STM32学习笔记</title>
     <url>/2021/02/09/STM32%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="STM32-点灯方法"><a href="#STM32-点灯方法" class="headerlink" title="STM32 点灯方法"></a>STM32 点灯方法</h1><ol>
-<li>查看核心板原理图 </li>
+    <content><![CDATA[<h2 id="一-点亮LED-灯"><a href="#一-点亮LED-灯" class="headerlink" title="一.点亮LED 灯"></a>一.点亮LED 灯</h2><h3 id="1-1-目标"><a href="#1-1-目标" class="headerlink" title="1.1 目标"></a>1.1 目标</h3><ol>
+<li>了解如何将LED 灯所连接的I/O端口进行初始化</li>
+<li>如何控制程序控制IO端口的高低电平变化</li>
+<li>控制LED1小灯</li>
 </ol>
+<h3 id="1-2-电路原理图"><a href="#1-2-电路原理图" class="headerlink" title="1.2 电路原理图"></a>1.2 电路原理图</h3><p><img src="/images/image-20210219072118042.png" alt="image-20210219072118042"></p>
+<p>由电路原理图可看出,LED1由PB0控制，也就是单片机的第18脚。即PB0输出高电平，LED1点亮,PB)输出低电平，LED1熄灭。</p>
 <a id="more"></a>
-<hr>
-<p>第三部分：按键控制LED</p>
-<p><img src="/images/image-20210216191456443.png" alt="image-20210216191456443"></p>
+<h3 id="1-3四种方法实现闪灯程序"><a href="#1-3四种方法实现闪灯程序" class="headerlink" title="1.3四种方法实现闪灯程序"></a>1.3四种方法实现闪灯程序</h3><h4 id="1-3-1控制方法"><a href="#1-3-1控制方法" class="headerlink" title="1.3.1控制方法"></a>1.3.1控制方法</h4><p><code>main.c</code></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span>&#123;<span class="comment">//主程序</span></span><br><span class="line">	RCC_Configuration(); <span class="comment">//时钟设置</span></span><br><span class="line">	LED_Init();<span class="comment">//LED灯初始化函数，将LED灯连接的IO端口进行初始化</span></span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//方法1：</span></span><br><span class="line">		GPIO_WriteBit(LEDPORT,LED1,(BitAction)(<span class="number">1</span>)); <span class="comment">//LED1接口输出高电平1</span></span><br><span class="line">		delay_us(<span class="number">50000</span>); <span class="comment">//延时1秒</span></span><br><span class="line">		GPIO_WriteBit(LEDPORT,LED1,(BitAction)(<span class="number">0</span>)); <span class="comment">//LED1接口输出低电平0</span></span><br><span class="line">		delay_us(<span class="number">50000</span>); <span class="comment">//延时1秒</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">//方法2：</span></span><br><span class="line"><span class="comment">//		GPIO_WriteBit(LEDPORT,LED1,(BitAction)(1-GPIO_ReadOutputDataBit(LEDPORT,LED1))); //取反LED1</span></span><br><span class="line"><span class="comment">//		delay_ms(500); //延时1秒</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">//方法3：</span></span><br><span class="line"><span class="comment">//		GPIO_SetBits(LEDPORT,LED1); //LED灯都为高电平（1）</span></span><br><span class="line"><span class="comment">//		delay_s(1); //延时1秒</span></span><br><span class="line"><span class="comment">//		GPIO_ResetBits(LEDPORT,LED1); //LED灯都为低电平（0）</span></span><br><span class="line"><span class="comment">//		delay_s(1); //延时1秒</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">//方法4</span></span><br><span class="line"><span class="comment">//		GPIO_Write(LEDPORT,0x0001); //直接数值操作将变量值写入LED</span></span><br><span class="line"><span class="comment">//		delay_s(2); //延时1秒</span></span><br><span class="line"><span class="comment">//		GPIO_Write(LEDPORT,0x0000); //直接数值操作将变量值写入LED</span></span><br><span class="line"><span class="comment">//		delay_s(2); //延时1秒</span></span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>led.c</code></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;led.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">LED_Init</span><span class="params">(<span class="keyword">void</span>)</span></span>&#123; <span class="comment">//LED灯的接口初始化</span></span><br><span class="line">	GPIO_InitTypeDef  GPIO_InitStructure;<span class="comment">//定义GPIO端口初始化参数</span></span><br><span class="line">    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA|RCC_APB2Periph_GPIOB|RCC_APB2Periph_GPIOC,ENABLE);<span class="comment">//在时钟层面启动IO端口       </span></span><br><span class="line">    GPIO_InitStructure.GPIO_Pin = LED1 | LED2; <span class="comment">//选择端口号（0~15或all）设置IO端口的端口号                        </span></span><br><span class="line">    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; <span class="comment">//选择IO接口工作方式   推挽输出模式 使用大电流控制LED灯点亮     </span></span><br><span class="line">    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz; <span class="comment">//设置IO接口速度（2/10/50MHz）输出的时候需要设置，输入的时候不用设置.    </span></span><br><span class="line">	GPIO_Init(LEDPORT, &amp;GPIO_InitStructure);<span class="comment">//将上面内容写入到IO端口对应的寄存器中			</span></span><br><span class="line">&#125;</span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+<p><code>led.h</code></p>
+<p><em>主要用来定义一些宏文件</em></p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> __LED_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> __LED_H	 </span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;sys.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//#define LED1 PBout(0)// PB0</span></span><br><span class="line"><span class="comment">//#define LED2 PBout(1)// PB1	</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LEDPORT	GPIOB	<span class="comment">//定义IO接口</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LED1	GPIO_Pin_0	<span class="comment">//定义IO接口</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LED2	GPIO_Pin_1	<span class="comment">//定义IO接口</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">LED_Init</span><span class="params">(<span class="keyword">void</span>)</span></span>;<span class="comment">//初始化</span></span><br><span class="line"></span><br><span class="line">		 				    </span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">方法五：</span><br><span class="line">PBout(1)&#x3D;1;&#x2F;&#x2F;控制B端口的1号脚为高电平</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="1-3-2延时函数"><a href="#1-3-2延时函数" class="headerlink" title="1.3.2延时函数"></a>1.3.2延时函数</h4><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;delay.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> AHB_INPUT  72  <span class="comment">//请按RCC中设置的AHB时钟频率填写到这里（单位MHz）</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">delay_us</span><span class="params">(u32 uS)</span></span>&#123; <span class="comment">//uS微秒级延时程序（参考值即是延时数，72MHz时最大值233015）	</span></span><br><span class="line">	SysTick-&gt;LOAD=AHB_INPUT*uS;      <span class="comment">//重装计数初值（当主频是72MHz，72次为1微秒）</span></span><br><span class="line">	SysTick-&gt;VAL=<span class="number">0x00</span>;        <span class="comment">//清空定时器的计数器</span></span><br><span class="line">	SysTick-&gt;CTRL=<span class="number">0x00000005</span>;<span class="comment">//时钟源HCLK，打开定时器</span></span><br><span class="line">	<span class="keyword">while</span>(!(SysTick-&gt;CTRL&amp;<span class="number">0x00010000</span>)); <span class="comment">//等待计数到0</span></span><br><span class="line">	SysTick-&gt;CTRL=<span class="number">0x00000004</span>;<span class="comment">//关闭定时器</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">delay_ms</span><span class="params">(u16 ms)</span></span>&#123; <span class="comment">//mS毫秒级延时程序（参考值即是延时数，最大值65535）	 		  	  </span></span><br><span class="line">	<span class="keyword">while</span>( ms-- != <span class="number">0</span>)&#123;</span><br><span class="line">		delay_us(<span class="number">1000</span>);	<span class="comment">//调用1000微秒的延时</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">delay_s</span><span class="params">(u16 s)</span></span>&#123; <span class="comment">//S秒级延时程序（参考值即是延时数，最大值65535）	 		  	  </span></span><br><span class="line">	<span class="keyword">while</span>( s-- != <span class="number">0</span>)&#123;</span><br><span class="line">		delay_ms(<span class="number">1000</span>);	<span class="comment">//调用1000毫秒的延时</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<h4 id="1-3-3-呼吸灯程序"><a href="#1-3-3-呼吸灯程序" class="headerlink" title="1.3.3 呼吸灯程序"></a>1.3.3 呼吸灯程序</h4><figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;stm32f10x.h&quot;</span> <span class="comment">//STM32头文件</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;sys.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;delay.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;led.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span> <span class="params">(<span class="keyword">void</span>)</span></span>&#123;<span class="comment">//主程序</span></span><br><span class="line">	<span class="comment">//定义需要的变量</span></span><br><span class="line">	u8 MENU;</span><br><span class="line">	u16 t,i;</span><br><span class="line">	<span class="comment">//初始化程序</span></span><br><span class="line">	RCC_Configuration(); <span class="comment">//时钟设置</span></span><br><span class="line">	LED_Init();</span><br><span class="line">	<span class="comment">//设置变量的初始值</span></span><br><span class="line">	MENU = <span class="number">0</span>;</span><br><span class="line">	t = <span class="number">1</span>;</span><br><span class="line">	<span class="comment">//主循环</span></span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">		<span class="comment">//菜单0</span></span><br><span class="line">		<span class="keyword">if</span>(MENU == <span class="number">0</span>)&#123; <span class="comment">//变亮循环</span></span><br><span class="line">			<span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)&#123;</span><br><span class="line">				GPIO_WriteBit(LEDPORT,LED1,(BitAction)(<span class="number">1</span>)); <span class="comment">//LED1接口输出高电平1</span></span><br><span class="line">				delay_us(t); <span class="comment">//延时</span></span><br><span class="line">				GPIO_WriteBit(LEDPORT,LED1,(BitAction)(<span class="number">0</span>)); <span class="comment">//LED1接口输出低电平0</span></span><br><span class="line">				delay_us(<span class="number">501</span>-t); <span class="comment">//延时</span></span><br><span class="line">			&#125;</span><br><span class="line">			t++;</span><br><span class="line">			<span class="keyword">if</span>(t==<span class="number">500</span>)&#123;</span><br><span class="line">				MENU = <span class="number">1</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//菜单1</span></span><br><span class="line">		<span class="keyword">if</span>(MENU == <span class="number">1</span>)&#123; <span class="comment">//变暗循环</span></span><br><span class="line">			<span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)&#123;</span><br><span class="line">				GPIO_WriteBit(LEDPORT,LED1,(BitAction)(<span class="number">1</span>)); <span class="comment">//LED1接口输出高电平1</span></span><br><span class="line">				delay_us(t); <span class="comment">//延时</span></span><br><span class="line">				GPIO_WriteBit(LEDPORT,LED1,(BitAction)(<span class="number">0</span>)); <span class="comment">//LED1接口输出低电平0</span></span><br><span class="line">				delay_us(<span class="number">501</span>-t); <span class="comment">//延时</span></span><br><span class="line">			&#125;</span><br><span class="line">			t--;</span><br><span class="line">			<span class="keyword">if</span>(t==<span class="number">1</span>)&#123;</span><br><span class="line">				MENU = <span class="number">0</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;		</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>学习笔记</category>
@@ -603,7 +614,68 @@ h_{\theta} \left( x \right)={\theta^{T}}X</script><p>其中上标T代表矩阵�
 <p>梯度下降算法的每次迭代受到学习率的影响，如果学习率$a$过小，则达到收敛所需的迭代次数会非常高；如果学习率$a$过大，每次迭代可能不会减小代价函数，可能会越过局部最小值导致无法收敛。</p>
 <p>通常可以考虑尝试些学习率：</p>
 <script type="math/tex; mode=display">
-\alpha=0.01，0.03，0.1，0.3，1，3，10</script><h3 id="4-5-特征和多项式回归"><a href="#4-5-特征和多项式回归" class="headerlink" title="4.5 特征和多项式回归"></a>4.5 特征和多项式回归</h3>]]></content>
+\alpha=0.01，0.03，0.1，0.3，1，3，10</script><h3 id="4-5-特征和多项式回归"><a href="#4-5-特征和多项式回归" class="headerlink" title="4.5 特征和多项式回归"></a>4.5 特征和多项式回归</h3><p>如房价预测问题，</p>
+<p><img src="/images/image-20210218161127888.png" alt="image-20210218161127888"></p>
+<p><img src="/images/image-20210218161153908.png" alt="image-20210218161153908"></p>
+<p><img src="/images/image-20210218161321350.png" alt="image-20210218161321350"></p>
+<p><img src="/images/image-20210218161337520.png" alt="image-20210218161337520"></p>
+<p>则：</p>
+<p><img src="/images/image-20210218161351222.png" alt="image-20210218161351222"></p>
+<p>线性回归并不适用于所有数据，有时我们需要曲线来适应我们的数据，比如一个二次方模型：</p>
+<p><img src="/images/image-20210218161449597.png" alt="image-20210218161449597"></p>
+<p>或者三次方模型:</p>
+<p><img src="/images/image-20210218161519095.png" alt="image-20210218161519095"></p>
+<p><img src="/images/image-20210218161533113.png" alt="image-20210218161533113"></p>
+<p>通常我们需要先观察数据然后再决定准备尝试怎样的模型。 另外，我们可以令：<img src="/images/image-20210218161643826.png" alt="image-20210218161643826">从而将模型转化为线性回归模型。</p>
+<p>根据函数图形特性，我们还可以使：<img src="/images/image-20210218161726641.png" alt="image-20210218161726641"></p>
+<p>或者:<img src="/images/image-20210218161742466.png" alt="image-20210218161742466"></p>
+<p>注：如果我们采用多项式回归模型，在运行梯度下降算法前，特征缩放非常有必要。</p>
+<h3 id="4-6正规方程"><a href="#4-6正规方程" class="headerlink" title="4.6正规方程"></a>4.6正规方程</h3><p>到目前为止，我们都在使用梯度下降算法，但是对于某些线性回归问题，正规方程方法是更好的解决方案。如：</p>
+<p><img src="/images/image-20210218162307180.png" alt="image-20210218162307180"></p>
+<p>正规方程是通过求解下面的方程来找出使得代价函数最小的参数的：</p>
+<p><img src="/images/image-20210218162409718.png" alt="image-20210218162409718"></p>
+<p>假设我们的训练集特征矩阵为X(包含了x0=1)并且我们的训练集结果为向量y,则利用正规方程解出向量</p>
+<p><img src="/images/image-20210218162601709.png" alt="image-20210218162601709"></p>
+<p>设<img src="/images/image-20210218162658334.png" alt="image-20210218162658334">则：<img src="/images/image-20210218162722849.png" alt="image-20210218162722849"></p>
+<p><img src="/images/image-20210218162755926.png" alt="image-20210218162755926"></p>
+<p><img src="/images/image-20210218162804677.png" alt="image-20210218162804677"></p>
+<p>运用正规方程方法求解参数：</p>
+<p><img src="/images/image-20210218162820290.png" alt="image-20210218162820290"></p>
+<p>注：对于那些不可逆的矩阵（通常是因为特征之间不独立，如同时包含英尺为单位的尺寸和米为单位的尺寸两个特征，也有可能是特征数量大于训练集的数量），正规方程方法是不能用的。</p>
+<p>梯度下降与正规方程的比较：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>梯度下降</th>
+<th>正规方程</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>需要选择学习率$\alpha$</td>
+<td>不需要</td>
+</tr>
+<tr>
+<td>需要多次迭代</td>
+<td>一次运算得出</td>
+</tr>
+<tr>
+<td>当特征数量$n$大时也能较好适用</td>
+<td>需要计算<img src="/images/image-20210218162916440.png" alt="image-20210218162916440"> 如果特征数量n较大则运算代价大，因为矩阵逆的计算时间复杂度为<img src="/images/image-20210218162943804.png" alt="image-20210218162943804">，通常来说当$n$小于10000 时还是可以接受的</td>
+</tr>
+<tr>
+<td>适用于各种类型的模型</td>
+<td>只适用于线性模型，不适合逻辑回归模型等其他模型</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>总结一下，只要特征变量的数目并不大，标准方程是一个很好的计算参数$\theta $的替代方法。具体地说，只要特征变量数量小于一万，我通常使用标准方程法，而不使用梯度下降法。</p>
+<p>随着我们要讲的学习算法越来越复杂，例如，当我们讲到分类算法，像逻辑回归算法，我们会看到，实际上对于那些算法，并不能使用标准方程法。对于那些更复杂的学习算法，我们将不得不仍然使用梯度下降法。因此，梯度下降法是一个非常有用的算法，可以用在有大量特征变量的线性回归问题。或者我们以后在课程中，会讲到的一些其他的算法，因为标准方程法不适合或者不能用在它们上。但对于这个特定的线性回归模型，标准方程法是一个比梯度下降法更快的替代算法。所以，根据具体的问题，以及你的特征变量的数量，这两种算法都是值得学习的。</p>
+<p>正规方程的python 实现：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">    </span><br><span class="line"> <span class="function"><span class="keyword">def</span> <span class="title">normalEqn</span>(<span class="params">X, y</span>):</span></span><br><span class="line">    </span><br><span class="line">   theta = np.linalg.inv(X.T@X)@X.T@y <span class="comment">#X.T@X等价于X.T.dot(X)</span></span><br><span class="line">    </span><br><span class="line">   <span class="keyword">return</span> theta</span><br></pre></td></tr></table></figure>
+<h3 id="4-7正规方程的不可逆过程"><a href="#4-7正规方程的不可逆过程" class="headerlink" title="4.7正规方程的不可逆过程"></a>4.7正规方程的不可逆过程</h3>]]></content>
       <categories>
         <category>AI</category>
         <category>学习笔记</category>
