@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+ <!--pjax：防止跳转页面音乐暂停-->
+  <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.js"></script> 
+
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"./public/search.xml"};
+  </script>
+
+  <meta name="description" content="一.Arduino 端口及组成部件 0～13为14个数字输入&#x2F;输出（Digital I&#x2F;O）端口，最大输入&#x2F;输出电流为40mA，其中，端口0和1可用作串口通信数据发送和接收引脚，端口3、5、6、9、10、11具有PWM（脉冲宽度调制）功能，端口13与板载LED灯连接。注：这里的数字指数字量，数字量指在一定范围内不连续变化的物理量；输入&#x2F;输出端口指输入或输出的引脚，引脚电压的变化范围为0～5V，数字">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Arduino开发">
+<meta property="og:url" content="http://example.com/2021/03/17/Arduino%E5%BC%80%E5%8F%91/index.html">
+<meta property="og:site_name" content="Grit&#39;s blog">
+<meta property="og:description" content="一.Arduino 端口及组成部件 0～13为14个数字输入&#x2F;输出（Digital I&#x2F;O）端口，最大输入&#x2F;输出电流为40mA，其中，端口0和1可用作串口通信数据发送和接收引脚，端口3、5、6、9、10、11具有PWM（脉冲宽度调制）功能，端口13与板载LED灯连接。注：这里的数字指数字量，数字量指在一定范围内不连续变化的物理量；输入&#x2F;输出端口指输入或输出的引脚，引脚电压的变化范围为0～5V，数字">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/image-20210317143833620.png">
+<meta property="og:image" content="http://example.com/images/image-20210317164124125.png">
+<meta property="og:image" content="http://example.com/images/image-20210317170525637.png">
+<meta property="og:image" content="http://example.com/images/image-20210317172014181.png">
+<meta property="og:image" content="http://example.com/images/image-20210317172107730.png">
+<meta property="og:image" content="http://example.com/images/image-20210317182902118.png">
+<meta property="og:image" content="http://example.com/images/image-20210317183111038.png">
+<meta property="article:published_time" content="2021-03-17T04:31:09.000Z">
+<meta property="article:modified_time" content="2021-03-17T10:32:52.922Z">
+<meta property="article:author" content="grit">
+<meta property="article:tag" content="硬件">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/image-20210317143833620.png">
+
+<link rel="canonical" href="http://example.com/2021/03/17/Arduino%E5%BC%80%E5%8F%91/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Arduino开发 | Grit's blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+
+<!-- 樱花特效 -->
+  
+
+</head>
+
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+    <a target="_blank" rel="noopener" href="https://github.com/xiangruiA" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Grit's blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description"> 爱自已，是一生浪漫的开始。</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-guestbook">
+
+    <a href="/guestbook/" rel="section"><i class="comment fa-fw"></i>留言板</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/17/Arduino%E5%BC%80%E5%8F%91/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="grit">
+      <meta itemprop="description" content="身体和灵魂总要有一个在路上">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Grit's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Arduino开发
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-03-17 12:31:09 / 修改时间：18:32:52" itemprop="dateCreated datePublished" datetime="2021-03-17T12:31:09+08:00">2021-03-17</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2021/03/17/Arduino%E5%BC%80%E5%8F%91/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/03/17/Arduino%E5%BC%80%E5%8F%91/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>3.8k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">
+
+阅读时长 &asymp;
+
+</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+
+      
+        <h2 id="一-Arduino-端口及组成部件"><a href="#一-Arduino-端口及组成部件" class="headerlink" title="一.Arduino 端口及组成部件"></a>一.Arduino 端口及组成部件</h2><ol>
+<li>0～13为14个数字输入/输出（Digital I/O）端口，最大输入/输出电流为40mA，其中，端口0和1可用作串口通信数据发送和接收引脚，端口3、5、6、9、10、11具有PWM（脉冲宽度调制）功能，端口13与板载LED灯连接。注：这里的数字指数字量，数字量指在一定范围内不连续变化的物理量；输入/输出端口指输入或输出的引脚，引脚电压的变化范围为0～5V，数字端口的返回值为数字0或1，当引脚电压低于0.8V时，数字端口的返回值为数字0，数字0表示低电平，当引脚电压高于2.0V时，数字端口的返回值为数字1，数字1表示高电平，当引脚电压高于0.8V且低于2.0V时，数字端口的返回值将无法确定；当端口13输出数字1时，板载LED灯点亮，当端口13输出数字0时，板载LED灯熄灭.</li>
+</ol>
+<a id="more"></a>
+<ol>
+<li>A0～A5为6个模拟输入（Analog In）端口，具有10位的分辨率，默认输入信号为0～5V电压。</li>
+<li>GND为电路公共逻辑参考电平引脚、电线接地端口，对于电源而言，GND为电源负极。Arduino Uno开发板上共有3个GND。</li>
+<li>AREF为模拟输入的基准电压（Reference Voltage for the AnalogInputs），使用analogReference（）命令调用。</li>
+<li>复位（Reset）键，又称重新启动键，在设备通电状态下手动按下复位键可使设备重新启动，程序从起始状态重新开始运行。</li>
+<li>外接电源插孔连接7～12V直流电源适配器，外接电源插孔的正极与1N4007二极管的正极连接，1N4007二极管的负极与VIN端口、AMS1117三端稳压器输入端连接。当Arduino Uno开发板的耗电电流小于500mA时，采用USB接口供电即可，无须外接电源；当耗电电流大于500mA时，必须外接电源，否则，开发板不能正常工作。</li>
+<li>5V和3.3V端口可向外部电路提供5V和3.3V电源。</li>
+<li>RESET端口与复位键的引脚连接。将此端口与GND端口快速连接一下然后断开，可使设备重新启动，从起始状态重新开始。</li>
+<li>VIN端口为外接电源输入（Voltage In）端口，外接电源的输入电压为7～12V。</li>
+<li>16MHz晶振表示使用的晶体振荡器的振荡频率为16MHz（16000000Hz），晶振在Arduino Uno开发板上的主要作用是产生基准频率，微控制器通过基准频率控制电路中的频率的准确性。注：频率指单位时间内变化的次数，频率的单位是赫兹，简称“赫”，符号为Hz。16MHz表示1秒钟变化16000000次。</li>
+</ol>
+<h2 id="二-Arduino-语言"><a href="#二-Arduino-语言" class="headerlink" title="二.Arduino 语言"></a>二.Arduino 语言</h2><p>arduino 语言的结构主要包括 </p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;<span class="comment">//设置初始化代码，此代码只运行一次&#125;;</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span> </span>&#123;<span class="comment">//放置主程序代码，此代码无限循环&#125;</span></span><br></pre></td></tr></table></figure>
+<p>setup 函数用于初始化变量，设置引脚的输入、输出模式，配置引脚，引入库函数文件等。只在Arduino Uno 上电或者复位后运行一次。</p>
+<p>LED 闪烁程序</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span></span>&#123;</span><br><span class="line">    pinMode(<span class="number">13</span>,OUTPUT);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span>&#123;</span><br><span class="line">    digitalWrite(<span class="number">13</span>,HIGH);</span><br><span class="line">    delay(<span class="number">10000</span>);</span><br><span class="line">    digitalWrite(<span class="number">13</span>,Low);</span><br><span class="line">    delay(<span class="number">10000</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>定义变量</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> n=<span class="number">13</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span></span>&#123;</span><br><span class="line">    pinMode(n,OUTPUT);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span>&#123;</span><br><span class="line">    digitalWrite(n,HIGH);</span><br><span class="line">    delay(<span class="number">10000</span>);</span><br><span class="line">    digitalWrite(<span class="number">13</span>,Low);</span><br><span class="line">    delay(<span class="number">10000</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Arduino 与PC 串口通信</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span></span>&#123;</span><br><span class="line">  Serial.begin(<span class="number">9600</span>);<span class="comment">//设置串口的波特率</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span>&#123;</span><br><span class="line">  Serial.println(<span class="string">&quot;Hello,PC&quot;</span>);<span class="comment">//通过串口发送一行字符</span></span><br><span class="line">  delay(<span class="number">100</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="三-Arduino-基础实验"><a href="#三-Arduino-基础实验" class="headerlink" title="三.Arduino 基础实验"></a>三.Arduino 基础实验</h2><h3 id="3-1-LED-控制"><a href="#3-1-LED-控制" class="headerlink" title="3.1 LED 控制"></a>3.1 LED 控制</h3><p>Arduino 控制LED 小灯闪烁</p>
+<p>硬件连接部分.</p>
+<p><img src="/images/image-20210317143833620.png" alt="image-20210317143833620"></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> n=<span class="number">8</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span></span>&#123;</span><br><span class="line">    pinMode(n,OUTPUT);</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span>&#123;</span><br><span class="line">    digitalWrite(n,High);</span><br><span class="line">    delay(<span class="number">100</span>);</span><br><span class="line">    digitalWrite(n,Low);</span><br><span class="line">    delay(<span class="number">100</span>);</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>PMW 呼吸灯程序</p>
+<p>只有开发板上数字旁带“～”符号的引脚才能够使用PWM。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> led=<span class="number">3</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="comment">// put your setup code here, to run once:</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  <span class="comment">// put your main code here, to run repeatedly:</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">int</span> fadeVale =<span class="number">0</span>;fadeVale&lt;=<span class="number">255</span>;fadeVale +=<span class="number">5</span>)</span><br><span class="line">  &#123;</span><br><span class="line">    analogWrite(led,fadeVale);</span><br><span class="line">    delay(<span class="number">30</span>);</span><br><span class="line">    </span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> fadeVale =<span class="number">255</span>; fadeVale&gt;=<span class="number">0</span>;fadeVale -=<span class="number">5</span>)&#123;</span><br><span class="line">    analogWrite(led,fadeVale);</span><br><span class="line">    delay(<span class="number">30</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-2-信号输入"><a href="#3-2-信号输入" class="headerlink" title="3.2 信号输入"></a>3.2 信号输入</h3><h4 id="3-2-1-按键控制"><a href="#3-2-1-按键控制" class="headerlink" title="3.2.1 按键控制"></a>3.2.1 按键控制</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> buttonPin =<span class="number">2</span>; <span class="comment">//相当于宏定义</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> led =<span class="number">13</span>;</span><br><span class="line"><span class="keyword">int</span> State =<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span></span>&#123;</span><br><span class="line">  pinMode(led,OUTPUT);</span><br><span class="line">    pinMode(buttonPin,INPUT);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span>&#123;</span><br><span class="line">    State =digitalRead(buttonPin);</span><br><span class="line">    <span class="keyword">if</span>(State ==<span class="number">1</span>)&#123;</span><br><span class="line">        digitalWrite(led,HIGH);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        digitalWrite(led,LOW);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/images/image-20210317164124125.png" alt></p>
+<p>改程序实现按下开关后LED灯熄灭的功能。</p>
+<h4 id="3-2-2-电位器控制"><a href="#3-2-2-电位器控制" class="headerlink" title="3.2.2 电位器控制"></a>3.2.2 电位器控制</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> sensorPin =A0;</span><br><span class="line"><span class="keyword">int</span> ledPin =<span class="number">13</span>;</span><br><span class="line"><span class="keyword">int</span> sensorValue =<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">  pinMode(ledPin, OUTPUT);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  sensorValue = analogRead(sensorPin);</span><br><span class="line">  digitalWrite(ledPin,<span class="number">1</span>);</span><br><span class="line">  <span class="comment">//延时</span></span><br><span class="line">  delay(sensorValue*<span class="number">10000</span>);</span><br><span class="line">  digitalWrite(ledPin,LOW);</span><br><span class="line">  delay(sensorValue*<span class="number">10000</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="/images/image-20210317170525637.png" alt="image-20210317170525637"></p>
+<p>连接图</p>
+<h3 id="3-3-电机控制"><a href="#3-3-电机控制" class="headerlink" title="3.3 电机控制"></a>3.3 电机控制</h3><h4 id="3-3-1-直流电机"><a href="#3-3-1-直流电机" class="headerlink" title="3.3.1 直流电机"></a>3.3.1 直流电机</h4><p>直流电机是最简单的电机，将其接入合适的电源即可驱动。在电机电气参数范围内调整其工作电压即可调速，电流反向可使电机反转。但并不是说可以直接使用Arduino的数字引脚输出电流来控制电机。电机的工作电流大型的往往在A级，而数字引脚能提供的电流只有mA级，这显然是不可行的。解决这个驱动电流问题的方法有很多，可以借助继电器、晶体管或多种控制芯片。为了能灵活控制，在此以L293D芯片驱动电机为例来说明如何用Arduino控制电机。</p>
+<p>电路连接图</p>
+<p><img src="/images/image-20210317172014181.png" alt="image-20210317172014181"></p>
+<p>L293D是一款宽电压、大电流、四通道电机驱动芯片，如图8-17所示为其封装后的外观，图8-18为其引脚标注（引脚序号由芯片上缺口左端算起）。</p>
+<p><img src="/images/image-20210317172107730.png" alt="image-20210317172107730"></p>
+<p>芯片引脚中，VCC1为芯片工作电压输入（4.5～7V），接地引脚需接地方可工作。1Y、2Y、3Y、4Y与1A、2A、3A、4A为四路电流输出极与其对应控制极，“1,2EN”控制第1、2路是否被启用（称为1、2路使能极），“3,4EN”亦为3、4路使能极。VCC2则是为4路输出提供电压的引脚，允许输入电压为Vcc1～36V（即VCC2电压不能低于芯片工作电压VCC1）。</p>
+<h4 id="3-3-2-舵机"><a href="#3-3-2-舵机" class="headerlink" title="3.3.2 舵机"></a>3.3.2 舵机</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;Servo.h&gt;</span></span></span><br><span class="line">Servo myservo;</span><br><span class="line"><span class="comment">//电位器</span></span><br><span class="line"><span class="keyword">int</span> potpin =A0;</span><br><span class="line"><span class="keyword">int</span> val=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span></span>&#123;</span><br><span class="line">  myservo.attach(<span class="number">9</span>);<span class="comment">//将引脚为9的舵机附加到伺服对象。</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="comment">//val=analogRead(potpin);//读取电位器的值</span></span><br><span class="line">  <span class="comment">//val=map(val,0,1023,0,180);//缩放为可用于控制舵机的角度值</span></span><br><span class="line">  myservo.write(<span class="number">1</span>);<span class="comment">//设置舵机位置</span></span><br><span class="line">  delay(<span class="number">1000</span>);</span><br><span class="line">  myservo.write(<span class="number">90</span>);</span><br><span class="line">  delay(<span class="number">1500</span>);<span class="comment">//防止抖动</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="/images/image-20210317182902118.png" alt="image-20210317182902118"></p>
+<h4 id="3-3-3-继电器控制"><a href="#3-3-3-继电器控制" class="headerlink" title="3.3.3 继电器控制"></a>3.3.3 继电器控制</h4><p>Arduino实现对电机的控制，利用了其他芯片以控制较大电流。而实现较宽电压的控制的时候就要使用到继电器了。</p>
+<p><img src="/images/image-20210317183111038.png" alt="image-20210317183111038"></p>
+<p>左上脚和左下脚串接线圈，中间公共脚与右下常闭（意为未工作时闭合）脚在线圈未通电时闭合，与右上常开（意为未工作时开路）脚断开。当继电器线圈接通直流电工作时，将产生磁场吸引衔铁使公共脚与常开脚接通，从而实现继电控制较宽电压。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E7%A1%AC%E4%BB%B6/" rel="tag"># 硬件</a>
+
+ <!-- 文章结束表示语-->
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #636363;font-size:14px;letter-spacing: 10px">本文结束啦<i class="fa fa-bell"></i>感谢您的阅读</div>
+    
+</div>
+      
+    </div>
+
+
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/02/21/soup/" rel="prev" title="soup">
+      <i class="fa fa-chevron-left"></i> soup
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+    <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+<embed id="musicplayer" frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=33756016&auto=1&height=32"></embed>
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80-Arduino-%E7%AB%AF%E5%8F%A3%E5%8F%8A%E7%BB%84%E6%88%90%E9%83%A8%E4%BB%B6"><span class="nav-text">一.Arduino 端口及组成部件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C-Arduino-%E8%AF%AD%E8%A8%80"><span class="nav-text">二.Arduino 语言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89-Arduino-%E5%9F%BA%E7%A1%80%E5%AE%9E%E9%AA%8C"><span class="nav-text">三.Arduino 基础实验</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-LED-%E6%8E%A7%E5%88%B6"><span class="nav-text">3.1 LED 控制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E4%BF%A1%E5%8F%B7%E8%BE%93%E5%85%A5"><span class="nav-text">3.2 信号输入</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-1-%E6%8C%89%E9%94%AE%E6%8E%A7%E5%88%B6"><span class="nav-text">3.2.1 按键控制</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-2-%E7%94%B5%E4%BD%8D%E5%99%A8%E6%8E%A7%E5%88%B6"><span class="nav-text">3.2.2 电位器控制</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-%E7%94%B5%E6%9C%BA%E6%8E%A7%E5%88%B6"><span class="nav-text">3.3 电机控制</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-1-%E7%9B%B4%E6%B5%81%E7%94%B5%E6%9C%BA"><span class="nav-text">3.3.1 直流电机</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-2-%E8%88%B5%E6%9C%BA"><span class="nav-text">3.3.2 舵机</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3-3-%E7%BB%A7%E7%94%B5%E5%99%A8%E6%8E%A7%E5%88%B6"><span class="nav-text">3.3.3 继电器控制</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="grit"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">grit</p>
+  <div class="site-description" itemprop="description">身体和灵魂总要有一个在路上</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="sidebar-button motion-element"><i class="fa fa-comment"></i>
+    Chat
+  </a>
+  </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/xiangruiA" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;xiangruiA" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://blog.csdn.net/weixin_46108138" title="CSDN → https:&#x2F;&#x2F;blog.csdn.net&#x2F;weixin_46108138" rel="noopener" target="_blank"><i class="book fa-fw"></i>CSDN</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=2543344628@qq.com" title="E - Mail → https:&#x2F;&#x2F;mail.qq.com&#x2F;cgi-bin&#x2F;qm_share?t&#x3D;qm_mailme&amp;email&#x3D;2543344628@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E - Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">
+  
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">grit</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">70k</span>
+    <div class="powered-by">
+    <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+       本站访客数:<span id="busuanzi_value_site_uv"></span>
+    </span>
+    </div>
+
+   <span class="post-meta-divider">|</span>
+   
+   <span id="busuanzi_container_site_pv">
+    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+   </span>
+
+
+   
+
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:04</span>
+</div>
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<span id="sitetime"></span>
+<script language=javascript>
+	function siteTime(){
+		window.setTimeout("siteTime()", 1000);
+		var seconds = 1000;
+		var minutes = seconds * 60;
+		var hours = minutes * 60;
+		var days = hours * 24;
+		var years = days * 365;
+		var today = new Date();
+		var todayYear = today.getFullYear();
+		var todayMonth = today.getMonth()+1;
+		var todayDate = today.getDate();
+		var todayHour = today.getHours();
+		var todayMinute = today.getMinutes();
+		var todaySecond = today.getSeconds();
+		/* 
+		Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+		year - 作为date对象的年份，为4位年份值
+		month - 0-11之间的整数，做为date对象的月份
+		day - 1-31之间的整数，做为date对象的天数
+		hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+		minutes - 0-59之间的整数，做为date对象的分钟数
+		seconds - 0-59之间的整数，做为date对象的秒数
+		microseconds - 0-999之间的整数，做为date对象的毫秒数
+        */
+		var t1 = Date.UTC(2020,02,13,15,00,00); //北京时间2018-2-13 00:00:00
+		var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+		var diff = t2-t1;
+		var diffYears = Math.floor(diff/years);
+		var diffDays = Math.floor((diff/days)-diffYears*365);
+		var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+		var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+		var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+		document.getElementById("sitetime").innerHTML=" 已运行"+/*diffYears+" 年 "+*/diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+	}
+	siteTime();
+</script>
+
+
+        
+<div class="busuanzi-count">
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'qzNLqU1UIaQIMaCBaFi4SaRM-gzGzoHsz',
+      appKey     : 'vYdThgQ0euJt90NlkPCUkIBY',
+      placeholder: "欢迎留言",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+    </div>
+</body>
+</html>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/clicklove.js"></script>
