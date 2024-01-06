@@ -1,1 +1,1 @@
-Home page of Huxiangrui
+Homepage of Xiangrui Hu
